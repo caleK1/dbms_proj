@@ -1,6 +1,16 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import DistrictFastFacts
+from .models import SchoolFastFacts
 
 # Create your views here.
-def index(request):
-    return HttpResponse("Hello, world. You're at the proj_display index.")
+def home(request):
+    return HttpResponse("Hello, world. You're at the proj_display home.")
+
+def districts(request):
+    district_list = DistrictFastFacts.objects.all()
+    return render(request, 'district_list.html', {'district_list': district_list})
+
+def schools(request):
+    school_list = SchoolFastFacts.objects.all()
+    return render(request, 'school_list.html', {'school_list': school_list})

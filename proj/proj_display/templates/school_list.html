@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<h1>Schools</h1>
+	<div class="table-responsive">
+		<table class="table table-striped">
+		  <thead class="thead-dark">
+		    <tr>
+		      <th scope="col">Year</th>
+		      <th scope="col">Name</th>
+		      <th schope="col">School ID</th>
+		      <th schope="col">District Name</th>
+		      <th scope="col">AUN</th>
+		      <th scope="col">Enrollment</th>
+		      <th scope="col">Grades Offered</th>
+		      <th scope="col">Website</th>
+		      <th scope="col">Phone Number</th>
+		      <th scope="col">Street</th>
+		      <th scope="col">City</th>
+		      <th scope="col">State</th>
+		      <th scope="col">Zip Code</th>
+		      <th scope="col">Intermediate Unit Name</th>
+		      <th scope="col">Intermediate Unit Website</th>
+		      <th scope="col">Male</th>
+		      <th scope="col">Female</th>
+		      <th scope="col">Black/African American</th>
+		      <th scope="col">White</th>
+		      <th scope="col">American Indian or Alaskan Native</th>
+		      <th scope="col">Asian</th>
+		      <th scope="col">Hispanic</th>
+		      <th scope="col">Native Hawaiian or Other Pacific Islander</th>
+		      <th scope="col">Two or More Races</th>
+		      <th scope="col">English Learner</th>
+		      <th scope="col">Economically Disadvantaged</th>
+		      <th scope="col">Career and Technical Programs</th>
+		      <th scope="col">Title 1 School</th>
+		      <th scope="col">Gifted Students</th>
+		      <th scope="col">Special Education</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	{% for school in school_list %}
+		    <tr>
+		      <td>{{ school.year }}</td>
+		      <td>{{ school }}</td>
+		      <td>{{ school.school_id }}</td>
+		      <td>{{ school.district_name }}</td>
+		      <td>{{ school.aun }}</td>
+		      <td>{{ school.enrollment }}</td>
+		      <td>{{ school.grades_offered }}</td>
+		      <td>{{ school.website }}</td>
+		      <td>{{ school.phone_number }}</td>
+		      <td>{{ school.street_address }}</td>
+		      <td>{{ school.city_address }}</td>
+		      <td>{{ school.state_address }}</td>
+		      <td>{{ school.zip_code }}</td>
+		      <td>{{ school.intermediate_unit_name }}</td>
+		      <td>{{ school.intermediate_unit_website }}</td>
+		      <td>{{ school.male }}</td>
+		      <td>{{ school.female }}</td>
+		      <td>{{ school.african_american }}</td>
+		      <td>{{ school.white }}</td>
+		      <td>{{ school.american_indian_or_alaskan_native }}</td>
+		      <td>{{ school.asian }}</td>
+		      <td>{{ school.hispanic }}</td>
+		      <td>{{ school.pacific_islander }}</td>
+		      <td>{{ school.two_or_more_races }}</td>
+		      <td>{{ school.english_learner }}</td>
+		      <td>{{ school.economically_disadvantaged }}</td>
+		      <td>{{ school.career_and_technical_programs }}</td>
+		      <td>{{ school.title_1_school }}</td>
+		      <td>{{ school.gifted_students }}</td>
+		      <td>{{ school.special_education }}</td>
+		    </tr>
+		    {% endfor %}
+		  </tbody>
+		</table>
+	</div>
+
+	
+{% endblock %}
