@@ -6,5 +6,5 @@ urlpatterns = [
     path("", views.home, name="home"),
     path("districts", views.districts, name="list-districts"),
     path("schools", views.schools, name="list-schools"),
-
+    path("district/<str:district_name>", views.district_view, name="district-view"),
 ]

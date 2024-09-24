@@ -49,7 +49,7 @@
 		  	{% for district in district_list %}
 		    <tr>
 		      <td>{{ district.year }}</td>
-		      <td>{{ district }}</td>
+		      <td><a href="{% url 'district-view' district %}">{{ district }}</td>
 		      <td>{{ district.aun }}</td>
 		      <td>{{ district.num_of_schools }}</td>
 		      <td>{% for school in district.schools_in_district.all %}
