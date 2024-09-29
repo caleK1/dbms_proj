@@ -7,4 +7,5 @@ urlpatterns = [
     path("districts", views.districts, name="list-districts"),
     path("schools", views.schools, name="list-schools"),
     path("district/<str:district_name>", views.district_view, name="district-view"),
+    path("school/<str:school_name>", views.school_view, name="school-view"),
 ]

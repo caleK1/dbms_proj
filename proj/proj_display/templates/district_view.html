@@ -3,7 +3,15 @@
 {% block content %}
 
 	<h1>District View for {{ district_info.name }}</h1>
-	<h1>Year: {{ district_info.year }}</h1>
+	<div class="card" style="width: 18rem;">
+	  <div class="card-body">
+	    <h5 class="card-title">Schools in {{ district_info.name }}</h5>
+	    {% for school in district_info.schools_in_district.all %}
+	    	<a href="{% url 'school-view' school %}" class="card-link">{{ school }}</a>
+	    {% endfor %}
+	    
+	  </div>
+	</div>
 
 	
 {% endblock %}

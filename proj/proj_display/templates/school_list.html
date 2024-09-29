@@ -43,7 +43,7 @@
 		  	{% for school in school_list %}
 		    <tr>
 		      <td>{{ school.year }}</td>
-		      <td>{{ school }}</td>
+		      <td><a href="{% url 'school-view' school %}">{{ school }}</td>
 		      <td>{{ school.school_id }}</td>
 		      <td>{{ school.district_name }}</td>
 		      <td>{{ school.aun }}</td>

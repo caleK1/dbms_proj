@@ -19,3 +19,8 @@ def district_view(request, district_name):
     district = DistrictFastFacts.objects.get(name=district_name)
     context = {'district_info' : district}
     return render(request, "district_view.html", context)
+
+def school_view(request, school_name):
+    school = SchoolFastFacts.objects.get(name=school_name)
+    context = {'school_info' : school}
+    return render(request, "school_view.html", context)
