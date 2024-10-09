@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <H1> Disctrict_Fiscal_Facts</H1>
+    <div class="table-responsive">
+        <table class="table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Year</th>
+                    <th scope="col">Name</th>
+                    <th scope="col"> AUN</th>
+                    <th scope="col"> ADM</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                {%for district in district_fiscal_list%}
+                <tr>
+                    <td>{{district.year}} </td>
+                    <td>{{district.name}}</td>
+                    <td>{{district.aun}}</td>
+                    <td>{{district.adm}}</td>
+
+
+                </tr>
+                {% endfor %}
+
+            </tbody>
+                
+
+        </table>
+    </div>
+{% endblock %}

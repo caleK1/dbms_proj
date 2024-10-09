@@ -76,3 +76,14 @@ class DistrictFastFacts(models.Model):
 
 	def __str__(self):
 		return self.name
+	
+class DistrictFiscalData(models.Model):
+	year = models.CharField('District Year', max_length=10)
+	name=models.ForeignKey('DistrictFastFacts', blank = True, null = True, on_delete = models.CASCADE)
+	aun=models.IntegerField('AUN')
+	adm=models.DecimalField('ADM',max_digits=7,decimal_places=2)
+	based_on_instruction=models.DecimalField('Based On Instruction',max_digits=10,decimal_places=2)
+	based_on_total=models.DecimalField('Based On Total',max_digits=10,decimal_places=2)
+
+	def __str_(self):
+		return self.name
