@@ -3,95 +3,14 @@
 {% block content %}
 
 	<h1>Districts</h1>
-	<div class="table-responsive">
-		<table class="table table-striped">
-		  <thead class="thead-dark">
-		    <tr>
-		      <th scope="col">Year</th>
-		      <th scope="col">Name</th>
-		      <th scope="col">AUN</th>
-		      <th scope="col">Number of Schools</th>
-		      <th scope="col">Schools In District</th>
-		      <th scope="col">Enrollment</th>
-		      <th scope="col">Grades Offered</th>
-		      <th scope="col">Website</th>
-		      <th scope="col">Phone Number</th>
-		      <th scope="col">Street</th>
-		      <th scope="col">City</th>
-		      <th scope="col">State</th>
-		      <th scope="col">Zip Code</th>
-		      <th scope="col">Geographic Size</th>
-		      <th scope="col">Intermediate Unit Name</th>
-		      <th scope="col">Intermediate Unit Website</th>
-		      <th scope="col">Male</th>
-		      <th scope="col">Female</th>
-		      <th scope="col">Black/African American</th>
-		      <th scope="col">White</th>
-		      <th scope="col">American Indian or Alaskan Native</th>
-		      <th scope="col">Asian</th>
-		      <th scope="col">Hispanic</th>
-		      <th scope="col">Native Hawaiian or Other Pacific Islander</th>
-		      <th scope="col">Two or More Races</th>
-		      <th scope="col">English Learner</th>
-		      <th scope="col">Economically Disadvantaged</th>
-		      <th scope="col">Homeless</th>
-		      <th scope="col">Foster Care</th>
-		      <th scope="col">Career and Technical Center Name</th>
-		      <th scope="col">Career and Technical Center Website</th>
-		      <th scope="col">Charter School Enrollment</th>
-		      <th scope="col">Enrollment in Partnering Career Technical Centers</th>
-		      <th scope="col">Military Connected</th>
-		      <th scope="col">Gifted Students</th>
-		      <th scope="col">Special Education</th>
-		    </tr>
-		  </thead>
-		  <tbody>
-		  	{% for district in district_list %}
-		    <tr>
-		      <td>{{ district.year }}</td>
-		      <td><a href="{% url 'district-view' district %}">{{ district }}</td>
-		      <td>{{ district.aun }}</td>
-		      <td>{{ district.num_of_schools }}</td>
-		      <td>{% for school in district.schools_in_district.all %}
-					{{ school }}
-					{% endfor %}
-			  </td>
-		      <td>{{ district.enrollment }}</td>
-		      <td>{{ district.grades_offered }}</td>
-		      <td>{{ district.website }}</td>
-		      <td>{{ district.phone_number }}</td>
-		      <td>{{ district.street_address }}</td>
-		      <td>{{ district.city_address }}</td>
-		      <td>{{ district.state_address }}</td>
-		      <td>{{ district.zip_code }}</td>
-		      <td>{{ district.geographic_size }}</td>
-		      <td>{{ district.intermediate_unit_name }}</td>
-		      <td>{{ district.intermediate_unit_website }}</td>
-		      <td>{{ district.male }}</td>
-		      <td>{{ district.female }}</td>
-		      <td>{{ district.african_american }}</td>
-		      <td>{{ district.white }}</td>
-		      <td>{{ district.american_indian_or_alaskan_native }}</td>
-		      <td>{{ district.asian }}</td>
-		      <td>{{ district.hispanic }}</td>
-		      <td>{{ district.pacific_islander }}</td>
-		      <td>{{ district.two_or_more_races }}</td>
-		      <td>{{ district.english_learner }}</td>
-		      <td>{{ district.economically_disadvantaged }}</td>
-		      <td>{{ district.homeless }}</td>
-		      <td>{{ district.foster_care }}</td>
-		      <td>{{ district.career_and_technical_center_name }}</td>
-		      <td>{{ district.career_and_technical_center_website }}</td>
-		      <td>{{ district.charter_school_enrollment }}</td>
-		      <td>{{ district.enrollment_in_partnering_career_technical_centers }}</td>
-		      <td>{{ district.miliitary_connected }}</td>
-		      <td>{{ district.gifted_students }}</td>
-		      <td>{{ district.special_education }}</td>
-		    </tr>
-		    {% endfor %}
-		  </tbody>
-		</table>
-	</div>
+	<br></br>
+	{% for county in county_list %}
+		<h3>{{ county.county_name }}</h3>
+		{% for district in district_list %}
+			{% if district.county_id.county_id == county.county_id %}
+				<p><a href="{% url 'district-view' district.district_aun %}">{{ district.district_name }}</p></a>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
 
-	
 {% endblock %}

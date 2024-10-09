@@ -1,12 +1,34 @@
 from django.db import models
 
 # Create your models here.
+
+class School(models.Model):
+	school_name = models.CharField('School Name', max_length=120)
+	district_aun = models.ForeignKey('District', blank=True, null=True, on_delete=models.CASCADE)
+	school_id = models.IntegerField('School ID', primary_key=True)
+
+	def __str__(self):
+		return self.school_name
+
+class District(models.Model):
+	district_aun = models.IntegerField('AUN', primary_key = True)
+	district_name = models.CharField('District Name', max_length=120)
+	county_id = models.ForeignKey('County', to_field='county_id', blank=True, null=True, on_delete=models.CASCADE)
+
+	def __str__(self):
+		return self.district_name
+
+class County(models.Model):
+	county_id = models.IntegerField('County ID', primary_key = True)
+	county_name = models.CharField('County Name', max_length=120)
+
+	def __str__(self):
+		return self.county_name
+
+
 class SchoolFastFacts(models.Model):
 	year = models.CharField('School Year', max_length=10)
-	name = models.CharField('School Name', max_length=120)
-	school_id = models.IntegerField('School ID', primary_key=True)
-	district_name = models.ForeignKey('DistrictFastFacts', blank = True, null = True, on_delete = models.CASCADE)
-	aun = models.IntegerField('AUN')
+	aun = models.ForeignKey('School', blank=True, null=True, on_delete=models.CASCADE)
 	street_address = models.CharField('Street Address', max_length=120)
 	city_address = models.CharField('City Address', max_length=50)
 	state_address = models.CharField('State Address', max_length=10)
@@ -38,8 +60,7 @@ class SchoolFastFacts(models.Model):
 
 class DistrictFastFacts(models.Model):
 	year = models.CharField('District Year', max_length=10)
-	name = models.CharField('District Name', max_length=120)
-	aun = models.IntegerField('AUN')
+	aun = models.ForeignKey('District', blank=True, null=True, on_delete=models.CASCADE)
 	two_or_more_races = models.DecimalField('Two or More Races', max_digits=4, decimal_places=2)
 	american_indian_or_alaskan_native = models.DecimalField('American Indian or Alaskan Native', max_digits=4, decimal_places=2)
 	asian = models.DecimalField('Asian', max_digits=4, decimal_places=2)
@@ -72,7 +93,6 @@ class DistrictFastFacts(models.Model):
 	phone_number = models.CharField('Phone Number', max_length=25)
 	website = models.URLField('Website Address')
 	white = models.DecimalField('White', max_digits=4, decimal_places=2)
-	schools_in_district = models.ManyToManyField('SchoolFastFacts', blank=True)
 
 	def __str__(self):
 		return self.name

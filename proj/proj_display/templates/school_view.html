@@ -2,6 +2,18 @@
 
 {% block content %}
 
-	<h1>School View for {{ school_info.name }}</h1>
+	<h1>School View for {{ school_info.school_name }}</h1>
+
+	<br></br>
+	<div class="dropdown">
+	  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    Select Year
+	  </button>
+	  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	    <a class="dropdown-item" href="#">2023-24</a>
+	    <a class="dropdown-item" href="#">2022-23</a>
+	    <a class="dropdown-item" href="#">2020-21</a>
+	  </div>
+	</div>
 	
 {% endblock %}

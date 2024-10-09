@@ -2,13 +2,25 @@
 
 {% block content %}
 
-	<h1>District View for {{ district_info.name }}</h1>
+	<h1>District View for {{ district_info.district_name }}</h1>
 	<div class="card" style="width: 18rem;">
 	  <div class="card-body">
-	    <h5 class="card-title">Schools in {{ district_info.name }}</h5>
-	    {% for school in district_info.schools_in_district.all %}
-	    	<a href="{% url 'school-view' school %}" class="card-link">{{ school }}</a>
+	    <h5 class="card-title">Schools in {{ district_info.district_name }}</h5>
+	    {% for school in school_info %}
+	    	<a href="{% url 'school-view' school.school_id %}" class="card-link">{{ school.school_name }}</a>
 	    {% endfor %}
+	  </div>
+	</div>
+
+	<br></br>
+	<div class="dropdown">
+	  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    Select Year
+	  </button>
+	  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	    <a class="dropdown-item" href="#">2023-24</a>
+	    <a class="dropdown-item" href="#">2022-23</a>
+	    <a class="dropdown-item" href="#">2020-21</a>
 	  </div>
 	</div>
 
