@@ -28,7 +28,7 @@ class County(models.Model):
 
 class SchoolFastFacts(models.Model):
 	year = models.CharField('School Year', max_length=10)
-	aun = models.ForeignKey('School', blank=True, null=True, on_delete=models.CASCADE)
+	school_id = models.ForeignKey('School', blank=True, null=True, on_delete=models.CASCADE)
 	street_address = models.CharField('Street Address', max_length=120)
 	city_address = models.CharField('City Address', max_length=50)
 	state_address = models.CharField('State Address', max_length=10)
@@ -56,7 +56,7 @@ class SchoolFastFacts(models.Model):
 	career_and_technical_programs = models.CharField('Career and Technical Programs', max_length=120, blank=True)
 
 	def __str__(self):
-		return self.name
+		return f"{self.school_id}"
 
 class DistrictFastFacts(models.Model):
 	year = models.CharField('District Year', max_length=10)
@@ -95,4 +95,4 @@ class DistrictFastFacts(models.Model):
 	white = models.DecimalField('White', max_digits=4, decimal_places=2)
 
 	def __str__(self):
-		return self.name
+		return f"{self.aun}"

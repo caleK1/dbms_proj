@@ -5,7 +5,7 @@
 	<h1>Districts</h1>
 	<br></br>
 	{% for county in county_list %}
-		<h3>{{ county.county_name }}</h3>
+		<h3>{{ county.county_name }} County</h3>
 		{% for district in district_list %}
 			{% if district.county_id.county_id == county.county_id %}
 				<p><a href="{% url 'district-view' district.district_aun %}">{{ district.district_name }}</p></a>
