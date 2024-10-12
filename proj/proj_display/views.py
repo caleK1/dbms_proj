@@ -91,3 +91,33 @@ def year_view_school(request, school_id):
 
 
     return render(request, 'school_view.html', context)
+
+def compare(request):
+    county_list = County.objects.all()
+    district_list = District.objects.all()
+    school_list = School.objects.all()
+    context = {'county_list' : county_list, 'district_list' : district_list, 'school_list' : school_list}
+
+    selected_county = request.GET.get('districtCompareCounty', None)
+    if selected_county:
+        context['selected_county'] = County.objects.get(county_id=selected_county)
+        context['dist_in_county'] = District.objects.filter(county_id=selected_county)
+
+    selected_county2 = request.GET.get('districtCompareCounty2', None)
+    if selected_county2:
+        context['selected_county2'] = County.objects.get(county_id=selected_county2)
+        context['dist_in_county2'] = District.objects.filter(county_id=selected_county2)
+
+    selected_district = request.GET.get('districtCompareDistrict', None)
+    if selected_district:
+        context['selected_district'] = District.objects.get(district_aun=selected_district)
+        if DistrictFastFacts.objects.filter(aun=selected_district).exists():
+            context['selected_district_facts'] = DistrictFastFacts.objects.filter(aun=selected_district)
+
+    selected_district2 = request.GET.get('districtCompareDistrict2', None)
+    if selected_district2:
+        context['selected_district2'] = District.objects.get(district_aun=selected_district2)
+        if DistrictFastFacts.objects.filter(aun=selected_district2).exists():
+            context['selected_district_facts2'] = DistrictFastFacts.objects.filter(aun=selected_district2)
+
+    return render(request, 'compare.html', context)

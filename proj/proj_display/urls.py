@@ -11,4 +11,5 @@ urlpatterns = [
     path("school/<str:school_id>", views.school_view, name="school-view"),
     path('yearDistrict/<str:district_aun>', views.year_view_district, name='year_view_district'),
     path('yearSchool/<str:school_id>', views.year_view_school, name='year_view_school'),
+    path("compare", views.compare, name="compare")
 ]
