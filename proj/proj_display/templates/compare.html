@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<h1>Compare</h1>
+
+	<br></br>
+	<h3>Compare Two Districts:</h3>
+
+	<div class="container">
+	    <form method="GET" action="{% url 'compare' %}">
+	        <div class="form-group row">
+		        <div class="col-md-6">
+			        <label for="districtCompareSelectCounty">Select County 1</label>
+			        <select class="form-control" id="districtCompareSelectCounty" name="districtCompareCounty" onchange="this.form.submit()">
+			            	
+			            <option value="" {% if not selected_county %} disabled selected{% endif %}>Select a County</option>
+
+			            {% for county in county_list %}
+				            <option value="{{ county.county_id }}" {% if selected_county.county_id == county.county_id %}selected{% endif %}>{{ county.county_name }}</option>
+			            {% endfor %}
+			           </select>
+			    </div>
+
+			    <div class="col-md-6">
+	                <label for="districtCompareSelectCounty2">Select County 2</label>
+	                <select class="form-control" id="districtCompareSelectCounty2" name="districtCompareCounty2" onchange="this.form.submit()">
+	                    <option value="" {% if not selected_county2 %} disabled selected{% endif %}>Select a County</option>
+	                    {% for county in county_list %}
+	                        <option value="{{ county.county_id }}" {% if selected_county2.county_id == county.county_id %}selected{% endif %}>{{ county.county_name }}</option>
+	                    {% endfor %}
+	                </select>
+	            </div>
+			</div>
+
+			<div class="form-group row">
+	        	<div class="col-md-6">
+	            	<label for="districtCompareSelectDistrict">Select District 1</label>
+	            	<select class="form-control" id="districtCompareSelectDistrict" name="districtCompareDistrict" onchange="this.form.submit()">
+	            		<option value="" {% if not selected_district %}disabled selected{% endif %}>Select a District</option>
+
+	            		{% for district in dist_in_county %}
+		            		<option value="{{ district.district_aun }}" {% if selected_district.district_aun == district.district_aun %}selected{% endif %}>{{ district.district_name }}</option>
+	            		{% endfor %}
+	            	</select>
+	        	</div>
+
+	        	<div class="col-md-6">
+	                <label for="districtCompareSelectDistrict2">Select District 2</label>
+	                <select class="form-control" id="districtCompareSelectDistrict2" name="districtCompareDistrict2" onchange="this.form.submit()">
+	                    <option value="" {% if not selected_district2 %}disabled selected{% endif %}>Select a District</option>
+	                    {% for district in dist_in_county2 %}
+	                        <option value="{{ district.district_aun }}" {% if selected_district2.district_aun == district.district_aun %}selected{% endif %}>{{ district.district_name }}</option>
+	                    {% endfor %}
+	                </select>
+	            </div>
+			</div>
+	    </form>
+	</div>
+
+	{% if selected_district and selected_district2 %}
+		<br></br>
+		{% if selected_district_facts or selected_district_facts2%}
+			<h3>Contact Information:</h3>
+			<div class="table-responsive">
+				<table class="table table-striped">
+				  <thead class="thead-dark">
+				    <tr>
+				      <th scope="col">Name</th>	
+				      <th scope="col">Year</th>
+				      <th scope="col">Street</th>
+				      <th scope="col">City</th>
+				      <th scope="col">State</th>
+				      <th scope="col">Zip Code</th>
+				      <th scope="col">Website</th>
+				      <th scope="col">Phone Number</th>
+				      <th scope="col">Enrollment</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				  	{% for facts in selected_district_facts %}
+					    <tr>
+					      <td>{{ selected_district.district_name }}</td>
+					      <td>{{ facts.year }}</td>
+					      <td>{{ facts.street_address }}</td>
+					      <td>{{ facts.city_address }}</td>
+					      <td>{{ facts.state_address }}</td>
+					      <td>{{ facts.zip_code }}</td>
+					      <td>{{ facts.website }}</td>
+					      <td>{{ facts.phone_number }}</td>
+					      <td>{{ facts.enrollment }}</td>
+					    </tr>
+				    {% endfor %}
+
+				    {% for facts in selected_district_facts2 %}
+					    <tr>
+					      <td>{{ selected_district2.district_name }}</td>
+					      <td>{{ facts.year }}</td>
+					      <td>{{ facts.street_address }}</td>
+					      <td>{{ facts.city_address }}</td>
+					      <td>{{ facts.state_address }}</td>
+					      <td>{{ facts.zip_code }}</td>
+					      <td>{{ facts.website }}</td>
+					      <td>{{ facts.phone_number }}</td>
+					      <td>{{ facts.enrollment }}</td>
+					    </tr>
+				    {% endfor %}
+				  </tbody>
+				</table>
+			</div>
+		{% endif %}
+	{% endif %}
+
+	<br></br>
+	<h3>Compare Two Schools:</h3>
+
+	<br></br>
+	<h3>Compare a School to its District:</h3>
+
+{% endblock %}
