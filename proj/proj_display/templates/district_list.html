@@ -4,8 +4,41 @@
 
 	<h1>Districts</h1>
 	<br></br>
+	<h3>Quick Search:</h3>
+
+	<div class="container">
+	    <form method="GET" action="{% url 'list-districts' %}">
+			    <label for="districtListSelectCounty">Select County</label>
+			    <select class="form-control" id="districtListSelectCounty" name="districtListCounty" onchange="this.form.submit()">
+			            	
+			       	<option value="" {% if not selected_county %} disabled selected{% endif %}>Select a County</option>
+
+			        {% for county in county_list %}
+				        <option value="{{ county.county_id }}" {% if selected_county.county_id == county.county_id %}selected{% endif %}>{{ county.county_name }}</option>
+			        {% endfor %}
+			    </select>
+
+	            <label for="districtListSelectDistrict">Select District</label>
+	            <select class="form-control" id="districtListSelectDistrict" name="districtListDistrict" onchange="this.form.submit()">
+	            	<option value="" {% if not selected_district %}disabled selected{% endif %}>Select a District</option>
+
+	           		{% for district in dist_in_county %}
+		           		<option value="{{ district.district_aun }}" {% if selected_district.district_aun == district.district_aun %}selected{% endif %}>{{ district.district_name }}</option>
+	           		{% endfor %}
+	           	</select>
+		</form>
+
+		{% if selected_district %}
+			<p><a href="{% url 'district-view' selected_district.district_aun %}">{{ selected_district.district_name}}</p></a>
+		{% endif %}
+		<br></br>
+
+	</div>
+
+
+	<h3>All School Districts:</h3>
 	{% for county in county_list %}
-		<h3>{{ county.county_name }} County</h3>
+		<h4>{{ county.county_name }} County</h4>
 		{% for district in district_list %}
 			{% if district.county_id.county_id == county.county_id %}
 				<p><a href="{% url 'district-view' district.district_aun %}">{{ district.district_name }}</p></a>

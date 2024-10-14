@@ -14,11 +14,39 @@ def districts(request):
     district_list = District.objects.all()
     county_list = County.objects.all()
     context = {'district_list': district_list, 'county_list': county_list}
+
+    selected_county = request.GET.get('districtListCounty', None)
+    if selected_county:
+        context['selected_county'] = County.objects.get(county_id=selected_county)
+        context['dist_in_county'] = District.objects.filter(county_id=selected_county)
+
+    selected_district = request.GET.get('districtListDistrict', None)
+    if selected_district:
+        context['selected_district'] = District.objects.get(district_aun=selected_district)
+
     return render(request, 'district_list.html', context)
 
 def schools(request):
+    district_list = District.objects.all()
+    county_list = County.objects.all()
     school_list = School.objects.all()
-    return render(request, 'school_list.html', {'school_list': school_list})
+    context = {'district_list': district_list, 'county_list': county_list, 'school_list': school_list}
+
+    selected_county = request.GET.get('schoolListCounty', None)
+    if selected_county:
+        context['selected_county'] = County.objects.get(county_id=selected_county)
+        context['dist_in_county'] = District.objects.filter(county_id=selected_county)
+
+    selected_district = request.GET.get('schoolListDistrict', None)
+    if selected_district:
+        context['selected_district'] = District.objects.get(district_aun=selected_district)
+        context['schools_in_dist'] = School.objects.filter(district_aun=selected_district)
+
+    selected_school = request.GET.get('schoolListSchool', None)
+    if selected_school:
+        context['selected_school'] = School.objects.get(school_id=selected_school)
+
+    return render(request, 'school_list.html', context)
 
 def district_view(request, district_aun):
     district = District.objects.get(district_aun=district_aun)
