@@ -3,7 +3,48 @@
 {% block content %}
 
 	<h1>Schools</h1>
-	
+	<br></br>
+	<h3>Quick Search:</h3>
+
+	<div class="container">
+	    <form method="GET" action="{% url 'list-schools' %}">
+			    <label for="schoolListSelectCounty">Select County</label>
+			    <select class="form-control" id="schoolListSelectCounty" name="schoolListCounty" onchange="this.form.submit()">
+			            	
+			       	<option value="" {% if not selected_county %} disabled selected{% endif %}>Select a County</option>
+
+			        {% for county in county_list %}
+				        <option value="{{ county.county_id }}" {% if selected_county.county_id == county.county_id %}selected{% endif %}>{{ county.county_name }}</option>
+			        {% endfor %}
+			    </select>
+
+	            <label for="schoolListSelectDistrict">Select District</label>
+	            <select class="form-control" id="schoolListSelectDistrict" name="schoolListDistrict" onchange="this.form.submit()">
+	            	<option value="" {% if not selected_district %}disabled selected{% endif %}>Select a District</option>
+
+	           		{% for district in dist_in_county %}
+		           		<option value="{{ district.district_aun }}" {% if selected_district.district_aun == district.district_aun %}selected{% endif %}>{{ district.district_name }}</option>
+	           		{% endfor %}
+	           	</select>
+
+	           	<label for="schoolListSelectSchool">Select School</label>
+	            <select class="form-control" id="schoolListSelectSchool" name="schoolListSchool" onchange="this.form.submit()">
+	            	<option value="" {% if not selected_school %}disabled selected{% endif %}>Select a School</option>
+
+	           		{% for school in schools_in_dist %}
+		           		<option value="{{ school.school_id }}" {% if selected_school.school_id == school.school_id %}selected{% endif %}>{{ school.school_name }}</option>
+	           		{% endfor %}
+	           	</select>
+		</form>
+
+		{% if selected_school %}
+			<p><a href="{% url 'school-view' selected_school.school_id %}">{{ selected_school.school_name}}</p></a>
+		{% endif %}
+		<br></br>
+
+	</div>
+
+	<h3>All Schools:</h3>
 	{% for school in school_list %}
 		<p><a href="{% url 'school-view' school.school_id %}">{{ school.school_name }}</p></a>
 	{% endfor %}
