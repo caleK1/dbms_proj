@@ -96,3 +96,26 @@ class DistrictFastFacts(models.Model):
 
 	def __str__(self):
 		return f"{self.aun}"
+	
+	##take anything besides ethnicity outside of the demographic 
+class Demographic(models.Model):
+	year=models.CharField("School Year", max_length=10)
+	school_id = models.ForeignKey("School", blank=True, null=True , on_delete=models.CASCADE)
+	asian = models.DecimalField('Asian', max_digits=4, decimal_places=2)
+	pacific_islander = models.DecimalField('Pacific Islander', max_digits=4, decimal_places=2)
+	african_american = models.DecimalField('Black/African American', max_digits=4, decimal_places=2)
+	hispanic = models.DecimalField('Hispanic', max_digits=4, decimal_places=2)
+	white = models.DecimalField('White', max_digits=4, decimal_places=2)
+	two_or_more_races = models.DecimalField('Two or More Races', max_digits=4, decimal_places=2)
+	economically_disadvantaged = models.DecimalField('Economically Disadvantaged', max_digits=4, decimal_places=2)
+	english_learner = models.DecimalField('English Learner', max_digits=4, decimal_places=2)
+	special_education = models.DecimalField('Special Education', max_digits=4, decimal_places=2)
+	def __str__(self):
+		return f"{self.school_id}"
+
+class Gender(models.Model):
+	school_id=models.ForeignKey("School",on_delete=models.CASCADE,null=True,blank=True)
+	male=models.DecimalField("Male", max_digits=4,decimal_places=2)
+	female=models.DecimalField("Female", max_digits=4,decimal_places=2)
+	def __str__(self):	
+		return f"{self.school_id}"

@@ -5,6 +5,8 @@ from .models import SchoolFastFacts
 from .models import School
 from .models import District
 from .models import County
+from .models import Gender
+from .models import Demographic
 
 # Create your views here.
 def home(request):

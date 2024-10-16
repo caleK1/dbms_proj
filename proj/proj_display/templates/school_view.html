@@ -55,9 +55,46 @@
 		      <td>{{ facts.enrollment }}</td>
 		    </tr>
 		    {% endfor %}
+			
+		
+
 		  </tbody>
 		</table>
+		<div style="width: 300px; height: 300px;">
+		<canvas id="chartjs-pie" ></canvas>
+	</div>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        new Chart(document.getElementById("chartjs-pie"), {
+            type: "pie",
+            data: {
+                labels: ["Male", "Female"],
+                datasets: [{
+                    data: [260, 125],
+                    backgroundColor: [
+                        "#007bff",  
+                        "#28a745"
+                    ],
+                    borderColor: "transparent"
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                cutoutPercentage: 65,
+				respnsive: true,
+				scales:{
+
+				}
+            }
+        });
+    });
+	 
+		</script>
+	
+
 	</div>
 	{% endif %}
+
 	
 {% endblock %}
