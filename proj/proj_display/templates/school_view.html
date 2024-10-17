@@ -55,11 +55,57 @@
 		      <td>{{ facts.enrollment }}</td>
 		    </tr>
 		    {% endfor %}
-			
-		
+			</tbody>
+		</table>
 
+		<h3>Fast Facts:</h3>
+	<div class="table-responsive">
+		<table class="table table-striped">
+		  <thead class="thead-dark">
+		    <tr>
+		    	{% if selected_year == NULL or selected_year == 'all-years' %}
+		    		<th scope="col">Year</th>
+		    	{% endif %}
+		      <th scope="col">Total Enrollment</th>
+		      <th scope="col">African American %</th>
+		      <th scope="col">American Indian %</th>
+		      <th scope="col">Asian %</th>
+		      <th scope="col">Hispanic %</th>
+		      <th scope="col">Pacific Islander %</th>
+		      <th scope="col">White %</th>
+		      <th scope="col">Two or More Races %</th>
+		      <th scope="col">Foster Care %</th>
+		      <th scope="col">Economically Disadvantaged %</th>
+		      <th scope="col">English Learner %</th>
+		      <th scope="col">Special Education %</th>
+		      <th scope="col">Gifted Students %</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	{% for facts in fast_facts %}
+		    <tr>
+		    	{% if selected_year == NULL or selected_year == 'all-years' %}
+		    		<td>{{ facts.year }}</td>
+		    	{% endif %}
+		      <td>{{ facts.enrollment }}</td>
+		      <td>{{ facts.african_american }}</td>
+		      <td>{{ facts.american_indian_or_alaskan_native }}</td>
+		      <td>{{ facts.asian }}</td>
+		      <td>{{ facts.hispanic }}</td>
+		      <td>{{ facts.pacific_islander }}</td>
+		      <td>{{ facts.white }}</td>
+		      <td>{{ facts.two_or_more_races }}</td>
+		      <td>{{ facts.foster_care }}</td>
+		      <td>{{ facts.economically_disadvantaged }}</td>
+		      <td>{{ facts.english_learner }}</td>
+		      <td>{{ facts.special_education }}</td>
+		      <td>{{ facts.gifted_students }}</td>
+		    </tr>
+		    {% endfor %}
 		  </tbody>
 		</table>
+	</div>
+
 		<div style="width: 300px; height: 300px;">
 		<canvas id="chartjs-pie" ></canvas>
 	</div>

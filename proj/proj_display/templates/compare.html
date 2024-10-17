@@ -68,13 +68,20 @@
 				    <tr>
 				      <th scope="col">Name</th>	
 				      <th scope="col">Year</th>
-				      <th scope="col">Street</th>
-				      <th scope="col">City</th>
-				      <th scope="col">State</th>
-				      <th scope="col">Zip Code</th>
-				      <th scope="col">Website</th>
-				      <th scope="col">Phone Number</th>
-				      <th scope="col">Enrollment</th>
+				      <th scope="col">Total Enrollment</th>
+				      <th scope="col">African American %</th>
+				      <th scope="col">American Indian %</th>
+				      <th scope="col">Asian %</th>
+				      <th scope="col">Hispanic %</th>
+				      <th scope="col">Pacific Islander %</th>
+				      <th scope="col">White %</th>
+				      <th scope="col">Two or More Races %</th>
+				      <th scope="col">Foster Care %</th>
+				      <th scope="col">Economically Disadvantaged %</th>
+				      <th scope="col">Homeless %</th>
+				      <th scope="col">English Learner %</th>
+				      <th scope="col">Special Education %</th>
+				      <th scope="col">Gifted Students %</th>
 				    </tr>
 				  </thead>
 				  <tbody>
@@ -82,13 +89,20 @@
 					    <tr>
 					      <td>{{ selected_district.district_name }}</td>
 					      <td>{{ facts.year }}</td>
-					      <td>{{ facts.street_address }}</td>
-					      <td>{{ facts.city_address }}</td>
-					      <td>{{ facts.state_address }}</td>
-					      <td>{{ facts.zip_code }}</td>
-					      <td>{{ facts.website }}</td>
-					      <td>{{ facts.phone_number }}</td>
 					      <td>{{ facts.enrollment }}</td>
+					      <td>{{ facts.african_american }}</td>
+					      <td>{{ facts.american_indian_or_alaskan_native }}</td>
+					      <td>{{ facts.asian }}</td>
+					      <td>{{ facts.hispanic }}</td>
+					      <td>{{ facts.pacific_islander }}</td>
+					      <td>{{ facts.white }}</td>
+					      <td>{{ facts.two_or_more_races }}</td>
+					      <td>{{ facts.foster_care }}</td>
+					      <td>{{ facts.economically_disadvantaged }}</td>
+					      <td>{{ facts.homeless }}</td>
+					      <td>{{ facts.english_learner }}</td>
+					      <td>{{ facts.special_education }}</td>
+					      <td>{{ facts.gifted_students }}</td>
 					    </tr>
 				    {% endfor %}
 
@@ -96,13 +110,20 @@
 					    <tr>
 					      <td>{{ selected_district2.district_name }}</td>
 					      <td>{{ facts.year }}</td>
-					      <td>{{ facts.street_address }}</td>
-					      <td>{{ facts.city_address }}</td>
-					      <td>{{ facts.state_address }}</td>
-					      <td>{{ facts.zip_code }}</td>
-					      <td>{{ facts.website }}</td>
-					      <td>{{ facts.phone_number }}</td>
 					      <td>{{ facts.enrollment }}</td>
+					      <td>{{ facts.african_american }}</td>
+					      <td>{{ facts.american_indian_or_alaskan_native }}</td>
+					      <td>{{ facts.asian }}</td>
+					      <td>{{ facts.hispanic }}</td>
+					      <td>{{ facts.pacific_islander }}</td>
+					      <td>{{ facts.white }}</td>
+					      <td>{{ facts.two_or_more_races }}</td>
+					      <td>{{ facts.foster_care }}</td>
+					      <td>{{ facts.economically_disadvantaged }}</td>
+					      <td>{{ facts.homeless }}</td>
+					      <td>{{ facts.english_learner }}</td>
+					      <td>{{ facts.special_education }}</td>
+					      <td>{{ facts.gifted_students }}</td>
 					    </tr>
 				    {% endfor %}
 				  </tbody>
