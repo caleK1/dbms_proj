@@ -1,1 +1,1062 @@
-a
+class AdmGeneral(models.Model):
+    district = models.ForeignKey(District, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    adm = models.FloatField(null=True, blank=True)
+    wadm = models.FloatField(null=True, blank=True)
+    adjusted_adm = models.FloatField(null=True, blank=True)
+    adm_pde_363 = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"ADM General - {self.district} ({self.school_year})"
+
+class AdmGrades(models.Model):
+    district = models.ForeignKey(District, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    adm_pre_kindergarten_ht = models.FloatField(null=True, blank=True)
+    adm_pre_kindergarten_ft = models.FloatField(null=True, blank=True)
+    adm_kindergarten_ht4 = models.FloatField(null=True, blank=True)
+    adm_kindergarten_ft4 = models.FloatField(null=True, blank=True)
+    adm_kindergarten_ht5 = models.FloatField(null=True, blank=True)
+    adm_kindergarten_ft5 = models.FloatField(null=True, blank=True)
+    adm_elementary = models.FloatField(null=True, blank=True)
+    adm_secondary = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"ADM Grades - {self.district} ({self.school_year})"
+
+class AidRatio(models.Model):
+    district = models.ForeignKey(District, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    market_value = models.FloatField(null=True, blank=True)
+    personal_income = models.FloatField(null=True, blank=True)
+    wadm = models.FloatField(null=True, blank=True)
+    mv_per_wadm = models.FloatField(null=True, blank=True)
+    market_value_aid_ratio = models.FloatField(null=True, blank=True)
+    pi_per_wadm = models.FloatField(null=True, blank=True)
+    personal_income_aid_ratio = models.FloatField(null=True, blank=True)
+    market_value_personal_income_aid_ratio = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Aid Ratio - {self.district} ({self.school_year})"
+
+class ApGeneral(models.Model):
+    school_id = models.IntegerField()
+    school_year = models.IntegerField()
+    promotion_rate_all_students = models.FloatField(null=True, blank=True)
+    ap_ib_college_credit = models.FloatField(null=True, blank=True)
+    attendance_rate = models.FloatField(null=True, blank=True)
+    calculated_score = models.FloatField(null=True, blank=True)
+    cohort_grad_rate = models.FloatField(null=True, blank=True)
+    industry_standards_based_competency_assessments_percent = models.FloatField(null=True, blank=True)
+    percent_industry_standards_based_competency_assessments_advanced = models.FloatField(null=True, blank=True)
+    final_academic_score = models.FloatField(null=True, blank=True)
+    percent_3_higher_ap_4_higher_ib = models.FloatField(null=True, blank=True)
+    grade_12_enrollment = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school_id', 'school_year')
+
+    def __str__(self):
+        return f"AP General - {self.school_id} ({self.school_year})"
+
+class ApPercentGapMetAll(models.Model):
+    school_id = models.IntegerField()
+    school_year = models.IntegerField()
+    math_percent_required_gap_closure_met_all = models.FloatField(null=True, blank=True)
+    ela_lit_percent_required_gap_closure_met_all = models.FloatField(null=True, blank=True)
+    science_bio_percent_required_gap_closure_met_all = models.FloatField(null=True, blank=True)
+    ela_percent_required_gap_closure_met_all = models.FloatField(null=True, blank=True)
+    bio_percent_required_gap_closure_met_all = models.FloatField(null=True, blank=True)
+    algebra_percent_required_gap_closure_met_all = models.FloatField(null=True, blank=True)
+    science_percent_required_gap_closure_met_all = models.FloatField(null=True, blank=True)
+    math_alg_percent_required_gap_closure_met_all = models.FloatField(null=True, blank=True)
+    lit_percent_required_gap_closure_met_all = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school_id', 'school_year')
+
+    def __str__(self):
+        return f"AP Percent Gap Met All - {self.school_id} ({self.school_year})"
+
+class ApPercentGapMetHus(models.Model):
+    school_id = models.IntegerField()
+    school_year = models.IntegerField()
+    math_percent_required_gap_closure_met_hus = models.FloatField(null=True, blank=True)
+    ela_lit_percent_required_gap_closure_met_hus = models.FloatField(null=True, blank=True)
+    science_bio_percent_required_gap_closure_met_hus = models.FloatField(null=True, blank=True)
+    ela_percent_required_gap_closure_met_hus = models.FloatField(null=True, blank=True)
+    bio_percent_required_gap_closure_met_hus = models.FloatField(null=True, blank=True)
+    algebra_percent_required_gap_closure_met_hus = models.FloatField(null=True, blank=True)
+    science_percent_required_gap_closure_met_hus = models.FloatField(null=True, blank=True)
+    math_alg_percent_required_gap_closure_met_hus = models.FloatField(null=True, blank=True)
+    lit_percent_required_gap_closure_met_hus = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school_id', 'school_year')
+
+    def __str__(self):
+        return f"AP Percent Gap Met HUS - {self.school_id} ({self.school_year})"
+
+class ApPssaKeystone(models.Model):
+    school_id = models.IntegerField()
+    school_year = models.IntegerField()
+    ela_meeting_annual_academic_growth_expectations = models.FloatField(null=True, blank=True)
+    ela_percent_proficient_or_advanced_pssa = models.FloatField(null=True, blank=True)
+    math_meeting_annual_academic_growth_expectations = models.FloatField(null=True, blank=True)
+    math_percent_proficient_or_advanced_keystone = models.FloatField(null=True, blank=True)
+    science_bio_meeting_annual_academic_growth_exp = models.FloatField(null=True, blank=True)
+    science_bio_percent_proficient_advanced_pssa_keystone = models.FloatField(null=True, blank=True)
+    percent_pssa_keystone_advanced_ela_lit = models.FloatField(null=True, blank=True)
+    percent_pssa_keystone_advanced_math_alg = models.FloatField(null=True, blank=True)
+    percent_pssa_keystone_advanced_scnice_bio = models.FloatField(null=True, blank=True)
+    grade_3_percent_proficient_advanced = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school_id', 'school_year')
+
+    def __str__(self):
+        return f"AP PSSA Keystone - {self.school_id} ({self.school_year})"
+
+class ApSatAct(models.Model):
+    school_id = models.IntegerField()
+    school_year = models.IntegerField()
+    sat_act_college_ready_benchmark = models.FloatField(null=True, blank=True)
+    num_grade_12_meeting_benchmarks = models.IntegerField(null=True, blank=True)
+    number_grade_12_with_22_higher_act = models.IntegerField(null=True, blank=True)
+    number_grade_12_with_3_higher_ap_4_higher_ib = models.IntegerField(null=True, blank=True)
+    number_grade_12_taking_plan = models.IntegerField(null=True, blank=True)
+    number_grade_12_taking_psat = models.IntegerField(null=True, blank=True)
+    psat_plan_participation = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school_id', 'school_year')
+
+    def __str__(self):
+        return f"AP SAT ACT - {self.school_id} ({self.school_year})"
+
+class BasicEduFunding(models.Model):
+    district = models.ForeignKey(District, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    final_bef = models.FloatField(null=True, blank=True)
+    base_bef = models.FloatField(null=True, blank=True)
+    student_weighted_distribution = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Basic Education Funding - {self.district} ({self.school_year})"
+
+from django.db import models
+
+class DistrictDemographic(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    per_african_american = models.FloatField(null=True, blank=True)
+    per_am_indian_or_alaskan_native = models.FloatField(null=True, blank=True)
+    per_pacific_islander = models.FloatField(null=True, blank=True)
+    per_two_or_more_races = models.FloatField(null=True, blank=True)
+    per_white = models.FloatField(null=True, blank=True)
+    per_hispanic = models.FloatField(null=True, blank=True)
+    per_asian = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"District Demographic - {self.district} ({self.school_year})"
+
+class DistrictFiscalData(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    average_daily_membership = models.FloatField(null=True, blank=True)
+    based_on_instruction = models.FloatField(null=True, blank=True)
+    based_on_total = models.FloatField(null=True, blank=True)
+    facilities_acquisition_and_construction = models.FloatField(null=True, blank=True)
+    federal_revenue = models.FloatField(null=True, blank=True)
+    general_fund_balance = models.FloatField(null=True, blank=True)
+    local_revenue = models.FloatField(null=True, blank=True)
+    mv_pi_aid_ratio = models.FloatField(null=True, blank=True)
+    instruction = models.FloatField(null=True, blank=True)
+    state_revenue = models.FloatField(null=True, blank=True)
+    non_instructional = models.FloatField(null=True, blank=True)
+    other_revenue = models.FloatField(null=True, blank=True)
+    other_financing_uses = models.FloatField(null=True, blank=True)
+    supporting_services = models.FloatField(null=True, blank=True)
+    total_expenditures = models.FloatField(null=True, blank=True)
+    total_revenues = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"District Fiscal Data - {self.district} ({self.school_year})"
+
+class DistrictInfo(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    c_and_t_web = models.CharField(max_length=50, null=True, blank=True)
+    c_and_t_enrollment = models.IntegerField(null=True, blank=True)
+    c_and_t_name = models.CharField(max_length=100, null=True, blank=True)
+    IMU_name = models.CharField(max_length=100, null=True, blank=True)
+    IMU_website = models.CharField(max_length=50, null=True, blank=True)
+    street_address = models.CharField(max_length=50, null=True, blank=True)
+    city_address = models.CharField(max_length=25, null=True, blank=True)
+    zip_code = models.IntegerField(null=True, blank=True)
+    website = models.CharField(max_length=50, null=True, blank=True)
+    phone_num = models.CharField(max_length=50, null=True, blank=True)
+    grades_off = models.CharField(max_length=25, null=True, blank=True)
+    num_schools = models.IntegerField(null=True, blank=True)
+    geographic_size = models.FloatField(null=True, blank=True)
+
+    def __str__(self):
+        return f"District Info - {self.district}"
+
+class ExpendituresGeneral(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    current_expenditures = models.FloatField(null=True, blank=True)
+    other_expenditures = models.FloatField(null=True, blank=True)
+    actual_instruction_summer = models.FloatField(null=True, blank=True)
+    instructional_staff = models.FloatField(null=True, blank=True)
+    administration = models.FloatField(null=True, blank=True)
+    pupil_health = models.FloatField(null=True, blank=True)
+    business = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Expenditures General - {self.district} ({self.school_year})"
+
+class ExpendituresPerAdm(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    adm = models.FloatField(null=True, blank=True)
+    weighted_adm = models.FloatField(null=True, blank=True)
+    instruction_per_adm = models.FloatField(null=True, blank=True)
+    support_services_per_adm = models.FloatField(null=True, blank=True)
+    non_instructional_per_adm = models.FloatField(null=True, blank=True)
+    current_exp_per_adm = models.FloatField(null=True, blank=True)
+    facilities_construction_per_adm = models.FloatField(null=True, blank=True)
+    other_financing_uses_per_adm = models.FloatField(null=True, blank=True)
+    total_exp_per_adm = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Expenditures Per ADM - {self.district} ({self.school_year})"
+
+class ExpendituresPrograms(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    regular_programs = models.FloatField(null=True, blank=True)
+    special_programs = models.FloatField(null=True, blank=True)
+    vocational_programs = models.FloatField(null=True, blank=True)
+    other_institutional_programs = models.FloatField(null=True, blank=True)
+    non_public_programs = models.FloatField(null=True, blank=True)
+    adult_education_programs = models.FloatField(null=True, blank=True)
+    higher_education_programs = models.FloatField(null=True, blank=True)
+    higher_ed_programs_secondary = models.FloatField(null=True, blank=True)
+    pre_kindergarten = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Expenditures Programs - {self.district} ({self.school_year})"
+
+class ExpendituresServices(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    instruction = models.FloatField(null=True, blank=True)
+    support_services = models.FloatField(null=True, blank=True)
+    noninstructional_services = models.FloatField(null=True, blank=True)
+    improvement_services = models.FloatField(null=True, blank=True)
+    support_services_students = models.FloatField(null=True, blank=True)
+    operation_of_plant_services = models.FloatField(null=True, blank=True)
+    students_transportation_services = models.FloatField(null=True, blank=True)
+    central = models.FloatField(null=True, blank=True)
+    other_support_services = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Expenditures Services - {self.district} ({self.school_year})"
+
+class ExtraDemoDistrict(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    per_military_connected = models.FloatField(null=True, blank=True)
+    per_gifted_student = models.FloatField(null=True, blank=True)
+    per_special_education = models.FloatField(null=True, blank=True)
+    per_english_learner = models.FloatField(null=True, blank=True)
+    per_foster_care = models.FloatField(null=True, blank=True)
+    per_homeless = models.FloatField(null=True, blank=True)
+    per_economically_disadvantaged = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Extra Demographics District - {self.district} ({self.school_year})"
+
+class ExtraDemoSchool(models.Model):
+    school = models.ForeignKey('School', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    per_english_learner = models.FloatField(null=True, blank=True)
+    per_special_education = models.FloatField(null=True, blank=True)
+    per_gifted_student = models.FloatField(null=True, blank=True)
+    per_military_connected = models.FloatField(null=True, blank=True)
+    per_foster_care = models.FloatField(null=True, blank=True)
+    per_economiccaly_disadvantaged = models.FloatField(null=True, blank=True)
+    per_homeless = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Extra Demographics School - {self.school} ({self.school_year})"
+
+class GenderDistrict(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    male = models.FloatField(null=True, blank=True)
+    female = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Gender District - {self.district} ({self.school_year})"
+
+class GenderSchool(models.Model):
+    school = models.ForeignKey('School', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    male = models.FloatField(null=True, blank=True)
+    female = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Gender School - {self.school} ({self.school_year})"
+
+class GradRateByCategoryDistrict(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    x_year_cohort = models.IntegerField(null=True, blank=True)
+    cohort_grad_rate = models.FloatField(null=True, blank=True)
+    male_grad_rate = models.FloatField(null=True, blank=True)
+    female_grad_rate = models.FloatField(null=True, blank=True)
+    special_ed_grad_rate = models.FloatField(null=True, blank=True)
+    el_grad_rate = models.FloatField(null=True, blank=True)
+    econ_disadvantaged_grad_rate = models.FloatField(null=True, blank=True)
+    migrant_grad_rate = models.FloatField(null=True, blank=True)
+    foster_grad_rate = models.FloatField(null=True, blank=True)
+    homeless_grad_rate = models.FloatField(null=True, blank=True)
+    military_grad_rate = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Grad Rate by Category (District) - {self.district} ({self.school_year})"
+
+class GradRateByCategorySchool(models.Model):
+    school = models.ForeignKey('School', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    x_year_cohort = models.IntegerField(null=True, blank=True)
+    cohort_grad_rate = models.FloatField(null=True, blank=True)
+    male_grad_rate = models.FloatField(null=True, blank=True)
+    female_grad_rate = models.FloatField(null=True, blank=True)
+    special_ed_grad_rate = models.FloatField(null=True, blank=True)
+    el_grad_rate = models.FloatField(null=True, blank=True)
+    econ_disadvantaged_grad_rate = models.FloatField(null=True, blank=True)
+    migrant_grad_rate = models.FloatField(null=True, blank=True)
+    foster_grad_rate = models.FloatField(null=True, blank=True)
+    homeless_grad_rate = models.FloatField(null=True, blank=True)
+    military_grad_rate = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Grad Rate by Category (School) - {self.school} ({self.school_year})"
+
+class GradRateByRaceDistrict(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    x_year_cohort = models.IntegerField(null=True, blank=True)
+    aian_grad_rate = models.FloatField(null=True, blank=True)
+    native_hawaiian_pacific_islander_grad_rate = models.FloatField(null=True, blank=True)
+    asian_grad_rate = models.FloatField(null=True, blank=True)
+    black_grad_rate = models.FloatField(null=True, blank=True)
+    hispanic_grad_rate = models.FloatField(null=True, blank=True)
+    white_grad_rate = models.FloatField(null=True, blank=True)
+    multi_racial_grad_rate = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Grad Rate by Race (District) - {self.district} ({self.school_year})"
+
+class GradRateByRaceSchool(models.Model):
+    school = models.ForeignKey('School', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    x_year_cohort = models.IntegerField(null=True, blank=True)
+    aian_grad_rate = models.FloatField(null=True, blank=True)
+    native_hawaiian_pacific_islander_grad_rate = models.FloatField(null=True, blank=True)
+    asian_grad_rate = models.FloatField(null=True, blank=True)
+    black_grad_rate = models.FloatField(null=True, blank=True)
+    hispanic_grad_rate = models.FloatField(null=True, blank=True)
+    white_grad_rate = models.FloatField(null=True, blank=True)
+    multi_racial_grad_rate = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Grad Rate by Race (School) - {self.school} ({self.school_year})"
+
+class KeystoneGradeSchool(models.Model):
+    school = models.ForeignKey('School', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    keystone_subject = models.CharField(max_length=25, null=True, blank=True)
+    student_group = models.CharField(max_length=75, null=True, blank=True)
+    grade = models.IntegerField(null=True, blank=True)
+    number_scored = models.IntegerField(null=True, blank=True)
+    percent_advanced = models.FloatField(null=True, blank=True)
+    percent_proficient = models.FloatField(null=True, blank=True)
+    percent_basic = models.FloatField(null=True, blank=True)
+    percent_below_basic = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Keystone Grade - {self.school} ({self.school_year})"
+
+class LowIncomePercentDistrict(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    total_enrollment = models.IntegerField(null=True, blank=True)
+    low_income_enrollment = models.IntegerField(null=True, blank=True)
+    percent_of_enrollment_from_low_income_families = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Low Income Percent (District) - {self.district} ({self.school_year})"
+
+class LowIncomePercentPrivateSchool(models.Model):
+    school = models.ForeignKey('School', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    low_income_percentage = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Low Income Percent (Private School) - {self.school} ({self.school_year})"
+
+class LowIncomePercentPubSchool(models.Model):
+    school = models.ForeignKey('School', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    total_enrollment = models.IntegerField(null=True, blank=True)
+    low_income_enrollment = models.IntegerField(null=True, blank=True)
+    percent_enrollment_from_low_income_families = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Low Income Percent (Public School) - {self.school} ({self.school_year})"
+
+class Misc(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    mv_pi_aid_ratio = models.FloatField(null=True, blank=True)
+    adm = models.FloatField(null=True, blank=True)
+    wadm = models.FloatField(null=True, blank=True)
+    eq_mills = models.FloatField(null=True, blank=True)
+    pop_per_sq_mile = models.FloatField(null=True, blank=True)
+    aie_per_wadm = models.FloatField(null=True, blank=True)
+    total_exp_per_adm = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Miscellaneous Data - {self.district} ({self.school_year})"
+
+class MiscRank(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    mv_pi_rk = models.IntegerField(null=True, blank=True)
+    wadm_rk = models.IntegerField(null=True, blank=True)
+    eq_mills_rk = models.IntegerField(null=True, blank=True)
+    pop_per_sq_mile_rk = models.IntegerField(null=True, blank=True)
+    aie_per_wadm_rk = models.IntegerField(null=True, blank=True)
+    total_exp_per_adm_rk = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Miscellaneous Rank - {self.district} ({self.school_year})"
+
+class PersonalIncome(models.Model):
+    district = models.ForeignKey('District', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    records = models.IntegerField(null=True, blank=True)
+    compensation = models.FloatField(null=True, blank=True)
+    net_profits = models.FloatField(null=True, blank=True)
+    dividends_and_interest = models.FloatField(null=True, blank=True)
+    misc_income = models.FloatField(null=True, blank=True)
+    out_of_st_tax_records = models.IntegerField(null=True, blank=True)
+    out_of_st_tax_credit = models.FloatField(null=True, blank=True)
+    out_of_st_income = models.FloatField(null=True, blank=True)
+    total_personal_income = models.FloatField(null=True, blank=True)
+    adjusted_personal_income = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district', 'school_year')
+
+    def __str__(self):
+        return f"Personal Income - {self.district} ({self.school_year})"
+
+class PrivateNonPublicElemEnrollmentFullyPublicPaid(models.Model):
+    school = models.ForeignKey('School', on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    k4 = models.IntegerField(null=True, blank=True)
+    k5 = models.IntegerField(null=True, blank=True)
+    grade_1 = models.IntegerField(null=True, blank=True)
+    grade_2 = models.IntegerField(null=True, blank=True)
+    grade_3 = models.IntegerField(null=True, blank=True)
+    grade_4 = models.IntegerField(null=True, blank=True)
+    grade_5 = models.IntegerField(null=True, blank=True)
+    grade_6 = models.IntegerField(null=True, blank=True)
+    grade_7E = models.IntegerField(null=True, blank=True)
+    grade_8E = models.IntegerField(null=True, blank=True)
+    total_elementary_ungraded = models.IntegerField(null=True, blank=True)
+    non_resident = models.IntegerField(null=True, blank=True)
+    resident = models.IntegerField(null=True, blank=True)
+    total_elementary_enrollment = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Private Non-Public Elem Enrollment - {self.school} ({self.school_year})"
+
+class PrivateNonPublicElemEnrollmentPrivatePaid(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    k4 = models.IntegerField(null=True, blank=True)
+    k5 = models.IntegerField(null=True, blank=True)
+    grade_1 = models.IntegerField(null=True, blank=True)
+    grade_2 = models.IntegerField(null=True, blank=True)
+    grade_3 = models.IntegerField(null=True, blank=True)
+    grade_4 = models.IntegerField(null=True, blank=True)
+    grade_5 = models.IntegerField(null=True, blank=True)
+    grade_6 = models.IntegerField(null=True, blank=True)
+    grade_7e = models.IntegerField(null=True, blank=True)
+    grade_8e = models.IntegerField(null=True, blank=True)
+    total_elementary_ungraded = models.IntegerField(null=True, blank=True)
+    non_resident = models.IntegerField(null=True, blank=True)
+    resident = models.IntegerField(null=True, blank=True)
+    total_elementary_enrollment = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Elem Enrollment {self.school} - {self.school_year}"
+
+class PrivateNonPublicFullTimeEquivalentTeachers(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    nursery_fte = models.FloatField(null=True, blank=True)
+    elementary_fte = models.FloatField(null=True, blank=True)
+    secondary_fte = models.FloatField(null=True, blank=True)
+    special_education_fte = models.FloatField(null=True, blank=True)
+    total_fte = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"FTE {self.school} - {self.school_year}"
+
+class PrivateNonPublicLowIncomeEnrollment(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    percent_nursery_low_income = models.FloatField(null=True, blank=True)
+    percent_k12_low_income = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Low Income Enrollment {self.school} - {self.school_year}"
+
+class PrivateNonPublicOtherEnrollmentPrivatePaid(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    nursery = models.IntegerField(null=True, blank=True)
+    special_ed_preschool_k5 = models.IntegerField(null=True, blank=True)
+    special_ed_preschool_nursery_age_3_4_5 = models.IntegerField(null=True, blank=True)
+    non_resident = models.IntegerField(null=True, blank=True)
+    resident = models.IntegerField(null=True, blank=True)
+    total_other_enrollment = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Other Enrollment Private Paid {self.school} - {self.school_year}"
+
+class PrivateNonPublicOtherEnrollmentPublicPaid(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    nursery = models.IntegerField(null=True, blank=True)
+    special_ed_preschool_k5 = models.IntegerField(null=True, blank=True)
+    special_ed_preschool_nursery_age_3_4_5 = models.IntegerField(null=True, blank=True)
+    non_resident = models.IntegerField(null=True, blank=True)
+    resident = models.IntegerField(null=True, blank=True)
+    total_other_enrollment = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Other Enrollment Public Paid {self.school} - {self.school_year}"
+
+
+class PrivateNonPublicSecondaryEnrollmentFullyPublicPaid(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    grade_9 = models.IntegerField(null=True, blank=True)
+    grade_10 = models.IntegerField(null=True, blank=True)
+    grade_11 = models.IntegerField(null=True, blank=True)
+    grade_12 = models.IntegerField(null=True, blank=True)
+    secondary_ungraded = models.IntegerField(null=True, blank=True)
+    non_resident = models.IntegerField(null=True, blank=True)
+    resident = models.IntegerField(null=True, blank=True)
+    total_secondary_enrollment = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Secondary Enrollment Fully Public Paid {self.school} - {self.school_year}"
+
+
+class PrivateNonPublicSecondaryEnrollmentPrivatePaid(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    grade_9 = models.IntegerField(null=True, blank=True)
+    grade_10 = models.IntegerField(null=True, blank=True)
+    grade_11 = models.IntegerField(null=True, blank=True)
+    grade_12 = models.IntegerField(null=True, blank=True)
+    secondary_ungraded = models.IntegerField(null=True, blank=True)
+    non_resident = models.IntegerField(null=True, blank=True)
+    resident = models.IntegerField(null=True, blank=True)
+    total_secondary_enrollment = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Secondary Enrollment Private Paid {self.school} - {self.school_year}"
+
+
+class PrivateNonPublicTotal(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    grand_total = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Private Non-Public Total {self.school} - {self.school_year}"
+
+
+class PSSASchool(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    pssa_subject = models.CharField(max_length=100, null=True, blank=True)
+    group_students = models.CharField(max_length=75, null=True, blank=True)
+    grade = models.IntegerField(null=True, blank=True)
+    number_scored = models.FloatField(null=True, blank=True)
+    percent_advanced = models.FloatField(null=True, blank=True)
+    percent_proficient = models.FloatField(null=True, blank=True)
+    percent_basic = models.FloatField(null=True, blank=True)
+    percent_below_basic = models.FloatField(null=True, blank=True)
+    percent_proficient_and_above = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"PSSA Data {self.school} - {self.school_year}"
+
+class PublicSchoolDropoutsDistrict(models.Model):
+    district_aun = models.IntegerField()
+    school_year = models.IntegerField()
+    oct_1_enrollment_grades_7_12 = models.IntegerField(null=True, blank=True)
+    male_dropouts = models.IntegerField(null=True, blank=True)
+    female_dropouts = models.IntegerField(null=True, blank=True)
+    dropouts = models.IntegerField(null=True, blank=True)
+    dropout_rate = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district_aun', 'school_year')
+
+    def __str__(self):
+        return f"Dropouts District {self.district_aun} - {self.school_year}"
+
+
+class PublicSchoolDropoutsSchool(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    oct_1_enrollment_grades_7_12 = models.IntegerField(null=True, blank=True)
+    male_dropouts = models.IntegerField(null=True, blank=True)
+    female_dropouts = models.IntegerField(null=True, blank=True)
+    dropouts = models.IntegerField(null=True, blank=True)
+    dropout_rate = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Dropouts School {self.school} - {self.school_year}"
+
+
+class PublicSchoolEnrollmentDistrict(models.Model):
+    district_aun = models.IntegerField()
+    school_year = models.IntegerField()
+    pka = models.IntegerField(null=True, blank=True)
+    pkp = models.IntegerField(null=True, blank=True)
+    pkf = models.IntegerField(null=True, blank=True)
+    k4a = models.IntegerField(null=True, blank=True)
+    k4p = models.IntegerField(null=True, blank=True)
+    k4f = models.IntegerField(null=True, blank=True)
+    k5a = models.IntegerField(null=True, blank=True)
+    k5p = models.IntegerField(null=True, blank=True)
+    k5f = models.IntegerField(null=True, blank=True)
+    grade_1 = models.IntegerField(null=True, blank=True)
+    grade_2 = models.IntegerField(null=True, blank=True)
+    grade_3 = models.IntegerField(null=True, blank=True)
+    grade_4 = models.IntegerField(null=True, blank=True)
+    grade_5 = models.IntegerField(null=True, blank=True)
+    grade_6 = models.IntegerField(null=True, blank=True)
+    grade_7 = models.IntegerField(null=True, blank=True)
+    grade_8 = models.IntegerField(null=True, blank=True)
+    grade_9 = models.IntegerField(null=True, blank=True)
+    grade_10 = models.IntegerField(null=True, blank=True)
+    grade_11 = models.IntegerField(null=True, blank=True)
+    grade_12 = models.IntegerField(null=True, blank=True)
+    total = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district_aun', 'school_year')
+
+    def __str__(self):
+        return f"Enrollment District {self.district_aun} - {self.school_year}"
+
+
+class PublicSchoolEnrollmentSchool(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    pka = models.IntegerField(null=True, blank=True)
+    pkp = models.IntegerField(null=True, blank=True)
+    pkf = models.IntegerField(null=True, blank=True)
+    k4a = models.IntegerField(null=True, blank=True)
+    k4p = models.IntegerField(null=True, blank=True)
+    k4f = models.IntegerField(null=True, blank=True)
+    k5a = models.IntegerField(null=True, blank=True)
+    k5p = models.IntegerField(null=True, blank=True)
+    k5f = models.IntegerField(null=True, blank=True)
+    grade_1 = models.IntegerField(null=True, blank=True)
+    grade_2 = models.IntegerField(null=True, blank=True)
+    grade_3 = models.IntegerField(null=True, blank=True)
+    grade_4 = models.IntegerField(null=True, blank=True)
+    grade_5 = models.IntegerField(null=True, blank=True)
+    grade_6 = models.IntegerField(null=True, blank=True)
+    grade_7 = models.IntegerField(null=True, blank=True)
+    grade_8 = models.IntegerField(null=True, blank=True)
+    grade_9 = models.IntegerField(null=True, blank=True)
+    grade_10 = models.IntegerField(null=True, blank=True)
+    grade_11 = models.IntegerField(null=True, blank=True)
+    grade_12 = models.IntegerField(null=True, blank=True)
+    total = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Enrollment School {self.school} - {self.school_year}"
+
+
+class PublicSchoolGradRatesDistrict(models.Model):
+    district_aun = models.IntegerField()
+    school_year = models.IntegerField()
+    total_graduates = models.IntegerField(null=True, blank=True)
+    total_college_bound = models.IntegerField(null=True, blank=True)
+    total_college_bound_percentage = models.FloatField(null=True, blank=True)
+    two_four_year_college_university = models.IntegerField(null=True, blank=True)
+    two_four_year_college_university_percentage = models.FloatField(null=True, blank=True)
+    total_postsecondary_bound = models.IntegerField(null=True, blank=True)
+    total_postsecondary_bound_percentage = models.FloatField(null=True, blank=True)
+    non_degree_getting_postsecondary_school = models.IntegerField(null=True, blank=True)
+    non_degree_getting_postsecondary_school_percentage = models.FloatField(null=True, blank=True)
+    specialized_associate_degree_getting_institution = models.IntegerField(null=True, blank=True)
+    specialized_associate_degree_getting_institution_percentage = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district_aun', 'school_year')
+
+    def __str__(self):
+        return f"Grad Rates District {self.district_aun} - {self.school_year}"
+
+
+class PublicSchoolGradRatesSchool(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    total_graduates = models.IntegerField(null=True, blank=True)
+    total_college_bound = models.IntegerField(null=True, blank=True)
+    total_college_bound_percentage = models.FloatField(null=True, blank=True)
+    two_four_year_college_university = models.IntegerField(null=True, blank=True)
+    two_four_year_college_university_percentage = models.FloatField(null=True, blank=True)
+    total_postsecondary_bound = models.IntegerField(null=True, blank=True)
+    total_postsecondary_bound_percentage = models.FloatField(null=True, blank=True)
+    non_degree_getting_postsecondary_school = models.IntegerField(null=True, blank=True)
+    non_degree_getting_postsecondary_school_percentage = models.FloatField(null=True, blank=True)
+    specialized_associate_degree_getting_institution = models.IntegerField(null=True, blank=True)
+    specialized_associate_degree_getting_institution_percentage = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Graduation Rates School {self.school} - {self.school_year}"
+
+class RealEstateTax(models.Model):
+    district_aun = models.IntegerField()
+    school_year = models.IntegerField()
+    municipality_and_other = models.CharField(max_length=100, null=True, blank=True)
+    real_estate_mills = models.FloatField(null=True, blank=True)
+    additional_community_college_mills = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district_aun', 'school_year')
+
+    def __str__(self):
+        return f"Real Estate Tax {self.district_aun} - {self.school_year}"
+
+
+class RevenuesBySource(models.Model):
+    district_aun = models.IntegerField()
+    school_year = models.IntegerField()
+    total_revenue = models.FloatField(null=True, blank=True)
+    local_taxes = models.FloatField(null=True, blank=True)
+    local_other = models.FloatField(null=True, blank=True)
+    total_local_revenue = models.FloatField(null=True, blank=True)
+    local_per_of_total_revenue = models.FloatField(null=True, blank=True)
+    total_state_revenue = models.FloatField(null=True, blank=True)
+    state_per_of_total_revenue = models.FloatField(null=True, blank=True)
+    revenue_from_federal_sources = models.FloatField(null=True, blank=True)
+    federal_per_of_total_revenue = models.FloatField(null=True, blank=True)
+    total_other_revenue = models.FloatField(null=True, blank=True)
+    other_per_of_total_revenue = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district_aun', 'school_year')
+
+    def __str__(self):
+        return f"Revenues By Source {self.district_aun} - {self.school_year}"
+
+
+class RevenuesPerAdm(models.Model):
+    district_aun = models.IntegerField()
+    school_year = models.IntegerField()
+    adm = models.FloatField(null=True, blank=True)
+    total_revenue_per_adm = models.FloatField(null=True, blank=True)
+    total_rank_total = models.IntegerField(null=True, blank=True)
+    local_revenue_per_adm = models.FloatField(null=True, blank=True)
+    total_rank_local = models.IntegerField(null=True, blank=True)
+    state_revenue_per_adm = models.FloatField(null=True, blank=True)
+    total_rank_state = models.IntegerField(null=True, blank=True)
+    federal_revenue_per_adm = models.FloatField(null=True, blank=True)
+    total_rank_federal = models.IntegerField(null=True, blank=True)
+    other_revenue_per_adm = models.FloatField(null=True, blank=True)
+    total_rank_other = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district_aun', 'school_year')
+
+    def __str__(self):
+        return f"Revenues Per ADM {self.district_aun} - {self.school_year}"
+
+
+class RevenuesTaxesColl(models.Model):
+    district_aun = models.IntegerField()
+    school_year = models.IntegerField()
+    total_taxes_collected = models.FloatField(null=True, blank=True)
+    real_estate_taxes_collected = models.FloatField(null=True, blank=True)
+    public_utility_realty_taxes_collected = models.FloatField(null=True, blank=True)
+    payment_in_lieu_taxes_collected = models.FloatField(null=True, blank=True)
+    per_capita_taxes_collected = models.FloatField(null=True, blank=True)
+    first_class_sd_taxes_collected = models.FloatField(null=True, blank=True)
+    delinquent_taxes_collected = models.FloatField(null=True, blank=True)
+    steb_market_value = models.FloatField(null=True, blank=True)
+    equalized_mills = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district_aun', 'school_year')
+
+    def __str__(self):
+        return f"Revenues Taxes Collected {self.district_aun} - {self.school_year}"
+
+
+class SchoolDemographic(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    per_asian = models.FloatField(null=True, blank=True)
+    per_hispanic = models.FloatField(null=True, blank=True)
+    per_pacific_islander = models.FloatField(null=True, blank=True)
+    per_am_indian_or_alaskan_native = models.FloatField(null=True, blank=True)
+    per_african_american = models.FloatField(null=True, blank=True)
+    per_white = models.FloatField(null=True, blank=True)
+    per_two_or_more_races = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"School Demographic {self.school} - {self.school_year}"
+
+
+class SchoolFiscalData(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    state_personnel = models.FloatField(null=True, blank=True)
+    state_non_personnel = models.FloatField(null=True, blank=True)
+    local_personnel = models.FloatField(null=True, blank=True)
+    local_non_personnel = models.FloatField(null=True, blank=True)
+    federal_personnel = models.FloatField(null=True, blank=True)
+    federal_non_personnel = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Fiscal Data for {self.school} - {self.school_year}"
+
+
+class SchoolInfo(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    street_address = models.CharField(max_length=50, null=True, blank=True)
+    city_address = models.CharField(max_length=25, null=True, blank=True)
+    zip_code = models.IntegerField(null=True, blank=True)
+    website = models.CharField(max_length=50, null=True, blank=True)
+    phone_num = models.CharField(max_length=25, null=True, blank=True)
+    grades_off = models.CharField(max_length=25, null=True, blank=True)
+    title_1 = models.BooleanField(default=False, null=True)
+
+    def __str__(self):
+        return f"School Info for {self.school}"
+
+
+class SecCareerTechnicalFund(models.Model):
+    district_aun = models.IntegerField()
+    school_year = models.IntegerField()
+    final_sctes = models.FloatField(null=True, blank=True)
+    aie_per_wadm = models.FloatField(null=True, blank=True)
+    ber = models.FloatField(null=True, blank=True)
+    vocational_adm = models.FloatField(null=True, blank=True)
+    voc_adm_multiplier = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district_aun', 'school_year')
+
+    def __str__(self):
+        return f"CT Fund for {self.district_aun} - {self.school_year}"
+
+
+class SpecialEduFunding(models.Model):
+    district_aun = models.IntegerField()
+    school_year = models.IntegerField()
+    final_sef = models.FloatField(null=True, blank=True)
+    base_sef = models.FloatField(null=True, blank=True)
+    student_based_allocation = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district_aun', 'school_year')
+
+    def __str__(self):
+        return f"Special Education Funding for {self.district_aun} - {self.school_year}"
+
+
+class TotalGradsDistrict(models.Model):
+    district_aun = models.IntegerField()
+    school_year = models.IntegerField()
+    x_year_cohort = models.IntegerField(null=True, blank=True)
+    grads = models.IntegerField(null=True, blank=True)
+    cohort = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district_aun', 'school_year')
+
+    def __str__(self):
+        return f"Total Graduates District {self.district_aun} - {self.school_year}"
+
+
+class TotalGradsSchool(models.Model):
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_year = models.IntegerField()
+    x_year_cohort = models.IntegerField(null=True, blank=True)
+    grads = models.IntegerField(null=True, blank=True)
+    cohort = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('school', 'school_year')
+
+    def __str__(self):
+        return f"Total Graduates School {self.school} - {self.school_year}"
+
+
+class WadmGrades(models.Model):
+    district_aun = models.IntegerField()
+    school_year = models.IntegerField()
+    wadm_pre_kindergarten_ht = models.FloatField(null=True, blank=True)
+    wadm_pre_kindergarten_ft = models.FloatField(null=True, blank=True)
+    wadm_kindergarten_ht4 = models.FloatField(null=True, blank=True)
+    wadm_kindergarten_ft4 = models.FloatField(null=True, blank=True)
+    wadm_kindergarten_ht5 = models.FloatField(null=True, blank=True)
+    wadm_kindergarten_ft5 = models.FloatField(null=True, blank=True)
+    wadm_elementary = models.FloatField(null=True, blank=True)
+    wadm_secondary = models.FloatField(null=True, blank=True)
+    adjustment_factor = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ('district_aun', 'school_year')
+
+    def __str__(self):
+        return f"WADM Grades for {self.district_aun} - {self.school_year}"
+
