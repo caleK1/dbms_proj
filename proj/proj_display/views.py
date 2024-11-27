@@ -5,19 +5,16 @@
 
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import DistrictFastFacts
-from .models import SchoolFastFacts
 from .models import School
 from .models import District
 from .models import County
-from .models import Gender
-from .models import Demographic
 
 # Create your views here.
 def home(request):
     return HttpResponse("Hello, world. You're at the proj_display home.")
 
 def districts(request):
+    """
     district_list = District.objects.all()
     county_list = County.objects.all()
     context = {'district_list': district_list, 'county_list': county_list}
@@ -32,8 +29,10 @@ def districts(request):
         context['selected_district'] = District.objects.get(district_aun=selected_district)
 
     return render(request, 'district_list.html', context)
+    """
 
 def schools(request):
+    """
     district_list = District.objects.all()
     county_list = County.objects.all()
     school_list = School.objects.all()
@@ -54,8 +53,10 @@ def schools(request):
         context['selected_school'] = School.objects.get(school_id=selected_school)
 
     return render(request, 'school_list.html', context)
+    """
 
 def district_view(request, district_aun):
+    """
     district = District.objects.get(district_aun=district_aun)
     schools = School.objects.filter(district_aun=district_aun)
     context = {'district_info' : district, 'school_info': schools}
@@ -65,6 +66,7 @@ def district_view(request, district_aun):
         context['fast_facts'] = distr_fast_facts
 
     return render(request, "district_view.html", context)
+    """
 
 """
 def district_view_year(request, district_aun, year):
@@ -79,6 +81,7 @@ def district_view_year(request, district_aun, year):
     return render(request, "district_view.html", context)
 """
 def school_view(request, school_id):
+    """
     school = School.objects.get(school_id=school_id)
     context = {'school_info' : school}
 
@@ -87,8 +90,10 @@ def school_view(request, school_id):
         context['fast_facts'] = school_fast_facts
 
     return render(request, "school_view.html", context)
+    """
 
 def year_view_district(request, district_aun):
+    """
     district = District.objects.get(district_aun=district_aun)
     schools = School.objects.filter(district_aun=district_aun)
     context = {'district_info' : district, 'school_info': schools}
@@ -107,8 +112,10 @@ def year_view_district(request, district_aun):
 
 
     return render(request, 'district_view.html', context)
+    """
 
 def year_view_school(request, school_id):
+    """
     school = School.objects.get(school_id=school_id)
     context = {'school_info' : school}
 
@@ -126,8 +133,10 @@ def year_view_school(request, school_id):
 
 
     return render(request, 'school_view.html', context)
+    """
 
 def compare(request):
+    """
     county_list = County.objects.all()
     district_list = District.objects.all()
     school_list = School.objects.all()
@@ -156,3 +165,4 @@ def compare(request):
             context['selected_district_facts2'] = DistrictFastFacts.objects.filter(aun=selected_district2)
 
     return render(request, 'compare.html', context)
+    """
