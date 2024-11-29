@@ -7,7 +7,7 @@ import pandas as pd
 
 # Use this command formatting to upload data from database using python3 manage.py <name> from terminal
 class Command(BaseCommand):
-    help = 'Imports counties from the database'
+    help = 'Imports counties to the database'
 
     # Handle does the work in the Command
     def handle(self, *args, **kwargs):

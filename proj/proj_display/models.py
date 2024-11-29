@@ -41,7 +41,7 @@ class SchoolInfo(models.Model):
     title_1 = models.BooleanField()
 
     def __str__(self):
-        return f"Info for {self.school}"
+        return f"Info for {self.school_id}"
 
 class GenderSchool(models.Model):
     school_id = models.ForeignKey(School, on_delete=models.CASCADE)
@@ -53,7 +53,7 @@ class GenderSchool(models.Model):
         unique_together = ('school_id', 'school_year')
 
     def __str__(self):
-        return f"Gender distribution for {self.school} in {self.school_year}"
+        return f"Gender distribution for {self.school_id} in {self.school_year}"
 
 class SchoolDemographic(models.Model):
     school_id = models.ForeignKey(School, on_delete=models.CASCADE)
@@ -70,10 +70,10 @@ class SchoolDemographic(models.Model):
         unique_together = ('school_id', 'school_year')
 
     def __str__(self):
-        return f"Demographics for {self.school} in {self.school_year}"
+        return f"Demographics for {self.school_id} in {self.school_year}"
 
 class ExtraDemoSchool(models.Model):
-    school = models.ForeignKey(School, on_delete=models.CASCADE)
+    school_id = models.ForeignKey(School, on_delete=models.CASCADE)
     school_year = models.IntegerField()
     per_english_learner = models.FloatField()
     per_special_education = models.FloatField()
@@ -84,10 +84,10 @@ class ExtraDemoSchool(models.Model):
     per_homeless = models.FloatField()
 
     class Meta:
-        unique_together = ('school', 'school_year')
+        unique_together = ('school_id', 'school_year')
 
     def __str__(self):
-        return f"Extra demographics for {self.school} in {self.school_year}"
+        return f"Extra demographics for {self.school_id} in {self.school_year}"
 
 class GenderDistrict(models.Model):
     district = models.ForeignKey(District, on_delete=models.CASCADE)
