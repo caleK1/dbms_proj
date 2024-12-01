@@ -109,38 +109,50 @@
 		<div style="width: 300px; height: 300px;">
 		<canvas id="chartjs-pie" ></canvas>
 	</div>
-		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        new Chart(document.getElementById("chartjs-pie"), {
-            type: "pie",
-            data: {
-                labels: ["Male", "Female"],
-                datasets: [{
-                    data: [260, 125],
-                    backgroundColor: [
-                        "#007bff",  
-                        "#28a745"
-                    ],
-                    borderColor: "transparent"
-                }]
-            },
-            options: {
-                maintainAspectRatio: false,
-                cutoutPercentage: 65,
-				respnsive: true,
-				scales:{
+		<script src="https://cdn.jsdelivr.net/npm/chart.js">
 
-				}
-            }
-        });
-    });
-	 
 		</script>
-	
+		{% if selected_year != 'all-years' and selected_year != NULL and gender_facts %}
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				//if not working add another {} to both male and female 
+				var male={ gender_facts.male|default:0|};
+				var female={ gender_facts.female|default:0|};
 
-	</div>
-	{% endif %}
-
-	
-{% endblock %}
+				new Chart(document.getElementById("chartjs-pie"), {
+					type: "pie",
+					data: {
+						labels: ["Male", "Female"],
+						datasets: [{
+		
+							//need to use selected_year to get gender from school by year 
+							data: [male, female],
+		
+							backgroundColor: [
+								"#007bff",  
+								"#28a745"
+							],
+							borderColor: "transparent"
+						}]
+					},
+					options: {
+						maintainAspectRatio: false,
+						cutoutPercentage: 65,
+						responsive: true,
+						scales:{
+		
+						}
+					}
+				});
+			}); 
+			
+				</script>
+				{% endif %}
+			
+		
+			</div>
+			{% endif %}
+		
+			
+		{% endblock %}
