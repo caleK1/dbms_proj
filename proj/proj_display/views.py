@@ -12,6 +12,10 @@ from .models import SchoolInfo
 from .models import GenderSchool
 from .models import SchoolDemographic
 from .models import ExtraDemoSchool
+from .models import DistrictInfo
+from .models import GenderDistrict
+from .models import DistrictDemographic
+from .models import ExtraDemoDistrict
 
 
 # Create your views here.
@@ -57,30 +61,38 @@ def schools(request):
     return render(request, 'school_list.html', context)
 
 def district_view(request, district_aun):
-    """
     district = District.objects.get(district_aun=district_aun)
     schools = School.objects.filter(district_aun=district_aun)
     context = {'district_info' : district, 'school_info': schools}
 
-    if DistrictFastFacts.objects.filter(aun=district_aun).exists():
-        distr_fast_facts = DistrictFastFacts.objects.filter(aun=district_aun)
-        context['fast_facts'] = distr_fast_facts
+    fast_facts = DistrictInfo.objects.get(district=district_aun)
+    context['fast_facts'] = fast_facts
 
     return render(request, "district_view.html", context)
-    """
 
-"""
-def district_view_year(request, district_aun, year):
-    district = District.objects.get(district_aun=district_aun)
-    schools = School.objects.filter(district_aun=district_aun)
-    context = {'district_info' : district, 'school_info': schools}
+# def district_view_year(request, district_aun, year):
+#     district = District.objects.get(district_aun=district_aun)
+#     schools = School.objects.filter(district_aun=district_aun)
+#     context = {'district_info' : district, 'school_info': schools}
 
-    if DistrictFastFacts.objects.filter(aun=district_aun, year=year).exists():
-        distr_fast_facts = DistrictFastFacts.objects.get(aun=district_aun, year=year)
-        context['fast_facts'] = distr_fast_facts
+#     if DistrictInfo.objects.filter(district=district_aun, year=year).exists():
+#         distr_fast_facts = DistrictInfo.objects.get(district=district_aun, year=year)
+#         context['fast_facts'] = distr_fast_facts
 
-    return render(request, "district_view.html", context)
-"""
+#     selected_year = request.GET.get('yearSchool', 'all-years')
+#     context['selected_year'] = selected_year
+
+#     if selected_year != "all-years":
+#         if DistrictDemographic.objects.filter(school_year=selected_year, district=district_aun).exists():
+#             district_demo = DistrictDemographic.objects.filter(school_year=selected_year, district=district_aun)
+#             context['district_demo'] = district_demo
+#     else:
+#         if DistrictDemographic.objects.filter(district=district_aun).exists():
+#             district_demo = DistrictDemographic.objects.filter(district=district_aun)
+#             context['district_demo'] = district_demo
+
+#     return render(request, "district_view.html", context)
+
 def school_view(request, school_id):
     school = School.objects.get(school_id=school_id)
 
@@ -92,26 +104,27 @@ def school_view(request, school_id):
     return render(request, "school_view.html", context)
 
 def year_view_district(request, district_aun):
-    """
     district = District.objects.get(district_aun=district_aun)
     schools = School.objects.filter(district_aun=district_aun)
     context = {'district_info' : district, 'school_info': schools}
+
+    fast_facts = DistrictInfo.objects.get(district=district_aun)
+    context['fast_facts'] = fast_facts
 
     selected_year = request.GET.get('yearDistrict', 'all-years')
     context['selected_year'] = selected_year
 
     if selected_year != "all-years":
-        if DistrictFastFacts.objects.filter(year=selected_year, aun=district_aun).exists():
-            district_fast_facts = DistrictFastFacts.objects.filter(year=selected_year, aun=district_aun)
-            context['fast_facts'] = district_fast_facts
+        if DistrictDemographic.objects.filter(school_year=selected_year, district=district_aun).exists():
+            district_demo = DistrictDemographic.objects.filter(school_year=selected_year, district=district_aun)
+            context['district_demo'] = district_demo
     else:
-        if DistrictFastFacts.objects.filter(aun=district_aun).exists():
-            distr_fast_facts = DistrictFastFacts.objects.filter(aun=district_aun)
-            context['fast_facts'] = distr_fast_facts
+        if DistrictDemographic.objects.filter(district=district_aun).exists():
+            district_demo = DistrictDemographic.objects.filter(district=district_aun)
+            context['district_demo'] = district_demo
 
 
     return render(request, 'district_view.html', context)
-    """
 
 def year_view_school(request, school_id):
     school = School.objects.get(school_id=school_id)
