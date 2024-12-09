@@ -11,6 +11,10 @@ from .models import SchoolInfo
 from .models import GenderSchool
 from .models import SchoolDemographic
 from .models import ExtraDemoSchool
+from .models import DistrictInfo
+from .models import GenderDistrict
+from .models import DistrictDemographic
+from .models import ExtraDemoDistrict
 
 # Register your models here.
 admin.site.register(School)
@@ -20,3 +24,7 @@ admin.site.register(SchoolInfo)
 admin.site.register(GenderSchool)
 admin.site.register(SchoolDemographic)
 admin.site.register(ExtraDemoSchool)
+admin.site.register(DistrictInfo)
+admin.site.register(GenderDistrict)
+admin.site.register(DistrictDemographic)
+admin.site.register(ExtraDemoDistrict)

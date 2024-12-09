@@ -49,7 +49,7 @@ class Command(BaseCommand):
         GenderSchool.objects.all().delete()
         SchoolDemographic.objects.all().delete()
         ExtraDemoSchool.objects.all().delete()
-        years = ['20172018', '20182019', '20192020', '20202021', '20222023']
+        years = ['20172018', '20182019', '20192020', '20202021', '20212022', '20222023']
         gender_school = []
         school_demographic = []
         extra_demo_school = []
@@ -70,25 +70,25 @@ class Command(BaseCommand):
                     school_demographic.append(SchoolDemographic(
                         school_id=school_year,
                         school_year=year,
-                        per_asian=row['Asian - Percent Enrollment by Race/Ethnicity'] if pd.notnull(row['Asian - Percent Enrollment by Race/Ethnicity']) else 0,
-                        per_hispanic=row['Hispanic - Percent Enrollment by Race/Ethnicity'] if pd.notnull(row['Hispanic - Percent Enrollment by Race/Ethnicity']) else 0,
-                        per_pacific_islander=row['Native Hawaiian or other Pacific Islander - Percent Enrollment by Race/Ethnicity'] if pd.notnull(row['Native Hawaiian or other Pacific Islander - Percent Enrollment by Race/Ethnicity']) else 0,
-                        per_am_indian_or_alaskan_native=row['American Indian/Alaskan Native - Percent Enrollment by Race/Ethnicity'] if pd.notnull(row['American Indian/Alaskan Native - Percent Enrollment by Race/Ethnicity']) else 0,
-                        per_african_american=row['Black/African American - Percent Enrollment by Race/Ethnicity'] if pd.notnull(row['Black/African American - Percent Enrollment by Race/Ethnicity']) else 0,
-                        per_white=row['White - Percent Enrollment by Race/Ethnicity'] if pd.notnull(row['White - Percent Enrollment by Race/Ethnicity']) else 0,
-                        per_two_or_more_races= row['2 or More Races - Percent Enrollment by Race/Ethnicity'] if pd.notnull(row['2 or More Races - Percent Enrollment by Race/Ethnicity']) else 0
+                        per_asian=row['Asian'] if pd.notnull(row['Asian']) else 0,
+                        per_hispanic=row['Hispanic'] if pd.notnull(row['Hispanic']) else 0,
+                        per_pacific_islander=row['Native Hawaiian or other Pacific Islander'] if pd.notnull(row['Native Hawaiian or other Pacific Islander']) else 0,
+                        per_am_indian_or_alaskan_native=row['American Indian/Alaskan Native'] if pd.notnull(row['American Indian/Alaskan Native']) else 0,
+                        per_african_american=row['Black/African American'] if pd.notnull(row['Black/African American']) else 0,
+                        per_white=row['White'] if pd.notnull(row['White']) else 0,
+                        per_two_or_more_races= row['2 or More Races'] if pd.notnull(row['2 or More Races']) else 0
                     ))
 
                     extra_demo_school.append(ExtraDemoSchool(
                         school_id=school_year,
                         school_year=year,
-                        per_english_learner=row['English Learner - Percent Enrollment by Student Groups'] if pd.notnull(row['English Learner - Percent Enrollment by Student Groups']) else 0,
-                        per_special_education=row['Special Education - Percent Enrollment by Student Groups'] if pd.notnull(row['Special Education - Percent Enrollment by Student Groups']) else 0,
+                        per_english_learner=row['English Learner'] if pd.notnull(row['English Learner']) else 0,
+                        per_special_education=row['Special Education'] if pd.notnull(row['Special Education']) else 0,
                         per_gifted_student=row['Percent of Gifted Students'] if pd.notnull(row['Percent of Gifted Students']) else 0,
-                        per_military_connected=row['Military Connected - Percent Enrollment by Student Groups'] if pd.notnull(row['Military Connected - Percent Enrollment by Student Groups']) else 0,
-                        per_foster_care=row['Foster Care - Percent Enrollment by Student Groups'] if pd.notnull(row['Foster Care - Percent Enrollment by Student Groups']) else 0,
-                        per_economically_disadvantaged=row['Economically Disadvantaged - Percent Enrollment by Student Groups'] if pd.notnull(row['Economically Disadvantaged - Percent Enrollment by Student Groups']) else 0,
-                        per_homeless=row['Homeless - Percent Enrollment by Student Groups'] if pd.notnull(row['Homeless - Percent Enrollment by Student Groups']) else 0
+                        per_military_connected=row['Military Connected'] if pd.notnull(row['Military Connected']) else 0,
+                        per_foster_care=row['Foster Care'] if pd.notnull(row['Foster Care']) else 0,
+                        per_economically_disadvantaged=row['Economically Disadvantaged'] if pd.notnull(row['Economically Disadvantaged']) else 0,
+                        per_homeless=row['Homeless'] if pd.notnull(row['Homeless']) else 0
                     ))
 
                 except School.DoesNotExist:
