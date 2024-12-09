@@ -8,13 +8,17 @@ from django.http import HttpResponse
 from .models import School
 from .models import District
 from .models import County
+from .models import SchoolInfo
+from .models import GenderSchool
+from .models import SchoolDemographic
+from .models import ExtraDemoSchool
+
 
 # Create your views here.
 def home(request):
     return HttpResponse("Hello, world. You're at the proj_display home.")
 
 def districts(request):
-    """
     district_list = District.objects.all()
     county_list = County.objects.all()
     context = {'district_list': district_list, 'county_list': county_list}
@@ -29,10 +33,8 @@ def districts(request):
         context['selected_district'] = District.objects.get(district_aun=selected_district)
 
     return render(request, 'district_list.html', context)
-    """
 
 def schools(request):
-    """
     district_list = District.objects.all()
     county_list = County.objects.all()
     school_list = School.objects.all()
@@ -53,7 +55,6 @@ def schools(request):
         context['selected_school'] = School.objects.get(school_id=selected_school)
 
     return render(request, 'school_list.html', context)
-    """
 
 def district_view(request, district_aun):
     """
@@ -81,16 +82,15 @@ def district_view_year(request, district_aun, year):
     return render(request, "district_view.html", context)
 """
 def school_view(request, school_id):
-    """
     school = School.objects.get(school_id=school_id)
+
     context = {'school_info' : school}
 
-    if SchoolFastFacts.objects.filter(school_id=school_id).exists():
-        school_fast_facts = SchoolFastFacts.objects.filter(school_id=school_id)
-        context['fast_facts'] = school_fast_facts
+    if SchoolInfo.objects.filter(school_id=school_id).exists():
+        school_info = SchoolInfo.objects.filter(school_id=school_id)
+        context['fast_facts'] = school_info
 
     return render(request, "school_view.html", context)
-    """
 
 def year_view_district(request, district_aun):
     """
@@ -115,25 +115,26 @@ def year_view_district(request, district_aun):
     """
 
 def year_view_school(request, school_id):
-    """
     school = School.objects.get(school_id=school_id)
     context = {'school_info' : school}
+
+    school_info = SchoolInfo.objects.get(school_id=school_id)
+    context = {'school_info2' : school_info}
 
     selected_year = request.GET.get('yearSchool', 'all-years')
     context['selected_year'] = selected_year
 
     if selected_year != "all-years":
-        if SchoolFastFacts.objects.filter(year=selected_year, school_id=school_id).exists():
-            school_fast_facts = SchoolFastFacts.objects.filter(year=selected_year, school_id=school_id)
-            context['fast_facts'] = school_fast_facts
+        if SchoolDemographic.objects.filter(school_year=selected_year, school_id=school_id).exists():
+            school_demo = SchoolDemographic.objects.filter(school_year=selected_year, school_id=school_id)
+            context['fast_facts'] = school_demo
     else:
-        if SchoolFastFacts.objects.filter(school_id=school_id).exists():
-            school_fast_facts = SchoolFastFacts.objects.filter(school_id=school_id)
-            context['fast_facts'] = school_fast_facts
+        if SchoolDemographic.objects.filter(school_id=school_id).exists():
+            school_demo = SchoolDemographic.objects.filter(school_id=school_id)
+            context['fast_facts'] = school_demo
 
 
     return render(request, 'school_view.html', context)
-    """
 
 def compare(request):
     """

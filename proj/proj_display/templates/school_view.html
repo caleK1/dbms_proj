@@ -13,9 +13,9 @@
 	            <label for="yearSelectSchool">Choose Year</label>
 	            <select class="form-control" id="yearSelectSchool" name="yearSchool" onchange="this.form.submit()">
 	            	<option value="all-years" {% if selected_year == 'all-years' %}selected{% endif %}>All Years</option>
-	                <option value="2022-2023" {% if selected_year == '2022-2023' %}selected{% endif %}>2022-2023</option>
-	                <option value="2021-2022" {% if selected_year == '2021-2022' %}selected{% endif %}>2021-2022</option>
-	                <option value="2020-2021" {% if selected_year == '2020-2021' %}selected{% endif %}>2020-2021</option>
+	                <option value="20222023" {% if selected_year == '20222023' %}selected{% endif %}>2022-2023</option>
+	                <option value="20212022" {% if selected_year == '20212022' %}selected{% endif %}>2021-2022</option>
+	                <option value="20202021" {% if selected_year == '20202021' %}selected{% endif %}>2020-2021</option>
 	            </select>
 	        </div>
 	    </form>
@@ -33,7 +33,6 @@
 		    	{% endif %}
 		      <th scope="col">Street</th>
 		      <th scope="col">City</th>
-		      <th scope="col">State</th>
 		      <th scope="col">Zip Code</th>
 		      <th scope="col">Website</th>
 		      <th scope="col">Phone Number</th>
@@ -46,13 +45,12 @@
 		    	{% if selected_year == NULL or selected_year == 'all-years' %}
 		    		<td>{{ facts.year }}</td>
 		    	{% endif %}
-		      <td>{{ facts.street_address }}</td>
-		      <td>{{ facts.city_address }}</td>
-		      <td>{{ facts.state_address }}</td>
-		      <td>{{ facts.zip_code }}</td>
-		      <td>{{ facts.website }}</td>
-		      <td>{{ facts.phone_number }}</td>
-		      <td>{{ facts.enrollment }}</td>
+		      <td>{{ school_info2.street_address }}</td>
+		      <td>{{ school_info2.city_address }}</td>
+		      <td>{{ school_info2.zip_code }}</td>
+		      <td>{{ school_info2.website }}</td>
+		      <td>{{ school_info2.phone_num }}</td>
+		      <td>{{ school_info2.enrollment }}</td>
 		    </tr>
 		    {% endfor %}
 			</tbody>
@@ -85,16 +83,16 @@
 		  	{% for facts in fast_facts %}
 		    <tr>
 		    	{% if selected_year == NULL or selected_year == 'all-years' %}
-		    		<td>{{ facts.year }}</td>
+		    		<td>{{ facts.school_year }}</td>
 		    	{% endif %}
 		      <td>{{ facts.enrollment }}</td>
-		      <td>{{ facts.african_american }}</td>
-		      <td>{{ facts.american_indian_or_alaskan_native }}</td>
-		      <td>{{ facts.asian }}</td>
-		      <td>{{ facts.hispanic }}</td>
-		      <td>{{ facts.pacific_islander }}</td>
-		      <td>{{ facts.white }}</td>
-		      <td>{{ facts.two_or_more_races }}</td>
+		      <td>{{ facts.per_african_american }}</td>
+		      <td>{{ facts.per_am_indian_or_alaskan_native }}</td>
+		      <td>{{ facts.per_asian }}</td>
+		      <td>{{ facts.per_hispanic }}</td>
+		      <td>{{ facts.per_pacific_islander }}</td>
+		      <td>{{ facts.per_white }}</td>
+		      <td>{{ facts.per_two_or_more_races }}</td>
 		      <td>{{ facts.foster_care }}</td>
 		      <td>{{ facts.economically_disadvantaged }}</td>
 		      <td>{{ facts.english_learner }}</td>
