@@ -86,9 +86,8 @@ def school_view(request, school_id):
 
     context = {'school_info' : school}
 
-    if SchoolInfo.objects.filter(school_id=school_id).exists():
-        school_info = SchoolInfo.objects.filter(school_id=school_id)
-        context['fast_facts'] = school_info
+    fast_facts = SchoolInfo.objects.get(school_id=school_id)
+    context['fast_facts'] = fast_facts
 
     return render(request, "school_view.html", context)
 
@@ -118,8 +117,8 @@ def year_view_school(request, school_id):
     school = School.objects.get(school_id=school_id)
     context = {'school_info' : school}
 
-    school_info = SchoolInfo.objects.get(school_id=school_id)
-    context = {'school_info2' : school_info}
+    fast_facts = SchoolInfo.objects.get(school_id=school_id)
+    context['fast_facts'] = fast_facts
 
     selected_year = request.GET.get('yearSchool', 'all-years')
     context['selected_year'] = selected_year
@@ -127,11 +126,11 @@ def year_view_school(request, school_id):
     if selected_year != "all-years":
         if SchoolDemographic.objects.filter(school_year=selected_year, school_id=school_id).exists():
             school_demo = SchoolDemographic.objects.filter(school_year=selected_year, school_id=school_id)
-            context['fast_facts'] = school_demo
+            context['school_demo'] = school_demo
     else:
         if SchoolDemographic.objects.filter(school_id=school_id).exists():
             school_demo = SchoolDemographic.objects.filter(school_id=school_id)
-            context['fast_facts'] = school_demo
+            context['school_demo'] = school_demo
 
 
     return render(request, 'school_view.html', context)
