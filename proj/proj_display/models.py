@@ -45,43 +45,43 @@ class SchoolInfo(models.Model):
 
 class GenderSchool(models.Model):
     school_id = models.ForeignKey(School, on_delete=models.CASCADE)
-    school_year = models.IntegerField()
-    male = models.FloatField()
-    female = models.FloatField()
+    school_year = models.IntegerField(verbose_name="School Year")
+    male = models.FloatField(verbose_name="Male")
+    female = models.FloatField(verbose_name="Female")
 
     class Meta:
         unique_together = ('school_id', 'school_year')
 
     def __str__(self):
-        return f"Gender distribution for {self.school_id} in {self.school_year}"
+        return f"Gender distribution for {self.school} in {self.school_year}"
 
 class SchoolDemographic(models.Model):
     school_id = models.ForeignKey(School, on_delete=models.CASCADE)
-    school_year = models.IntegerField()
-    per_asian = models.FloatField()
-    per_hispanic = models.FloatField()
-    per_pacific_islander = models.FloatField()
-    per_am_indian_or_alaskan_native = models.FloatField()
-    per_african_american = models.FloatField()
-    per_white = models.FloatField()
-    per_two_or_more_races = models.FloatField()
+    school_year = models.IntegerField(verbose_name="School Year")
+    per_asian = models.FloatField(verbose_name="Asian %")
+    per_hispanic = models.FloatField(verbose_name="Hispanic %")
+    per_pacific_islander = models.FloatField(verbose_name="Pacific Islander %")
+    per_am_indian_or_alaskan_native = models.FloatField(verbose_name="American Indian or Alaskan Native %")
+    per_african_american = models.FloatField(verbose_name="African American/Black %")
+    per_white = models.FloatField(verbose_name="White %")
+    per_two_or_more_races = models.FloatField(verbose_name="2 or More Races %")
 
     class Meta:
         unique_together = ('school_id', 'school_year')
 
     def __str__(self):
-        return f"Demographics for {self.school_id} in {self.school_year}"
+        return f"Demographics for {self.school} in {self.school_year}"
 
 class ExtraDemoSchool(models.Model):
     school_id = models.ForeignKey(School, on_delete=models.CASCADE)
-    school_year = models.IntegerField()
-    per_english_learner = models.FloatField()
-    per_special_education = models.FloatField()
-    per_gifted_student = models.FloatField()
-    per_military_connected = models.FloatField()
-    per_foster_care = models.FloatField()
-    per_economically_disadvantaged = models.FloatField()
-    per_homeless = models.FloatField()
+    school_year = models.IntegerField(verbose_name="School Year")
+    per_english_learner = models.FloatField(verbose_name="English Learner %")
+    per_special_education = models.FloatField(verbose_name="Special Education %")
+    per_gifted_student = models.FloatField(verbose_name="Gifted Student %")
+    per_military_connected = models.FloatField(verbose_name="Military Connected %")
+    per_foster_care = models.FloatField(verbose_name="Foster Care %")
+    per_economically_disadvantaged = models.FloatField(verbose_name="Economically Disadvantaged %")
+    per_homeless = models.FloatField(verbose_name="Homeless %")
 
     class Meta:
         unique_together = ('school_id', 'school_year')
@@ -91,9 +91,9 @@ class ExtraDemoSchool(models.Model):
 
 class GenderDistrict(models.Model):
     district = models.ForeignKey(District, on_delete=models.CASCADE)
-    school_year = models.IntegerField()
-    male = models.FloatField()
-    female = models.FloatField()
+    school_year = models.IntegerField(verbose_name="School Year")
+    male = models.FloatField(verbose_name="Male %")
+    female = models.FloatField(verbose_name="Female %")
 
     class Meta:
         unique_together = ('district', 'school_year')
@@ -103,14 +103,14 @@ class GenderDistrict(models.Model):
 
 class DistrictDemographic(models.Model):
     district = models.ForeignKey(District, on_delete=models.CASCADE)
-    school_year = models.IntegerField()
-    per_african_american = models.FloatField()
-    per_am_indian_or_alaskan_native = models.FloatField()
-    per_pacific_islander = models.FloatField()
-    per_two_or_more_races = models.FloatField()
-    per_white = models.FloatField()
-    per_hispanic = models.FloatField()
-    per_asian = models.FloatField()
+    school_year = models.IntegerField(verbose_name="School Year")
+    per_african_american = models.FloatField(verbose_name="African American/Black %")
+    per_am_indian_or_alaskan_native = models.FloatField(verbose_name="American Indian or Alaskan Native %")
+    per_pacific_islander = models.FloatField(verbose_name="Pacific Islander %")
+    per_two_or_more_races = models.FloatField(verbose_name="2 or More Races %")
+    per_white = models.FloatField(verbose_name="White %")
+    per_hispanic = models.FloatField(verbose_name="Hispanic %")
+    per_asian = models.FloatField(verbose_name="Asian %")
 
     class Meta:
         unique_together = ('district', 'school_year')
@@ -120,14 +120,14 @@ class DistrictDemographic(models.Model):
 
 class ExtraDemoDistrict(models.Model):
     district = models.ForeignKey(District, on_delete=models.CASCADE)
-    school_year = models.IntegerField()
-    per_military_connected = models.FloatField()
-    per_gifted_student = models.FloatField()
-    per_special_education = models.FloatField()
-    per_english_learner = models.FloatField()
-    per_foster_care = models.FloatField()
-    per_homeless = models.FloatField()
-    per_economically_disadvantaged = models.FloatField()
+    school_year = models.IntegerField(verbose_name="School Year")
+    per_military_connected = models.FloatField(verbose_name="Military Connected %")
+    per_gifted_student = models.FloatField(verbose_name="Gifted Student %")
+    per_special_education = models.FloatField(verbose_name="Special Education %")
+    per_english_learner = models.FloatField(verbose_name="English Learner %")
+    per_foster_care = models.FloatField(verbose_name="Foster Care %")
+    per_homeless = models.FloatField(verbose_name="Homeless %")
+    per_economically_disadvantaged = models.FloatField(verbose_name="Economically Disadvantaged %")
 
     class Meta:
         unique_together = ('district', 'school_year')
@@ -156,13 +156,13 @@ class DistrictInfo(models.Model):
 
 class SchoolFiscalData(models.Model):
     school = models.ForeignKey(School, on_delete=models.CASCADE)
-    school_year = models.IntegerField()
-    state_personnel = models.FloatField()
-    state_non_personnel = models.FloatField()
-    local_personnel = models.FloatField()
-    local_non_personnel = models.FloatField()
-    federal_personnel = models.FloatField()
-    federal_non_personnel = models.FloatField()
+    school_year = models.IntegerField(verbose_name="School Year")
+    state_personnel = models.FloatField(verbose_name="State Personnel")
+    state_non_personnel = models.FloatField(verbose_name="State Non-Personnel")
+    local_personnel = models.FloatField(verbose_name="Local Personnel")
+    local_non_personnel = models.FloatField(verbose_name="Local Non-Personnel")
+    federal_personnel = models.FloatField(verbose_name="Federal Personnel")
+    federal_non_personnel = models.FloatField(verbose_name="Federal Non-Personnel")
 
     class Meta:
         unique_together = ('school', 'school_year')
