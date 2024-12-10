@@ -120,7 +120,7 @@ def year_view_district(request, district_aun):
     context['selected_cat'] = selected_cat
 
     if selected_cat == "demographic":
-        table_create_demographics_district(district_aun, selected_year, context)
+        table_create_demographics_district(district_aun, selected_year, context, "")
     elif selected_cat == "fiscal":
         pass
     else:
@@ -151,6 +151,39 @@ def year_view_school(request, school_id):
 
 
     return render(request, 'school_view.html', context)
+
+def compare(request):
+    county_list = County.objects.all()
+    district_list = District.objects.all()
+    school_list = School.objects.all()
+    context = {'county_list' : county_list, 'district_list' : district_list, 'school_list' : school_list}
+
+    selected_county = request.GET.get('districtCompareCounty', None)
+    if selected_county:
+        context['selected_county'] = County.objects.get(county_id=selected_county)
+        context['dist_in_county'] = District.objects.filter(county_id=selected_county)
+
+    selected_county2 = request.GET.get('districtCompareCounty2', None)
+    if selected_county2:
+        context['selected_county2'] = County.objects.get(county_id=selected_county2)
+        context['dist_in_county2'] = District.objects.filter(county_id=selected_county2)
+
+    context['selected_year'] = 'all-years'
+    selected_district = request.GET.get('districtCompareDistrict', None)
+    if selected_district:
+        context['selected_district'] = District.objects.get(district_aun=selected_district)
+        # if DistrictDemographic.objects.filter(district=selected_district).exists():
+        #     context['selected_district_demo'] = DistrictDemographic.objects.filter(district=selected_district)
+        table_create_demographics_district(selected_district, 'all-years', context, "")
+
+    selected_district2 = request.GET.get('districtCompareDistrict2', None)
+    if selected_district2:
+        context['selected_district2'] = District.objects.get(district_aun=selected_district2)
+        # if DistrictDemographic.objects.filter(district=selected_district).exists():
+        #     context['selected_district_demo2'] = DistrictDemographic.objects.filter(district=selected_district2)
+        table_create_demographics_district(selected_district2, 'all-years', context, "_compare")
+
+    return render(request, 'compare.html', context)
 
 def table_create_demographics(school_id, selected_year, context):
     if selected_year != "all-years":
@@ -277,7 +310,7 @@ def table_create_demographics(school_id, selected_year, context):
             context['cat_info3'] = cat_info_list3
             context['table_name3'] = 'Gender Information'
 
-def table_create_demographics_district(district_aun, selected_year, context):
+def table_create_demographics_district(district_aun, selected_year, context, add):
     if selected_year != "all-years":
         #School Demographic
         if DistrictDemographic.objects.filter(school_year=selected_year, district=district_aun).exists():
@@ -289,11 +322,11 @@ def table_create_demographics_district(district_aun, selected_year, context):
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
                 i = i + 1
-            context['cat_headers'] = fields
+            context[f'cat_headers{add}'] = fields
 
             cat_info_dict = cat_info.__dict__
             good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
-            context['cat_info'] = good_cat_info_dict.values()
+            context[f'cat_info{add}'] = good_cat_info_dict.values()
             context['table_name'] = 'Demographic Information'
 
         #Extra Demographic
@@ -306,12 +339,12 @@ def table_create_demographics_district(district_aun, selected_year, context):
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
                 i = i + 1
-            context['cat_headers2'] = fields
+            context[f'cat_headers2{add}'] = fields
 
             cat_info_dict2 = cat_info2.__dict__
             good_cat_info_dict2 = dict(islice(cat_info_dict2.items(), 3, None))
-            context['cat_info2'] = good_cat_info_dict2.values()
-            context['table_name2'] = 'More Demographic Information'
+            context[f'cat_info2{add}'] = good_cat_info_dict2.values()
+            context[f'table_name2{add}'] = 'More Demographic Information'
 
         #Gender School
         if GenderDistrict.objects.filter(school_year=selected_year, district=district_aun).exists():
@@ -323,12 +356,12 @@ def table_create_demographics_district(district_aun, selected_year, context):
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
                 i = i + 1
-            context['cat_headers3'] = fields
+            context[f'cat_headers3{add}'] = fields
 
             cat_info_dict3 = cat_info3.__dict__
             good_cat_info_dict3 = dict(islice(cat_info_dict3.items(), 3, None))
-            context['cat_info3'] = good_cat_info_dict3.values()
-            context['table_name3'] = 'Gender Information'
+            context[f'cat_info3{add}'] = good_cat_info_dict3.values()
+            context[f'table_name3{add}'] = 'Gender Information'
 
     else:
         if DistrictDemographic.objects.filter(district=district_aun).exists():
@@ -340,7 +373,7 @@ def table_create_demographics_district(district_aun, selected_year, context):
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
                 i = i + 1
-            context['cat_headers'] = fields
+            context[f'cat_headers{add}'] = fields
 
             cat_info_list = []
             cat_info_headers = []
@@ -351,8 +384,8 @@ def table_create_demographics_district(district_aun, selected_year, context):
                 good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
                 cat_info_list.append(good_cat_info_dict)
 
-            context['cat_info'] = cat_info_list
-            context['table_name'] = 'Demographic Information'
+            context[f'cat_info{add}'] = cat_info_list
+            context[f'table_name{add}'] = 'Demographic Information'
 
         #Extra Demographic
         if ExtraDemoDistrict.objects.filter(district=district_aun).exists():
@@ -364,7 +397,7 @@ def table_create_demographics_district(district_aun, selected_year, context):
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
                 i = i + 1
-            context['cat_headers2'] = fields
+            context[f'cat_headers2{add}'] = fields
 
             cat_info_list2 = []
             cat_info_headers2 = []
@@ -375,8 +408,8 @@ def table_create_demographics_district(district_aun, selected_year, context):
                 good_cat_info_dict2 = dict(islice(cat_info_dict2.items(), 3, None))
                 cat_info_list2.append(good_cat_info_dict2)
 
-            context['cat_info2'] = cat_info_list2
-            context['table_name2'] = 'More Demographic Information'
+            context[f'cat_info2{add}'] = cat_info_list2
+            context[f'table_name2{add}'] = 'More Demographic Information'
 
         #Gender School
         if GenderDistrict.objects.filter(district=district_aun).exists():
@@ -388,7 +421,7 @@ def table_create_demographics_district(district_aun, selected_year, context):
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
                 i = i + 1
-            context['cat_headers3'] = fields
+            context[f'cat_headers3{add}'] = fields
 
             cat_info_list3 = []
             cat_info_headers3 = []
@@ -399,8 +432,8 @@ def table_create_demographics_district(district_aun, selected_year, context):
                 good_cat_info_dict3 = dict(islice(cat_info_dict3.items(), 3, None))
                 cat_info_list3.append(good_cat_info_dict3)
 
-            context['cat_info3'] = cat_info_list3
-            context['table_name3'] = 'Gender Information'
+            context[f'cat_info3{add}'] = cat_info_list3
+            context[f'table_name3{add}'] = 'Gender Information'
 
 def table_create_fiscal(school_id, selected_year, context):
     if selected_year != "all-years":
@@ -443,35 +476,3 @@ def table_create_fiscal(school_id, selected_year, context):
 
             context['cat_info'] = cat_info_list
             context['table_name'] = 'Fiscal Information'
-
-def compare(request):
-    """
-    county_list = County.objects.all()
-    district_list = District.objects.all()
-    school_list = School.objects.all()
-    context = {'county_list' : county_list, 'district_list' : district_list, 'school_list' : school_list}
-
-    selected_county = request.GET.get('districtCompareCounty', None)
-    if selected_county:
-        context['selected_county'] = County.objects.get(county_id=selected_county)
-        context['dist_in_county'] = District.objects.filter(county_id=selected_county)
-
-    selected_county2 = request.GET.get('districtCompareCounty2', None)
-    if selected_county2:
-        context['selected_county2'] = County.objects.get(county_id=selected_county2)
-        context['dist_in_county2'] = District.objects.filter(county_id=selected_county2)
-
-    selected_district = request.GET.get('districtCompareDistrict', None)
-    if selected_district:
-        context['selected_district'] = District.objects.get(district_aun=selected_district)
-        if DistrictFastFacts.objects.filter(aun=selected_district).exists():
-            context['selected_district_facts'] = DistrictFastFacts.objects.filter(aun=selected_district)
-
-    selected_district2 = request.GET.get('districtCompareDistrict2', None)
-    if selected_district2:
-        context['selected_district2'] = District.objects.get(district_aun=selected_district2)
-        if DistrictFastFacts.objects.filter(aun=selected_district2).exists():
-            context['selected_district_facts2'] = DistrictFastFacts.objects.filter(aun=selected_district2)
-
-    return render(request, 'compare.html', context)
-    """
