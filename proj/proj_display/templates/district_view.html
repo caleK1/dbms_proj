@@ -55,41 +55,114 @@
 		</table>
 	</div>
 	<br></br>
-	<h3>Fast Facts:</h3>
-	<div class="table-responsive">
-		<table class="table table-striped">
-		  <thead class="thead-dark">
-		    <tr>
-		    	{% if selected_year == NULL or selected_year == 'all-years' %}
-		    		<th scope="col">Year</th>
-		    	{% endif %}
-		      <th scope="col">African American %</th>
-		      <th scope="col">American Indian %</th>
-		      <th scope="col">Asian %</th>
-		      <th scope="col">Hispanic %</th>
-		      <th scope="col">Pacific Islander %</th>
-		      <th scope="col">White %</th>
-		      <th scope="col">Two or More Races %</th>
-		    </tr>
-		  </thead>
-		  <tbody>
-		  	{% for facts in district_demo %}
-		    <tr>
-		    	{% if selected_year == NULL or selected_year == 'all-years' %}
-		    		<td>{{ facts.school_year }}</td>
-		    	{% endif %}
-		      <td>{{ facts.per_african_american }}</td>
-		      <td>{{ facts.per_am_indian_or_alaskan_native }}</td>
-		      <td>{{ facts.per_asian }}</td>
-		      <td>{{ facts.per_hispanic }}</td>
-		      <td>{{ facts.per_pacific_islander }}</td>
-		      <td>{{ facts.per_white }}</td>
-		      <td>{{ facts.per_two_or_more_races }}</td>
-		    </tr>
-		    {% endfor %}
-		  </tbody>
-		</table>
+	{% endif %}
+
+	<div class="container">
+	    <form method="GET" action="{% url 'year_view_district' district_aun=district_info.district_aun %}">
+	        <div class="form-group">
+	            <label for="categorySelectDistrict">Choose Category</label>
+	            <select class="form-control" id="categorySelectDisrict" name="categoryDistrict" onchange="this.form.submit()">
+	            	<option value="demographic" {% if selected_cat == 'demographic' %}selected{% endif %}>Demographic</option>
+	                <option value="fiscal" {% if selected_cat == 'fiscal' %}selected{% endif %}>Fiscal</option>
+	            </select>
+	        </div>
+	    </form>
 	</div>
+
+	{% if selected_cat %}
+		<h3>{{ table_name }}</h3>
+		<div class="table-responsive">
+			<table class="table table-striped">
+			  <thead class="thead-dark">
+				    <tr>
+				    	{% for header in cat_headers %}
+				    		<th scope="col">{{ header }}</th>
+				    	{% endfor %}
+				    </tr>
+			  </thead>
+			  <tbody>
+			  	{% if selected_year != 'all-years' %}
+			  		<tr>
+				  		{% for info in cat_info %}
+				      		<td>{{ info }}</td>
+				      	{% endfor %}
+				    </tr>
+			  	{% else %}
+			  		{% for info in cat_info %}
+					  	<tr>
+					  		{% for value in info.values %}
+					      		<td>{{ value }}</td>
+					      	{% endfor %}
+					    </tr>
+					{% endfor %}
+			  	{% endif %}
+			  </tbody>
+			</table>
+		</div>
+	{% endif %}
+
+	{% if cat_info2 %}
+		<h3>{{ table_name2 }}</h3>
+		<div class="table-responsive">
+			<table class="table table-striped">
+			  <thead class="thead-dark">
+				    <tr>
+				    	{% for header in cat_headers2 %}
+				    		<th scope="col">{{ header }}</th>
+				    	{% endfor %}
+				    </tr>
+			  </thead>
+			  <tbody>
+			  	{% if selected_year != 'all-years' %}
+			  		<tr>
+				  		{% for info in cat_info2 %}
+				      		<td>{{ info }}</td>
+				      	{% endfor %}
+				    </tr>
+			  	{% else %}
+			  		{% for info in cat_info2 %}
+					  	<tr>
+					  		{% for value in info.values %}
+					      		<td>{{ value }}</td>
+					      	{% endfor %}
+					    </tr>
+					{% endfor %}
+			  	{% endif %}
+			  </tbody>
+			</table>
+		</div>
+	{% endif %}
+
+	{% if cat_info3 %}
+		<h3>{{ table_name3 }}</h3>
+		<div class="table-responsive">
+			<table class="table table-striped">
+			  <thead class="thead-dark">
+				    <tr>
+				    	{% for header in cat_headers3 %}
+				    		<th scope="col">{{ header }}</th>
+				    	{% endfor %}
+				    </tr>
+			  </thead>
+			  <tbody>
+			  	{% if selected_year != 'all-years' %}
+			  		<tr>
+				  		{% for info in cat_info3 %}
+				      		<td>{{ info }}</td>
+				      	{% endfor %}
+				    </tr>
+			  	{% else %}
+			  		{% for info in cat_info3 %}
+					  	<tr>
+					  		{% for value in info.values %}
+					      		<td>{{ value }}</td>
+					      	{% endfor %}
+					    </tr>
+					{% endfor %}
+			  	{% endif %}
+			  </tbody>
+			</table>
+		</div>
 	{% endif %}
 	
 {% endblock %}

@@ -60,76 +60,200 @@
 
 	{% if selected_district and selected_district2 %}
 		<br></br>
-		{% if selected_district_facts or selected_district_facts2%}
-			<h3>Contact Information:</h3>
-			<div class="table-responsive">
-				<table class="table table-striped">
-				  <thead class="thead-dark">
-				    <tr>
-				      <th scope="col">Name</th>	
-				      <th scope="col">Year</th>
-				      <th scope="col">Total Enrollment</th>
-				      <th scope="col">African American %</th>
-				      <th scope="col">American Indian %</th>
-				      <th scope="col">Asian %</th>
-				      <th scope="col">Hispanic %</th>
-				      <th scope="col">Pacific Islander %</th>
-				      <th scope="col">White %</th>
-				      <th scope="col">Two or More Races %</th>
-				      <th scope="col">Foster Care %</th>
-				      <th scope="col">Economically Disadvantaged %</th>
-				      <th scope="col">Homeless %</th>
-				      <th scope="col">English Learner %</th>
-				      <th scope="col">Special Education %</th>
-				      <th scope="col">Gifted Students %</th>
-				    </tr>
-				  </thead>
-				  <tbody>
-				  	{% for facts in selected_district_facts %}
-					    <tr>
-					      <td>{{ selected_district.district_name }}</td>
-					      <td>{{ facts.year }}</td>
-					      <td>{{ facts.enrollment }}</td>
-					      <td>{{ facts.african_american }}</td>
-					      <td>{{ facts.american_indian_or_alaskan_native }}</td>
-					      <td>{{ facts.asian }}</td>
-					      <td>{{ facts.hispanic }}</td>
-					      <td>{{ facts.pacific_islander }}</td>
-					      <td>{{ facts.white }}</td>
-					      <td>{{ facts.two_or_more_races }}</td>
-					      <td>{{ facts.foster_care }}</td>
-					      <td>{{ facts.economically_disadvantaged }}</td>
-					      <td>{{ facts.homeless }}</td>
-					      <td>{{ facts.english_learner }}</td>
-					      <td>{{ facts.special_education }}</td>
-					      <td>{{ facts.gifted_students }}</td>
-					    </tr>
-				    {% endfor %}
+		<h3>{{ selected_district }}</h3>
+			{% if cat_info %}
+				<h3>{{ table_name }}</h3>
+				<div class="table-responsive">
+					<table class="table table-striped">
+			  			<thead class="thead-dark">
+				    		<tr>
+				    		{% for header in cat_headers %}
+				    			<th scope="col">{{ header }}</th>
+				    		{% endfor %}
+				    		</tr>
+			  			</thead>
+				  		<tbody>
+					  		{% if selected_year != 'all-years' %}
+					  			<tr>
+						  			{% for info in cat_info %}
+						      			<td>{{ info }}</td>
+						      		{% endfor %}
+						    	</tr>
+					  		{% else %}
+					  			{% for info in cat_info %}
+							  		<tr>
+							  			{% for value in info.values %}
+							      			<td>{{ value }}</td>
+							      		{% endfor %}
+							    	</tr>
+								{% endfor %}
+					  		{% endif %}
+				  		</tbody>
+					</table>
+				</div>
+			{% endif %}
 
-				    {% for facts in selected_district_facts2 %}
-					    <tr>
-					      <td>{{ selected_district2.district_name }}</td>
-					      <td>{{ facts.year }}</td>
-					      <td>{{ facts.enrollment }}</td>
-					      <td>{{ facts.african_american }}</td>
-					      <td>{{ facts.american_indian_or_alaskan_native }}</td>
-					      <td>{{ facts.asian }}</td>
-					      <td>{{ facts.hispanic }}</td>
-					      <td>{{ facts.pacific_islander }}</td>
-					      <td>{{ facts.white }}</td>
-					      <td>{{ facts.two_or_more_races }}</td>
-					      <td>{{ facts.foster_care }}</td>
-					      <td>{{ facts.economically_disadvantaged }}</td>
-					      <td>{{ facts.homeless }}</td>
-					      <td>{{ facts.english_learner }}</td>
-					      <td>{{ facts.special_education }}</td>
-					      <td>{{ facts.gifted_students }}</td>
-					    </tr>
-				    {% endfor %}
-				  </tbody>
-				</table>
-			</div>
-		{% endif %}
+			{% if cat_info2 %}
+				<h3>{{ table_name2 }}</h3>
+				<div class="table-responsive">
+					<table class="table table-striped">
+			  			<thead class="thead-dark">
+				    		<tr>
+				    			{% for header in cat_headers2 %}
+				    				<th scope="col">{{ header }}</th>
+				    			{% endfor %}
+				    		</tr>
+			  			</thead>
+			  			<tbody>
+			  				{% if selected_year != 'all-years' %}
+			  					<tr>
+				  					{% for info in cat_info2 %}
+				      					<td>{{ info }}</td>
+				      				{% endfor %}
+				    			</tr>
+			  				{% else %}
+			  					{% for info in cat_info2 %}
+					  				<tr>
+					  					{% for value in info.values %}
+					      					<td>{{ value }}</td>
+					      				{% endfor %}
+					    			</tr>
+								{% endfor %}
+			  				{% endif %}
+			  			</tbody>
+					</table>
+				</div>
+			{% endif %}
+
+			{% if cat_info3 %}
+				<h3>{{ table_name3 }}</h3>
+				<div class="table-responsive">
+					<table class="table table-striped">
+					  <thead class="thead-dark">
+						    <tr>
+						    	{% for header in cat_headers3 %}
+						    		<th scope="col">{{ header }}</th>
+						    	{% endfor %}
+						    </tr>
+					  </thead>
+					  <tbody>
+					  	{% if selected_year != 'all-years' %}
+					  		<tr>
+						  		{% for info in cat_info3 %}
+						      		<td>{{ info }}</td>
+						      	{% endfor %}
+						    </tr>
+					  	{% else %}
+					  		{% for info in cat_info3 %}
+							  	<tr>
+							  		{% for value in info.values %}
+							      		<td>{{ value }}</td>
+							      	{% endfor %}
+							    </tr>
+							{% endfor %}
+					  	{% endif %}
+					  </tbody>
+					</table>
+				</div>
+			{% endif %}
+
+			<br></br>
+			<h3>{{ selected_district2 }}</h3>
+			{% if cat_info_compare %}
+				<h3>{{ table_name }}</h3>
+				<div class="table-responsive">
+					<table class="table table-striped">
+			  			<thead class="thead-dark">
+				    		<tr>
+				    		{% for header in cat_headers_compare %}
+				    			<th scope="col">{{ header }}</th>
+				    		{% endfor %}
+				    		</tr>
+			  			</thead>
+				  		<tbody>
+					  		{% if selected_year != 'all-years' %}
+					  			<tr>
+						  			{% for info in cat_info_compare %}
+						      			<td>{{ info }}</td>
+						      		{% endfor %}
+						    	</tr>
+					  		{% else %}
+					  			{% for info in cat_info_compare %}
+							  		<tr>
+							  			{% for value in info.values %}
+							      			<td>{{ value }}</td>
+							      		{% endfor %}
+							    	</tr>
+								{% endfor %}
+					  		{% endif %}
+				  		</tbody>
+					</table>
+				</div>
+			{% endif %}
+
+			{% if cat_info2_compare %}
+				<h3>{{ table_name2 }}</h3>
+				<div class="table-responsive">
+					<table class="table table-striped">
+			  			<thead class="thead-dark">
+				    		<tr>
+				    			{% for header in cat_headers2_compare %}
+				    				<th scope="col">{{ header }}</th>
+				    			{% endfor %}
+				    		</tr>
+			  			</thead>
+			  			<tbody>
+			  				{% if selected_year != 'all-years' %}
+			  					<tr>
+				  					{% for info in cat_info2_compare %}
+				      					<td>{{ info }}</td>
+				      				{% endfor %}
+				    			</tr>
+			  				{% else %}
+			  					{% for info in cat_info2_compare %}
+					  				<tr>
+					  					{% for value in info.values %}
+					      					<td>{{ value }}</td>
+					      				{% endfor %}
+					    			</tr>
+								{% endfor %}
+			  				{% endif %}
+			  			</tbody>
+					</table>
+				</div>
+			{% endif %}
+
+			{% if cat_info3_compare %}
+				<h3>{{ table_name3 }}</h3>
+				<div class="table-responsive">
+					<table class="table table-striped">
+					  <thead class="thead-dark">
+						    <tr>
+						    	{% for header in cat_headers3_compare %}
+						    		<th scope="col">{{ header }}</th>
+						    	{% endfor %}
+						    </tr>
+					  </thead>
+					  <tbody>
+					  	{% if selected_year != 'all-years' %}
+					  		<tr>
+						  		{% for info in cat_info3_compare %}
+						      		<td>{{ info }}</td>
+						      	{% endfor %}
+						    </tr>
+					  	{% else %}
+					  		{% for info in cat_info3_compare %}
+							  	<tr>
+							  		{% for value in info.values %}
+							      		<td>{{ value }}</td>
+							      	{% endfor %}
+							    </tr>
+							{% endfor %}
+					  	{% endif %}
+					  </tbody>
+					</table>
+				</div>
+			{% endif %}
 	{% endif %}
 
 	<br></br>
