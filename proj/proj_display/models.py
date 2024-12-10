@@ -46,8 +46,8 @@ class SchoolInfo(models.Model):
 class GenderSchool(models.Model):
     school_id = models.ForeignKey(School, on_delete=models.CASCADE)
     school_year = models.IntegerField(verbose_name="School Year")
-    male = models.FloatField(verbose_name="Male")
-    female = models.FloatField(verbose_name="Female")
+    male = models.FloatField(verbose_name="Male %")
+    female = models.FloatField(verbose_name="Female %")
 
     class Meta:
         unique_together = ('school_id', 'school_year')

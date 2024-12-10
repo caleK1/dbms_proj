@@ -6,6 +6,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from itertools import islice
+import matplotlib.pyplot as plt
+import numpy as np
 from .models import School
 from .models import District
 from .models import County
@@ -204,6 +206,15 @@ def table_create_demographics(school_id, selected_year, context):
             context['cat_info'] = good_cat_info_dict.values()
             context['table_name'] = 'Demographic Information'
 
+            demo_pie_chart = dict()
+            i = 0
+            for val in fields:
+                if i != 0:
+                    demo_pie_chart.update({fields[i]: list(good_cat_info_dict.values())[i]})
+                i = i + 1
+
+            context['cat_graph'] = demo_pie_chart
+
         #Extra Demographic
         if ExtraDemoSchool.objects.filter(school_year=selected_year, school_id=school_id).exists():
             cat_info2 = ExtraDemoSchool.objects.get(school_year=selected_year, school_id=school_id)
@@ -237,6 +248,15 @@ def table_create_demographics(school_id, selected_year, context):
             good_cat_info_dict3 = dict(islice(cat_info_dict3.items(), 3, None))
             context['cat_info3'] = good_cat_info_dict3.values()
             context['table_name3'] = 'Gender Information'
+
+            gender_pie_chart = {fields[1]: list(good_cat_info_dict3.values())[1], fields[2]: list(good_cat_info_dict3.values())[2]}
+            context['cat_graph3'] = gender_pie_chart
+
+            # y = np.array([list(good_cat_info_dict3.values())[1], list(good_cat_info_dict3.values())[2]])
+            # mylabels = [fields[1], fields[2]]
+            # fig = plt.pie(y, labels=mylabels)
+            # html_str = mpld3.fig_to_html(fig)
+            # context['html_str'] = html_str
 
     else:
         if SchoolDemographic.objects.filter(school_id=school_id).exists():
@@ -362,6 +382,9 @@ def table_create_demographics_district(district_aun, selected_year, context, add
             good_cat_info_dict3 = dict(islice(cat_info_dict3.items(), 3, None))
             context[f'cat_info3{add}'] = good_cat_info_dict3.values()
             context[f'table_name3{add}'] = 'Gender Information'
+
+            gender_pie_chart = {fields[1]: list(good_cat_info_dict3.values())[1], fields[2]: list(good_cat_info_dict3.values())[2]}
+            context['cat_graph3'] = gender_pie_chart
 
     else:
         if DistrictDemographic.objects.filter(district=district_aun).exists():
