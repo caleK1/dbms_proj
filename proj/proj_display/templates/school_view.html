@@ -2,6 +2,208 @@
 
 {% block content %}
 
-	<h1>School View for {{ school_info.name }}</h1>
-	
-{% endblock %}
+	<h1>School View for {{ school_info.school_name }}</h1>
+
+	<br></br>
+
+	<div class="container">
+    
+	    <form method="GET" action="{% url 'year_view_school' school_id=school_info.school_id %}">
+	        <div class="form-group">
+	            <label for="yearSelectSchool">Choose Year</label>
+	            <select class="form-control" id="yearSelectSchool" name="yearSchool" onchange="this.form.submit()">
+	            	<option value="all-years" {% if selected_year == 'all-years' %}selected{% endif %}>All Years</option>
+	                <option value="20222023" {% if selected_year == '20222023' %}selected{% endif %}>2022-2023</option>
+	                <option value="20212022" {% if selected_year == '20212022' %}selected{% endif %}>2021-2022</option>
+	                <option value="20202021" {% if selected_year == '20202021' %}selected{% endif %}>2020-2021</option>
+	            </select>
+	        </div>
+	    </form>
+	</div>
+
+	{% if fast_facts %}
+	<br></br>
+	<h3>Contact Information:</h3>
+	<div class="table-responsive">
+		<table class="table table-striped">
+		  <thead class="thead-dark">
+		    <tr>
+		      <th scope="col">Street</th>
+		      <th scope="col">City</th>
+		      <th scope="col">Zip Code</th>
+		      <th scope="col">Website</th>
+		      <th scope="col">Phone Number</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  	
+		    <tr>
+		      <td>{{ fast_facts.street_address }}</td>
+		      <td>{{ fast_facts.city_address }}</td>
+		      <td>{{ fast_facts.zip_code }}</td>
+		      <td>{{ fast_facts.website }}</td>
+		      <td>{{ fast_facts.phone_num }}</td>
+		    </tr>
+		    
+			</tbody>
+		</table>
+	{% endif %}
+
+	<div class="container">
+	    <form method="GET" action="{% url 'year_view_school' school_id=school_info.school_id %}">
+	        <div class="form-group">
+	            <label for="categorySelectSchool">Choose Category</label>
+	            <select class="form-control" id="categorySelectSchool" name="categorySchool" onchange="this.form.submit()">
+	            	<option value="demographic" {% if selected_cat == 'demographic' %}selected{% endif %}>Demographic</option>
+	                <option value="fiscal" {% if selected_cat == 'fiscal' %}selected{% endif %}>Fiscal</option>
+	            </select>
+	        </div>
+	    </form>
+	</div>
+
+	{% if selected_cat %}
+		<h3>{{ table_name }}</h3>
+		<div class="table-responsive">
+			<table class="table table-striped">
+			  <thead class="thead-dark">
+				    <tr>
+				    	{% for header in cat_headers %}
+				    		<th scope="col">{{ header }}</th>
+				    	{% endfor %}
+				    </tr>
+			  </thead>
+			  <tbody>
+			  	{% if selected_year != 'all-years' %}
+			  		<tr>
+				  		{% for info in cat_info %}
+				      		<td>{{ info }}</td>
+				      	{% endfor %}
+				    </tr>
+			  	{% else %}
+			  		{% for info in cat_info %}
+					  	<tr>
+					  		{% for value in info.values %}
+					      		<td>{{ value }}</td>
+					      	{% endfor %}
+					    </tr>
+					{% endfor %}
+			  	{% endif %}
+			  </tbody>
+			</table>
+		</div>
+	{% endif %}
+
+	{% if cat_info2 %}
+		<h3>{{ table_name2 }}</h3>
+		<div class="table-responsive">
+			<table class="table table-striped">
+			  <thead class="thead-dark">
+				    <tr>
+				    	{% for header in cat_headers2 %}
+				    		<th scope="col">{{ header }}</th>
+				    	{% endfor %}
+				    </tr>
+			  </thead>
+			  <tbody>
+			  	{% if selected_year != 'all-years' %}
+			  		<tr>
+				  		{% for info in cat_info2 %}
+				      		<td>{{ info }}</td>
+				      	{% endfor %}
+				    </tr>
+			  	{% else %}
+			  		{% for info in cat_info2 %}
+					  	<tr>
+					  		{% for value in info.values %}
+					      		<td>{{ value }}</td>
+					      	{% endfor %}
+					    </tr>
+					{% endfor %}
+			  	{% endif %}
+			  </tbody>
+			</table>
+		</div>
+	{% endif %}
+
+	{% if cat_info3 %}
+		<h3>{{ table_name3 }}</h3>
+		<div class="table-responsive">
+			<table class="table table-striped">
+			  <thead class="thead-dark">
+				    <tr>
+				    	{% for header in cat_headers3 %}
+				    		<th scope="col">{{ header }}</th>
+				    	{% endfor %}
+				    </tr>
+			  </thead>
+			  <tbody>
+			  	{% if selected_year != 'all-years' %}
+			  		<tr>
+				  		{% for info in cat_info3 %}
+				      		<td>{{ info }}</td>
+				      	{% endfor %}
+				    </tr>
+			  	{% else %}
+			  		{% for info in cat_info3 %}
+					  	<tr>
+					  		{% for value in info.values %}
+					      		<td>{{ value }}</td>
+					      	{% endfor %}
+					    </tr>
+					{% endfor %}
+			  	{% endif %}
+			  </tbody>
+			</table>
+		</div>
+	{% endif %}
+
+
+		<div style="width: 300px; height: 300px;">
+		<canvas id="chartjs-pie" ></canvas>
+	</div>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js">
+
+		</script>
+		{% if selected_year != 'all-years' and selected_year != NULL and gender_facts %}
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				//if not working add another {} to both male and female 
+				var male={ gender_facts.male|default:0|};
+				var female={ gender_facts.female|default:0|};
+
+				new Chart(document.getElementById("chartjs-pie"), {
+					type: "pie",
+					data: {
+						labels: ["Male", "Female"],
+						datasets: [{
+		
+							//need to use selected_year to get gender from school by year 
+							data: [male, female],
+		
+							backgroundColor: [
+								"#007bff",  
+								"#28a745"
+							],
+							borderColor: "transparent"
+						}]
+					},
+					options: {
+						maintainAspectRatio: false,
+						cutoutPercentage: 65,
+						responsive: true,
+						scales:{
+		
+						}
+					}
+				});
+			}); 
+			
+				</script>
+				{% endif %}
+			
+		
+			</div>
+		
+			
+		{% endblock %}

@@ -1,3 +1,9 @@
+"""
+    DBMS Project: Cale King, Eric Lynch, Jacob Seltzer
+    Github Repo: https://github.com/caleK1/dbms_proj.git
+"""
+
+
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os

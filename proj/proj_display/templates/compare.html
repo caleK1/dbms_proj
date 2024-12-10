@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<h1>Compare</h1>
+
+	<br></br>
+	<h3>Compare Two Districts:</h3>
+
+	<div class="container">
+	    <form method="GET" action="{% url 'compare' %}">
+	        <div class="form-group row">
+		        <div class="col-md-6">
+			        <label for="districtCompareSelectCounty">Select County 1</label>
+			        <select class="form-control" id="districtCompareSelectCounty" name="districtCompareCounty" onchange="this.form.submit()">
+			            	
+			            <option value="" {% if not selected_county %} disabled selected{% endif %}>Select a County</option>
+
+			            {% for county in county_list %}
+				            <option value="{{ county.county_id }}" {% if selected_county.county_id == county.county_id %}selected{% endif %}>{{ county.county_name }}</option>
+			            {% endfor %}
+			           </select>
+			    </div>
+
+			    <div class="col-md-6">
+	                <label for="districtCompareSelectCounty2">Select County 2</label>
+	                <select class="form-control" id="districtCompareSelectCounty2" name="districtCompareCounty2" onchange="this.form.submit()">
+	                    <option value="" {% if not selected_county2 %} disabled selected{% endif %}>Select a County</option>
+	                    {% for county in county_list %}
+	                        <option value="{{ county.county_id }}" {% if selected_county2.county_id == county.county_id %}selected{% endif %}>{{ county.county_name }}</option>
+	                    {% endfor %}
+	                </select>
+	            </div>
+			</div>
+
+			<div class="form-group row">
+	        	<div class="col-md-6">
+	            	<label for="districtCompareSelectDistrict">Select District 1</label>
+	            	<select class="form-control" id="districtCompareSelectDistrict" name="districtCompareDistrict" onchange="this.form.submit()">
+	            		<option value="" {% if not selected_district %}disabled selected{% endif %}>Select a District</option>
+
+	            		{% for district in dist_in_county %}
+		            		<option value="{{ district.district_aun }}" {% if selected_district.district_aun == district.district_aun %}selected{% endif %}>{{ district.district_name }}</option>
+	            		{% endfor %}
+	            	</select>
+	        	</div>
+
+	        	<div class="col-md-6">
+	                <label for="districtCompareSelectDistrict2">Select District 2</label>
+	                <select class="form-control" id="districtCompareSelectDistrict2" name="districtCompareDistrict2" onchange="this.form.submit()">
+	                    <option value="" {% if not selected_district2 %}disabled selected{% endif %}>Select a District</option>
+	                    {% for district in dist_in_county2 %}
+	                        <option value="{{ district.district_aun }}" {% if selected_district2.district_aun == district.district_aun %}selected{% endif %}>{{ district.district_name }}</option>
+	                    {% endfor %}
+	                </select>
+	            </div>
+			</div>
+	    </form>
+	</div>
+
+	{% if selected_district and selected_district2 %}
+		<br></br>
+		{% if selected_district_facts or selected_district_facts2%}
+			<h3>Contact Information:</h3>
+			<div class="table-responsive">
+				<table class="table table-striped">
+				  <thead class="thead-dark">
+				    <tr>
+				      <th scope="col">Name</th>	
+				      <th scope="col">Year</th>
+				      <th scope="col">Total Enrollment</th>
+				      <th scope="col">African American %</th>
+				      <th scope="col">American Indian %</th>
+				      <th scope="col">Asian %</th>
+				      <th scope="col">Hispanic %</th>
+				      <th scope="col">Pacific Islander %</th>
+				      <th scope="col">White %</th>
+				      <th scope="col">Two or More Races %</th>
+				      <th scope="col">Foster Care %</th>
+				      <th scope="col">Economically Disadvantaged %</th>
+				      <th scope="col">Homeless %</th>
+				      <th scope="col">English Learner %</th>
+				      <th scope="col">Special Education %</th>
+				      <th scope="col">Gifted Students %</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				  	{% for facts in selected_district_facts %}
+					    <tr>
+					      <td>{{ selected_district.district_name }}</td>
+					      <td>{{ facts.year }}</td>
+					      <td>{{ facts.enrollment }}</td>
+					      <td>{{ facts.african_american }}</td>
+					      <td>{{ facts.american_indian_or_alaskan_native }}</td>
+					      <td>{{ facts.asian }}</td>
+					      <td>{{ facts.hispanic }}</td>
+					      <td>{{ facts.pacific_islander }}</td>
+					      <td>{{ facts.white }}</td>
+					      <td>{{ facts.two_or_more_races }}</td>
+					      <td>{{ facts.foster_care }}</td>
+					      <td>{{ facts.economically_disadvantaged }}</td>
+					      <td>{{ facts.homeless }}</td>
+					      <td>{{ facts.english_learner }}</td>
+					      <td>{{ facts.special_education }}</td>
+					      <td>{{ facts.gifted_students }}</td>
+					    </tr>
+				    {% endfor %}
+
+				    {% for facts in selected_district_facts2 %}
+					    <tr>
+					      <td>{{ selected_district2.district_name }}</td>
+					      <td>{{ facts.year }}</td>
+					      <td>{{ facts.enrollment }}</td>
+					      <td>{{ facts.african_american }}</td>
+					      <td>{{ facts.american_indian_or_alaskan_native }}</td>
+					      <td>{{ facts.asian }}</td>
+					      <td>{{ facts.hispanic }}</td>
+					      <td>{{ facts.pacific_islander }}</td>
+					      <td>{{ facts.white }}</td>
+					      <td>{{ facts.two_or_more_races }}</td>
+					      <td>{{ facts.foster_care }}</td>
+					      <td>{{ facts.economically_disadvantaged }}</td>
+					      <td>{{ facts.homeless }}</td>
+					      <td>{{ facts.english_learner }}</td>
+					      <td>{{ facts.special_education }}</td>
+					      <td>{{ facts.gifted_students }}</td>
+					    </tr>
+				    {% endfor %}
+				  </tbody>
+				</table>
+			</div>
+		{% endif %}
+	{% endif %}
+
+	<br></br>
+	<h3>Compare Two Schools:</h3>
+
+	<br></br>
+	<h3>Compare a School to its District:</h3>
+
+{% endblock %}

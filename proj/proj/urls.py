@@ -1,4 +1,9 @@
 """
+    DBMS Project: Cale King, Eric Lynch, Jacob Seltzer
+    Github Repo: https://github.com/caleK1/dbms_proj.git
+"""
+
+"""
 URL configuration for proj project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
