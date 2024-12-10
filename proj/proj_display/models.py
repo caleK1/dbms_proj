@@ -840,7 +840,7 @@ class KeystoneGradeSchool(models.Model):
     percent_below_basic = models.FloatField()
 
     class Meta:
-        unique_together = ('school', 'school_year')
+        unique_together = ('school', 'school_year','student_group','keystone_subject')
         verbose_name = 'Keystone Grade School'
         verbose_name_plural = 'Keystone Grade School'
 

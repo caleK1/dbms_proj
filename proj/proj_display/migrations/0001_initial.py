@@ -920,7 +920,7 @@ class Migration(migrations.Migration):
             options={
                 'verbose_name': 'Keystone Grade School',
                 'verbose_name_plural': 'Keystone Grade School',
-                'unique_together': {('school', 'school_year')},
+                'unique_together': {('school', 'school_year','student_group','keystone_subject')},
             },
         ),
         migrations.CreateModel(
