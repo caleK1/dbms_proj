@@ -1,692 +1,498 @@
-﻿county,AUN,LEA,School Number,School,Total Graduates,2- or 4-Year College or University,2- or 4-Year College or University %,Specialized Associate Degree-Granting Institution,Specialized Associate Degree-Granting Institution %,Total College-Bound,Total College-Bound %,Non-Degree-Granting Postsecondary School,Non-Degree-Granting Postsecondary School %,Total Postsecondary Bound,Total Postsecondary Bound %
-Chester,124150002,21st Century Cyber CS,7691,21st Century Cyber CS,71,50,70.4%,0,0.0%,50,70.4%,12,16.9%,62,87.3%
-Montgomery,123460302,Abington  SD,3241,Abington SHS,580,508,87.6%,8,1.4%,516,89.0%,5,0.9%,521,89.8%
-Lackawanna,119350303,Abington Heights SD,5091,Abington Heights HS,315,259,82.2%,11,3.5%,270,85.7%,6,1.9%,276,87.6%
-Allegheny,102020003,Academy CS,7846,Academy CS,33,1,3.0%,3,9.1%,4,12.1%,2,6.1%,6,18.2%
-Montgomery,125230001,Achievement House CS,7824,Achievement House CS,81,15,18.5%,4,4.9%,19,23.5%,4,4.9%,23,28.4%
-Chester,126510020,Agora Cyber CS,7858,Agora Cyber CS,30,9,30.0%,1,3.3%,10,33.3%,0,0.0%,10,33.3%
-Fayette,101260303,Albert Gallatin Area SD,6001,Albert Gallatin Area SHS,243,111,45.7%,17,7.0%,128,52.7%,20,8.2%,148,60.9%
-Beaver,127040503,Aliquippa SD,6554,Aliquippa SHS,89,47,52.8%,8,9.0%,55,61.8%,6,6.7%,61,68.5%
-Allegheny,103020603,Allegheny Valley SD,0029,Springdale JSHS,98,82,83.7%,3,3.1%,85,86.7%,4,4.1%,89,90.8%
-Clarion,106160303,Allegheny-Clarion Valley SD,4664,Allegheny-Clarion Valley HS,86,34,39.5%,5,5.8%,39,45.3%,9,10.5%,48,55.8%
-Lehigh,121390302,Allentown City SD,2795,Louis E Dieruff HS,387,254,65.6%,6,1.6%,260,67.2%,5,1.3%,265,68.5%
-Lehigh,121390302,Allentown City SD,2794,William Allen HS,693,395,57.0%,4,0.6%,399,57.6%,9,1.3%,408,58.9%
-Blair,108070502,Altoona Area SD,0913,Altoona Area HS,512,299,58.4%,23,4.5%,322,62.9%,21,4.1%,343,67.0%
-Blair,108070502,Altoona Area SD,7425,Kimmel Alternative School,5,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Beaver,127040703,Ambridge Area SD,6555,Ambridge Area HS,190,137,72.1%,11,5.8%,148,77.9%,4,2.1%,152,80.0%
-Lebanon,113380303,Annville-Cleona SD,2725,Annville Cleona JSHS,108,77,71.3%,0,0.0%,77,71.3%,5,4.6%,82,75.9%
-Berks,114060503,Antietam SD,0820,Antietam MS/HS,98,69,70.4%,1,1.0%,70,71.4%,6,6.1%,76,77.6%
-Armstrong,128030603,Apollo-Ridge SD,2320,Apollo-Ridge HS,91,62,68.1%,6,6.6%,68,74.7%,3,3.3%,71,78.0%
-Philadelphia,126513190,Architecture and Design CHS,7578,Architecture and Design CHS,131,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Armstrong,128030852,Armstrong SD,0582,Elderton JSHS,48,30,62.5%,7,14.6%,37,77.1%,0,0.0%,37,77.1%
-Armstrong,128030852,Armstrong SD,6575,Ford City JSHS,98,74,75.5%,7,7.1%,81,82.7%,2,2.0%,83,84.7%
-Armstrong,128030852,Armstrong SD,0596,Kittanning SHS,132,104,78.8%,0,0.0%,104,78.8%,1,0.8%,105,79.5%
-Armstrong,128030852,Armstrong SD,7640,West Shamokin JSHS,73,47,64.4%,3,4.1%,50,68.5%,3,4.1%,53,72.6%
-Bradford,117080503,Athens Area SD,0958,Athens Area HS,205,119,58.0%,4,2.0%,123,60.0%,4,2.0%,127,62.0%
-Potter,109530304,Austin Area SD,6222,Austin Area JSHS,18,8,44.4%,0,0.0%,8,44.4%,1,5.6%,9,50.0%
-Washington,101630504,Avella Area SD,4165,Avella Area JSHS,62,39,62.9%,0,0.0%,39,62.9%,8,12.9%,47,75.8%
-Chester,124150003,Avon Grove CS,7721,Avon Grove CS,33,25,75.8%,0,0.0%,25,75.8%,0,0.0%,25,75.8%
-Chester,124150503,Avon Grove SD,1367,Avon Grove HS,421,328,77.9%,0,0.0%,328,77.9%,17,4.0%,345,81.9%
-Allegheny,103020753,Avonworth SD,5199,Avonworth HS,91,74,81.3%,5,5.5%,79,86.8%,0,0.0%,79,86.8%
-Centre,110141003,Bald Eagle Area SD,1335,Bald Eagle Area JSHS,162,87,53.7%,11,6.8%,98,60.5%,1,0.6%,99,61.1%
-Allegheny,103021102,Baldwin-Whitehall SD,0050,Baldwin SHS,400,309,77.3%,23,5.8%,332,83.0%,15,3.8%,347,86.8%
-Northampton,120480803,Bangor Area SD,3434,Bangor Area HS,309,190,61.5%,3,1.0%,193,62.5%,1,0.3%,194,62.8%
-Beaver,127040001,Beaver Area Academic CS,7847,Beaver Area Academic CS,9,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Beaver,127041203,Beaver Area SD,0640,Beaver Area SHS,165,128,77.6%,0,0.0%,128,77.6%,6,3.6%,134,81.2%
-Bedford,108051003,Bedford Area SD,0726,Bedford SHS,128,66,51.6%,1,0.8%,67,52.3%,5,3.9%,72,56.3%
-Bedford,108051003,Bedford Area SD,0742,Hyndman MSHS,30,17,56.7%,0,0.0%,17,56.7%,2,6.7%,19,63.3%
-Westmoreland,107650603,Belle Vernon Area SD,4930,Belle Vernon Area HS,239,168,70.3%,14,5.9%,182,76.2%,2,0.8%,184,77.0%
-Centre,110141103,Bellefonte Area SD,1343,Bellefonte Area HS,255,174,68.2%,20,7.8%,194,76.1%,1,0.4%,195,76.5%
-Blair,108071003,Bellwood-Antis SD,0917,Bellwood-Antis HS,102,67,65.7%,0,0.0%,67,65.7%,8,7.8%,75,73.5%
-Bucks,122091002,Bensalem Township SD,5116,Bensalem Twp HS,466,334,71.7%,12,2.6%,346,74.2%,25,5.4%,371,79.6%
-Columbia,116191004,Benton Area SD,1595,Benton Area MSHS,54,34,63.0%,1,1.9%,35,64.8%,2,3.7%,37,68.5%
-Washington,101630903,Bentworth SD,4188,Bentworth SHS,92,60,65.2%,19,20.7%,79,85.9%,1,1.1%,80,87.0%
-Somerset,108561003,Berlin Brothersvalley SD,6207,Berlin Brothersvalley SHS,82,56,68.3%,4,4.9%,60,73.2%,0,0.0%,60,73.2%
-Adams,112011103,Bermudian Springs SD,0003,Bermudian Springs HS,154,76,49.4%,23,14.9%,99,64.3%,2,1.3%,101,65.6%
-Columbia,116191103,Berwick Area SD,1605,Berwick Area HS,208,144,69.2%,4,1.9%,148,71.2%,2,1.0%,150,72.1%
-Allegheny,103021252,Bethel Park SD,0062,Bethel Park SHS,460,442,96.1%,11,2.4%,453,98.5%,1,0.2%,454,98.7%
-Northampton,120481002,Bethlehem Area SD,4957,Freedom HS,468,389,83.1%,18,3.8%,407,87.0%,2,0.4%,409,87.4%
-Northampton,120481002,Bethlehem Area SD,3465,Liberty HS,655,535,81.7%,17,2.6%,552,84.3%,1,0.2%,553,84.4%
-Washington,101631003,Bethlehem-Center SD,4181,Bethlehem-Center SHS,95,49,51.6%,14,14.7%,63,66.3%,2,2.1%,65,68.4%
-Beaver,127041503,Big Beaver Falls Area SD,0649,Beaver Falls Area SHS,147,93,63.3%,19,12.9%,112,76.2%,2,1.4%,114,77.6%
-Cumberland,115210503,Big Spring SD,1677,Big Spring HS,208,120,57.7%,3,1.4%,123,59.1%,13,6.3%,136,65.4%
-Beaver,127041603,Blackhawk SD,6707,Blackhawk HS,223,157,70.4%,0,0.0%,157,70.4%,19,8.5%,176,78.9%
-Cambria,108110603,Blacklick Valley SD,5135,Blacklick Valley JSHS,46,28,60.9%,4,8.7%,32,69.6%,3,6.5%,35,76.1%
-Indiana,128321103,Blairsville-Saltsburg SD,4706,Blairsville SHS,95,60,63.2%,10,10.5%,70,73.7%,3,3.2%,73,76.8%
-Indiana,128321103,Blairsville-Saltsburg SD,2353,Saltsburg MS/HS,82,52,63.4%,9,11.0%,61,74.4%,3,3.7%,64,78.0%
-Columbia,116191203,Bloomsburg Area SD,1612,Bloomsburg Area HS,99,73,73.7%,3,3.0%,76,76.8%,2,2.0%,78,78.8%
-Schuylkill,129540803,Blue Mountain SD,3891,Blue Mountain HS,226,163,72.1%,8,3.5%,171,75.7%,12,5.3%,183,81.0%
-Susquehanna,119581003,Blue Ridge SD,4034,Blue Ridge HS,76,52,68.4%,3,3.9%,55,72.4%,0,0.0%,55,72.4%
-Berks,114060753,Boyertown Area SD,6306,Boyertown Area SHS,556,378,68.0%,22,4.0%,400,71.9%,12,2.2%,412,74.1%
-McKean,109420803,Bradford Area SD,4691,Bradford Area HS,253,181,71.5%,8,3.2%,189,74.7%,10,4.0%,199,78.7%
-Berks,114060853,Brandywine Heights Area SD,6308,Brandywine Heights HS,140,107,76.4%,2,1.4%,109,77.9%,1,0.7%,110,78.6%
-Allegheny,103021453,Brentwood Borough SD,0070,Brentwood SHS,103,81,78.6%,0,0.0%,81,78.6%,5,4.9%,86,83.5%
-Bucks,122091303,Bristol Borough SD,1014,Bristol HS,99,62,62.6%,5,5.1%,67,67.7%,2,2.0%,69,69.7%
-Bucks,122091352,Bristol Township SD,1029,Truman SHS,352,260,73.9%,8,2.3%,268,76.1%,12,3.4%,280,79.5%
-Jefferson,106330703,Brockway Area SD,2362,Brockway Area JSHS,67,39,58.2%,9,13.4%,48,71.6%,6,9.0%,54,80.6%
-Jefferson,106330803,Brookville Area SD,6162,Brookville JSHS,140,82,58.6%,3,2.1%,85,60.7%,11,7.9%,96,68.6%
-Fayette,101260803,Brownsville Area SD,4818,Brownsville Area HS,106,48,45.3%,8,7.5%,56,52.8%,0,0.0%,56,52.8%
-Bucks,122091457,Bucks County Technical High School,1030,Bucks County Technical High School,312,195,62.5%,4,1.3%,199,63.8%,0,0.0%,199,63.8%
-Washington,101631203,Burgettstown Area SD,4195,Burgettstown MS/HS,116,66,56.9%,18,15.5%,84,72.4%,9,7.8%,93,80.2%
-Westmoreland,107650703,Burrell SD,4340,Burrell HS,165,132,80.0%,9,5.5%,141,85.5%,3,1.8%,144,87.3%
-Butler,104101252,Butler Area SD,1147,Butler Area SHS,610,490,80.3%,15,2.5%,505,82.8%,17,2.8%,522,85.6%
-Washington,101631503,California Area SD,4203,California Area SHS,76,58,76.3%,5,6.6%,63,82.9%,9,11.8%,72,94.7%
-Cambria,108111203,Cambria Heights SD,5212,Cambria Heights SHS,110,76,69.1%,5,4.5%,81,73.6%,0,0.0%,81,73.6%
-Cameron,109122703,Cameron County SD,1299,Cameron County JSHS,83,48,57.8%,4,4.8%,52,62.7%,2,2.4%,54,65.1%
-Cumberland,115211003,Camp Hill SD,1682,Camp Hill SHS,85,70,82.4%,4,4.7%,74,87.1%,0,0.0%,74,87.1%
-Washington,101631703,Canon-McMillan SD,4217,Canon-McMillan SHS,329,267,81.2%,15,4.6%,282,85.7%,6,1.8%,288,87.5%
-Bradford,117081003,Canton Area SD,0988,Canton JSHS,85,46,54.1%,1,1.2%,47,55.3%,3,3.5%,50,58.8%
-Carbon,121131507,Carbon Career & Technical Institute,4870,Carbon Career & Technical Institute,64,22,34.4%,2,3.1%,24,37.5%,0,0.0%,24,37.5%
-Lackawanna,119351303,Carbondale Area SD,2420,Carbondale Area JSHS,101,54,53.5%,7,6.9%,61,60.4%,4,4.0%,65,64.4%
-Allegheny,102023180,Career Connections CHS,7577,Career Connections CHS,62,14,22.6%,2,3.2%,16,25.8%,1,1.6%,17,27.4%
-Cumberland,115211103,Carlisle Area SD,1694,Carlisle Area HS,347,234,67.4%,0,0.0%,234,67.4%,10,2.9%,244,70.3%
-Allegheny,103021603,Carlynton SD,0079,Carlynton JSHS,103,69,67.0%,9,8.7%,78,75.7%,0,0.0%,78,75.7%
-Greene,101301303,Carmichaels Area SD,7112,Carmichaels Area JSHS,74,36,48.6%,7,9.5%,43,58.1%,2,2.7%,45,60.8%
-Lehigh,121391303,Catasauqua Area SD,2798,Catasauqua SHS,106,71,67.0%,6,5.7%,77,72.6%,2,1.9%,79,74.5%
-Bucks,122092002,Centennial SD,1040,William Tennent HS,468,392,83.8%,0,0.0%,392,83.8%,17,3.6%,409,87.4%
-Beaver,127041903,Center Area SD,0654,Center Area SHS,142,107,75.4%,6,4.2%,113,79.6%,1,0.7%,114,80.3%
-Chester,124151607,Center for Arts & Technology,7293,Center for Arts & Technology-Pickering,177,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Bucks,122090001,Center for Student Learning CS at Pennsb,7726,Center for Student Lrng CS Pennsbury,16,12,75.0%,0,0.0%,12,75.0%,3,18.8%,15,93.8%
-Bucks,122092102,Central Bucks SD,5133,Central Bucks HS-East,482,442,91.7%,3,0.6%,445,92.3%,2,0.4%,447,92.7%
-Bucks,122092102,Central Bucks SD,7790,Central Bucks HS-South,582,509,87.5%,2,0.3%,511,87.8%,19,3.3%,530,91.1%
-Bucks,122092102,Central Bucks SD,1043,Central Bucks HS-West,476,371,77.9%,0,0.0%,371,77.9%,3,0.6%,374,78.6%
-Cambria,108111303,Central Cambria SD,1208,Central Cambria HS,158,102,64.6%,7,4.4%,109,69.0%,4,2.5%,113,71.5%
-Columbia,116191503,Central Columbia SD,1619,Central Columbia SHS,174,107,61.5%,0,0.0%,107,61.5%,15,8.6%,122,70.1%
-Dauphin,115221402,Central Dauphin SD,1746,Central Dauphin East SHS,304,243,79.9%,0,0.0%,243,79.9%,0,0.0%,243,79.9%
-Dauphin,115221402,Central Dauphin SD,1745,Central Dauphin SHS,475,399,84.0%,10,2.1%,409,86.1%,8,1.7%,417,87.8%
-Fulton,111291304,Central Fulton SD,6252,McConnellsburg HS,65,41,63.1%,0,0.0%,41,63.1%,1,1.5%,42,64.6%
-Greene,101301403,Central Greene SD,5118,Waynesburg Central HS,156,84,53.8%,9,5.8%,93,59.6%,4,2.6%,97,62.2%
-Blair,108070001,Central PA Digital Learning Foundation C,7720,Central PA Digital Lrng Foundation CS,16,4,25.0%,5,31.3%,9,56.3%,1,6.3%,10,62.5%
-York,112671303,Central York SD,4545,Central York HS,349,258,73.9%,15,4.3%,273,78.2%,8,2.3%,281,80.5%
-Franklin,112281302,Chambersburg Area SD,2191,Chambersburg Area SHS,601,310,51.6%,9,1.5%,319,53.1%,18,3.0%,337,56.1%
-Washington,101631803,Charleroi SD,4715,Charleroi Area HS,101,67,66.3%,20,19.8%,87,86.1%,1,1.0%,88,87.1%
-Allegheny,103021752,Chartiers Valley SD,6706,Chartiers Valley HS,293,248,84.6%,3,1.0%,251,85.7%,1,0.3%,252,86.0%
-Washington,101631903,Chartiers-Houston SD,4235,Chartiers-Houston JSHS,102,66,64.7%,13,12.7%,79,77.5%,2,2.0%,81,79.4%
-Montgomery,123461302,Cheltenham Township SD,3260,Cheltenham HS,395,373,94.4%,2,0.5%,375,94.9%,0,0.0%,375,94.9%
-Delaware,125231232,Chester-Upland SD,6492,Chester HS - Main Campus,241,96,39.8%,36,14.9%,132,54.8%,0,0.0%,132,54.8%
-Bedford,108051503,Chestnut Ridge SD,0732,Chestnut Ridge SHS,155,85,54.8%,17,11.0%,102,65.8%,2,1.3%,104,67.1%
-Delaware,125231303,Chichester SD,1849,Chichester SHS,255,151,59.2%,2,0.8%,153,60.0%,33,12.9%,186,72.9%
-Allegheny,102020001,City CHS,7727,City CHS,94,70,74.5%,6,6.4%,76,80.9%,0,0.0%,76,80.9%
-Allegheny,103021903,Clairton City SD,7156,Clairton HS,56,48,85.7%,0,0.0%,48,85.7%,1,1.8%,49,87.5%
-Clarion,106161203,Clarion Area SD,1475,Clarion Area JSHS,72,49,68.1%,4,5.6%,53,73.6%,0,0.0%,53,73.6%
-Clarion,106161703,Clarion-Limestone Area SD,1480,Clarion-Limestone Area JSHS,71,46,64.8%,2,2.8%,48,67.6%,1,1.4%,49,69.0%
-Blair,108071504,Claysburg-Kimmel SD,0921,Claysburg-Kimmel HS,62,26,41.9%,15,24.2%,41,66.1%,1,1.6%,42,67.7%
-Clearfield,110171003,Clearfield Area SD,6236,Clearfield Area HS,201,95,47.3%,22,10.9%,117,58.2%,8,4.0%,125,62.2%
-Chester,124151902,Coatesville Area SD,5012,Coatesville Area SHS,509,346,68.0%,6,1.2%,352,69.2%,66,13.0%,418,82.1%
-Lancaster,113361303,Cocalico SD,6290,Cocalico SHS,263,167,63.5%,9,3.4%,176,66.9%,1,0.4%,177,67.3%
-Chester,124153320,Collegium CS,7628,Collegium CS,10,7,70.0%,2,20.0%,9,90.0%,0,0.0%,9,90.0%
-Montgomery,123461602,Colonial SD,3333,Plymouth-Whitemarsh SHS,356,308,86.5%,6,1.7%,314,88.2%,7,2.0%,321,90.2%
-Lancaster,113361503,Columbia Borough SD,2515,Columbia JSHS,110,50,45.5%,11,10.0%,61,55.5%,10,9.1%,71,64.5%
-Columbia,116191757,Columbia-Montour AVTS,5178,Columbia-Montour AVTS,150,62,41.3%,1,0.7%,63,42.0%,4,2.7%,67,44.7%
-Mercer,104431304,Commodore Perry SD,6122,Commodore Perry JSHS,62,39,62.9%,8,12.9%,47,75.8%,2,3.2%,49,79.0%
-Philadelphia,126512840,Community Academy of Philadelphia CS,7510,Community Academy of Philadelphia CS,132,64,48.5%,0,0.0%,64,48.5%,11,8.3%,75,56.8%
-Somerset,108561803,Conemaugh Township Area SD,3978,Conemaugh Twp Area JSHS,96,67,69.8%,8,8.3%,75,78.1%,3,3.1%,78,81.3%
-Cambria,108111403,Conemaugh Valley SD,5136,Conemaugh Valley JSHS,64,41,64.1%,1,1.6%,42,65.6%,1,1.6%,43,67.2%
-Lancaster,113361703,Conestoga Valley SD,2532,Conestoga Valley SHS,249,164,65.9%,11,4.4%,175,70.3%,17,6.8%,192,77.1%
-Adams,112011603,Conewago Valley SD,0017,New Oxford SHS,297,179,60.3%,12,4.0%,191,64.3%,18,6.1%,209,70.4%
-Crawford,105201033,Conneaut SD,1637,Conneaut Lake HS,91,49,53.8%,7,7.7%,56,61.5%,1,1.1%,57,62.6%
-Crawford,105201033,Conneaut SD,1639,Conneaut Valley HS,64,30,46.9%,9,14.1%,39,60.9%,1,1.6%,40,62.5%
-Crawford,105201033,Conneaut SD,1644,Linesville HS,62,30,48.4%,5,8.1%,35,56.5%,1,1.6%,36,58.1%
-Fayette,101266007,Connellsville Area Career & Technical Ce,6643,Connellsville Area Career & Technical Ce,83,18,21.7%,1,1.2%,19,22.9%,7,8.4%,26,31.3%
-Fayette,101261302,Connellsville Area SD,5228,Connellsville Area SHS,238,171,71.8%,0,0.0%,171,71.8%,12,5.0%,183,76.9%
-Berks,114061103,Conrad Weiser Area SD,0777,Conrad Weiser HS,242,179,74.0%,7,2.9%,186,76.9%,9,3.7%,195,80.6%
-Allegheny,103022103,Cornell SD,6946,Cornell SHS,60,46,76.7%,0,0.0%,46,76.7%,0,0.0%,46,76.7%
-Lebanon,113381303,Cornwall-Lebanon SD,4800,Cedar Crest HS,428,312,72.9%,0,0.0%,312,72.9%,5,1.2%,317,74.1%
-Erie,105251453,Corry Area SD,1998,Corry Area HS,186,91,48.9%,22,11.8%,113,60.8%,10,5.4%,123,66.1%
-Potter,109531304,Coudersport Area SD,3869,Coudersport Area JSHS,66,47,71.2%,0,0.0%,47,71.2%,4,6.1%,51,77.3%
-Bucks,122092353,Council Rock SD,5096,Council Rock HS North,589,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Bucks,122092353,Council Rock SD,7749,Council Rock HS South,508,473,93.1%,1,0.2%,474,93.3%,2,0.4%,476,93.7%
-Venango,106611303,Cranberry Area SD,4098,Cranberry Area JSHS,98,54,55.1%,16,16.3%,70,71.4%,0,0.0%,70,71.4%
-Crawford,105201352,Crawford Central SD,1632,Cochranton JSHS,72,46,63.9%,1,1.4%,47,65.3%,0,0.0%,47,65.3%
-Crawford,105201352,Crawford Central SD,1654,Meadville Area SHS,233,144,61.8%,2,0.9%,146,62.7%,12,5.2%,158,67.8%
-Luzerne,118401403,Crestwood SD,2860,Crestwood HS,279,233,83.5%,1,0.4%,234,83.9%,8,2.9%,242,86.7%
-York,112673300,Crispus Attucks Youthbuild CS,7624,Crispus Attucks Youthbuild CS,46,3,6.5%,0,0.0%,3,6.5%,0,0.0%,3,6.5%
-Cumberland,115211603,Cumberland Valley SD,1701,Cumberland Valley HS,570,449,78.8%,0,0.0%,449,78.8%,0,0.0%,449,78.8%
-Clearfield,110171803,Curwensville Area SD,1529,Curwensville Area JSHS,74,51,68.9%,4,5.4%,55,74.3%,4,5.4%,59,79.7%
-Luzerne,118401603,Dallas SD,2869,Dallas SHS,218,189,86.7%,2,0.9%,191,87.6%,3,1.4%,194,89.0%
-York,112671603,Dallastown Area SD,4553,Dallastown Area SHS,435,316,72.6%,12,2.8%,328,75.4%,15,3.4%,343,78.9%
-Berks,114061503,Daniel Boone Area SD,4810,Daniel Boone Area HS,249,158,63.5%,15,6.0%,173,69.5%,1,0.4%,174,69.9%
-Montour,116471803,Danville Area SD,3425,Danville Area SHS,191,152,79.6%,2,1.0%,154,80.6%,1,0.5%,155,81.2%
-Dauphin,115221607,Dauphin County AVTS,5278,Dauphin County AVTS,178,58,32.6%,13,7.3%,71,39.9%,4,2.2%,75,42.1%
-Allegheny,103022253,Deer Lakes SD,0513,Deer Lakes HS,159,120,75.5%,0,0.0%,120,75.5%,18,11.3%,138,86.8%
-Philadelphia,126513470,Delaware Valley CHS,7671,Delaware Valley CHS,140,79,56.4%,1,0.7%,80,57.1%,19,13.6%,99,70.7%
-Pike,120522003,Delaware Valley SD,5261,Delaware Valley HS,446,366,82.1%,8,1.8%,374,83.9%,3,0.7%,377,84.5%
-Westmoreland,107651603,Derry Area SD,4352,Derry Area SHS,210,163,77.6%,13,6.2%,176,83.8%,7,3.3%,183,87.1%
-Dauphin,115221753,Derry Township SD,4801,Hershey HS,264,225,85.2%,0,0.0%,225,85.2%,8,3.0%,233,88.3%
-Lancaster,113362203,Donegal SD,2539,Donegal SHS,208,114,54.8%,10,4.8%,124,59.6%,4,1.9%,128,61.5%
-York,112671803,Dover Area SD,4558,Dover Area HS,207,118,57.0%,20,9.7%,138,66.7%,12,5.8%,150,72.5%
-Chester,124152003,Downingtown Area SD,7759,Downingtown HS East Campus,439,412,93.8%,1,0.2%,413,94.1%,5,1.1%,418,95.2%
-Chester,124152003,Downingtown Area SD,1387,Downingtown HS West Campus,471,412,87.5%,3,0.6%,415,88.1%,0,0.0%,415,88.1%
-Westmoreland,107653040,Dr Robert Ketterer CS,7550,Dr Robert Ketterer CS,25,6,24.0%,4,16.0%,10,40.0%,0,0.0%,10,40.0%
-Clearfield,106172003,Dubois Area SD,6156,Dubois Area SHS,301,197,65.4%,30,10.0%,227,75.4%,12,4.0%,239,79.4%
-Lackawanna,119352203,Dunmore SD,2429,Dunmore HS,148,128,86.5%,7,4.7%,135,91.2%,0,0.0%,135,91.2%
-Allegheny,103022803,East Allegheny SD,5193,East Allegheny HS,124,94,75.8%,11,8.9%,105,84.7%,3,2.4%,108,87.1%
-Lycoming,117412003,East Lycoming SD,6364,Hughesville JSHS,153,104,68.0%,7,4.6%,111,72.5%,8,5.2%,119,77.8%
-Lehigh,121392303,East Penn SD,2809,Emmaus HS,637,523,82.1%,1,0.2%,524,82.3%,10,1.6%,534,83.8%
-Cumberland,115212503,East Pennsboro Area SD,1707,East Pennsboro Area SHS,193,168,87.0%,0,0.0%,168,87.0%,1,0.5%,169,87.6%
-Monroe,120452003,East Stroudsburg Area SD,7641,East Stroudsburg SHS North,321,76,23.7%,0,0.0%,76,23.7%,1,0.3%,77,24.0%
-Monroe,120452003,East Stroudsburg Area SD,6935,East Stroudsburg SHS South,380,262,68.9%,9,2.4%,271,71.3%,7,1.8%,278,73.2%
-Lancaster,113362303,Eastern Lancaster County SD,2554,Garden Spot SHS,309,180,58.3%,6,1.9%,186,60.2%,2,0.6%,188,60.8%
-Lebanon,113382303,Eastern Lebanon County SD,2740,Eastern Lebanon Co SHS,180,102,56.7%,9,5.0%,111,61.7%,7,3.9%,118,65.6%
-York,112672203,Eastern York SD,4564,Eastern York HS,175,97,55.4%,13,7.4%,110,62.9%,9,5.1%,119,68.0%
-Northampton,120483302,Easton Area SD,3482,Easton Area HS,698,582,83.4%,6,0.9%,588,84.2%,19,2.7%,607,87.0%
-Allegheny,103023153,Elizabeth Forward SD,0144,Elizabeth Forward SHS,195,137,70.3%,17,8.7%,154,79.0%,4,2.1%,158,81.0%
-Lancaster,113362403,Elizabethtown Area SD,2562,Elizabethtown Area SHS,281,191,68.0%,5,1.8%,196,69.8%,7,2.5%,203,72.2%
-Susquehanna,119582503,Elk Lake SD,6418,Elk Lake JSHS,101,71,70.3%,2,2.0%,73,72.3%,2,2.0%,75,74.3%
-Lawrence,104372003,Ellwood City Area SD,2675,Lincoln JSHS,130,86,66.2%,5,3.8%,91,70.0%,4,3.1%,95,73.1%
-Lancaster,113362603,Ephrata Area SD,6293,Ephrata SHS,363,202,55.6%,10,2.8%,212,58.4%,22,6.1%,234,64.5%
-Erie,105252602,Erie City SD,7842,AEP/Transition Sch,19,1,5.3%,0,0.0%,1,5.3%,1,5.3%,2,10.5%
-Erie,105252602,Erie City SD,7294,Central HS,162,63,38.9%,31,19.1%,94,58.0%,7,4.3%,101,62.3%
-Erie,105252602,Erie City SD,2026,East SHS,212,146,68.9%,0,0.0%,146,68.9%,1,0.5%,147,69.3%
-Erie,105252602,Erie City SD,7515,Northwest PA Collegiate Academy,231,226,97.8%,0,0.0%,226,97.8%,0,0.0%,226,97.8%
-Erie,105252602,Erie City SD,2027,Strong Vincent HS,159,80,50.3%,10,6.3%,90,56.6%,7,4.4%,97,61.0%
-Bedford,108053003,Everett Area SD,7897,Everett Area HS,125,72,57.6%,1,0.8%,73,58.4%,6,4.8%,79,63.2%
-Monroe,120450003,Evergreen Community CS,7866,Evergreen Community CS,9,8,88.9%,0,0.0%,8,88.9%,0,0.0%,8,88.9%
-Berks,114062003,Exeter Township SD,0788,Exeter Twp SHS,317,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Adams,112013054,Fairfield Area SD,6269,Fairfield Area HS,96,61,63.5%,2,2.1%,63,65.6%,2,2.1%,65,67.7%
-Erie,105253303,Fairview SD,6737,Fairview HS,134,107,79.9%,7,5.2%,114,85.1%,0,0.0%,114,85.1%
-Franklin,112282004,Fannett-Metal SD,2201,Fannett-Metal SHS,45,15,33.3%,1,2.2%,16,35.6%,2,4.4%,18,40.0%
-Mercer,104432503,Farrell Area SD,5248,Farrell Area HS/UMS,68,3,4.4%,0,0.0%,3,4.4%,0,0.0%,3,4.4%
-Cambria,108112003,Ferndale Area SD,1225,Ferndale Area JSHS,56,29,51.8%,2,3.6%,31,55.4%,3,5.4%,34,60.7%
-Berks,114062503,Fleetwood Area SD,5023,Fleetwood SHS,218,141,64.7%,6,2.8%,147,67.4%,6,2.8%,153,70.2%
-Fulton,111292304,Forbes Road SD,2246,Forbes Road JSHS,33,18,54.5%,1,3.0%,19,57.6%,0,0.0%,19,57.6%
-Forest,106272003,Forest Area SD,6159,East Forest JSHS,22,12,54.5%,3,13.6%,15,68.2%,0,0.0%,15,68.2%
-Forest,106272003,Forest Area SD,6161,West Forest JSHS,46,21,45.7%,11,23.9%,32,69.6%,1,2.2%,33,71.7%
-Susquehanna,119583003,Forest City Regional SD,6419,Forest City Regional HS,67,39,58.2%,0,0.0%,39,58.2%,1,1.5%,40,59.7%
-Cambria,108112203,Forest Hills SD,1191,Forest Hills HS,230,143,62.2%,11,4.8%,154,67.0%,9,3.9%,163,70.9%
-Washington,101632403,Fort Cherry SD,4242,Fort Cherry JSHS,90,61,67.8%,4,4.4%,65,72.2%,0,0.0%,65,72.2%
-Erie,105253553,Fort LeBoeuf SD,2037,Fort LeBoeuf SHS,196,130,66.3%,3,1.5%,133,67.9%,14,7.1%,147,75.0%
-Allegheny,103023912,Fox Chapel Area SD,0156,Fox Chapel Area SHS,371,322,86.8%,13,3.5%,335,90.3%,5,1.3%,340,91.6%
-Venango,106612203,Franklin Area SD,4106,Franklin Area HS,179,100,55.9%,2,1.1%,102,57.0%,7,3.9%,109,60.9%
-Westmoreland,107652603,Franklin Regional SD,4360,Franklin Regional SHS,320,270,84.4%,10,3.1%,280,87.5%,2,0.6%,282,88.1%
-Philadelphia,126513450,Franklin Towne CHS,7666,Franklin Towne CHS,179,123,68.7%,15,8.4%,138,77.1%,11,6.1%,149,83.2%
-Fayette,101262903,Frazier SD,2126,Frazier HS,81,44,54.3%,7,8.6%,51,63.0%,3,3.7%,54,66.7%
-Beaver,127042853,Freedom Area SD,6563,Freedom Area SHS,131,91,69.5%,13,9.9%,104,79.4%,3,2.3%,107,81.7%
-Armstrong,128033053,Freeport Area SD,0594,Freeport Area SHS,134,98,73.1%,5,3.7%,103,76.9%,10,7.5%,113,84.3%
-Philadelphia,126513270,Freire CS,7586,Freire CS,74,65,87.8%,0,0.0%,65,87.8%,3,4.1%,68,91.9%
-Potter,109532804,Galeton Area SD,6223,Galeton Area Sch,22,10,45.5%,0,0.0%,10,45.5%,0,0.0%,10,45.5%
-Delaware,125234103,Garnet Valley SD,1869,Garnet Valley HS,355,314,88.5%,9,2.5%,323,91.0%,10,2.8%,333,93.8%
-Allegheny,103024102,Gateway SD,0170,Gateway SHS,339,268,79.1%,7,2.1%,275,81.1%,9,2.7%,284,83.8%
-Erie,105253903,General McLane SD,2040,General McLane HS,210,160,76.2%,5,2.4%,165,78.6%,5,2.4%,170,81.0%
-Adams,112013753,Gettysburg Area SD,6271,Gettysburg Area HS,285,177,62.1%,23,8.1%,200,70.2%,3,1.1%,203,71.2%
-Erie,105254053,Girard SD,2043,Girard HS,138,79,57.2%,17,12.3%,96,69.6%,3,2.2%,99,71.7%
-Clearfield,110173003,Glendale SD,5219,Glendale JSHS,71,43,60.6%,0,0.0%,43,60.6%,10,14.1%,53,74.6%
-Berks,114063003,Governor Mifflin SD,0802,Governor Mifflin SHS,311,236,75.9%,0,0.0%,236,75.9%,25,8.0%,261,83.9%
-Chester,124153503,Great Valley SD,1424,Great Valley HS,318,292,91.8%,0,0.0%,292,91.8%,2,0.6%,294,92.5%
-Cambria,108112502,Greater Johnstown SD,1251,Greater Johnstown SHS,212,113,53.3%,1,0.5%,114,53.8%,0,0.0%,114,53.8%
-Westmoreland,107653102,Greater Latrobe SD,4845,Greater Latrobe SHS,317,261,82.3%,4,1.3%,265,83.6%,4,1.3%,269,84.9%
-Luzerne,118402603,Greater Nanticoke Area SD,5242,Greater Nanticoke Area SHS,190,135,71.1%,1,0.5%,136,71.6%,2,1.1%,138,72.6%
-Franklin,112283003,Greencastle-Antrim SD,2206,Greencastle-Antrim SHS,204,126,61.8%,9,4.4%,135,66.2%,9,4.4%,144,70.6%
-Westmoreland,107653203,Greensburg Salem SD,4373,Greensburg-Salem HS,224,131,58.5%,7,3.1%,138,61.6%,0,0.0%,138,61.6%
-Mercer,104432803,Greenville Area SD,3137,Greenville JSHS,106,62,58.5%,7,6.6%,69,65.1%,3,2.8%,72,67.9%
-Perry,115503004,Greenwood SD,6341,Greenwood HS,68,28,41.2%,1,1.5%,29,42.6%,4,5.9%,33,48.5%
-Mercer,104432903,Grove City Area SD,6125,George Jr Republic HS,46,27,58.7%,3,6.5%,30,65.2%,4,8.7%,34,73.9%
-Mercer,104432903,Grove City Area SD,3145,Grove City Area HS,159,117,73.6%,9,5.7%,126,79.2%,6,3.8%,132,83.0%
-Dauphin,115222504,Halifax Area SD,6330,Halifax Area HS,78,52,66.7%,2,2.6%,54,69.2%,2,2.6%,56,71.8%
-Berks,114063503,Hamburg Area SD,0808,Hamburg Area HS,195,113,57.9%,1,0.5%,114,58.5%,24,12.3%,138,70.8%
-Allegheny,103024603,Hampton Township SD,5190,Hampton HS,253,230,90.9%,0,0.0%,230,90.9%,5,2.0%,235,92.9%
-Luzerne,118403003,Hanover Area SD,2891,Hanover Area JSHS,166,104,62.7%,2,1.2%,106,63.9%,2,1.2%,108,65.1%
-York,112672803,Hanover Public SD,4571,Hanover SHS,104,55,52.9%,11,10.6%,66,63.5%,2,1.9%,68,65.4%
-Erie,105254353,Harbor Creek SD,7948,Harbor Creek Senior HS,154,109,70.8%,1,0.6%,110,71.4%,5,3.2%,115,74.7%
-Clearfield,110173504,Harmony Area SD,1547,Harmony Area HS,28,12,42.9%,4,14.3%,16,57.1%,0,0.0%,16,57.1%
-Dauphin,115222752,Harrisburg City SD,7899,ACTS @ William Penn School,66,9,13.6%,0,0.0%,9,13.6%,0,0.0%,9,13.6%
-Dauphin,115222752,Harrisburg City SD,7900,Career Technology Academy,64,37,57.8%,6,9.4%,43,67.2%,2,3.1%,45,70.3%
-Dauphin,115222752,Harrisburg City SD,6333,Harrisburg HS,248,157,63.3%,12,4.8%,169,68.1%,4,1.6%,173,69.8%
-Dauphin,115222752,Harrisburg City SD,7902,Harrisburg University of Science and Tec,57,53,93.0%,0,0.0%,53,93.0%,2,3.5%,55,96.5%
-Dauphin,115222752,Harrisburg City SD,1761,Shimmell Sch,3,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Montgomery,123463603,Hatboro-Horsham SD,3272,Hatboro-Horsham SHS,473,415,87.7%,10,2.1%,425,89.9%,6,1.3%,431,91.1%
-Delaware,125234502,Haverford Township SD,1879,Haverford SHS,461,418,90.7%,15,3.3%,433,93.9%,1,0.2%,434,94.1%
-Luzerne,118403302,Hazleton Area SD,7348,Hazleton Area HS,746,486,65.1%,19,2.5%,505,67.7%,9,1.2%,514,68.9%
-Lancaster,113363103,Hempfield  SD,2578,Hempfield SHS,522,397,76.1%,0,0.0%,397,76.1%,15,2.9%,412,78.9%
-Westmoreland,107653802,Hempfield Area SD,7747,Crossroads Sch,3,1,33.3%,0,0.0%,1,33.3%,0,0.0%,1,33.3%
-Westmoreland,107653802,Hempfield Area SD,4404,Hempfield Area SHS,500,411,82.2%,7,1.4%,418,83.6%,11,2.2%,429,85.8%
-Mercer,104433303,Hermitage SD,3150,Hickory HS,190,142,74.7%,10,5.3%,152,80.0%,2,1.1%,154,81.1%
-Allegheny,103024753,Highlands SD,5153,Highlands SHS,203,110,54.2%,28,13.8%,138,68.0%,1,0.5%,139,68.5%
-Blair,108073503,Hollidaysburg Area SD,0927,Hollidaysburg Area JHS,1,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Blair,108073503,Hollidaysburg Area SD,5207,Hollidaysburg Area SHS,285,199,69.8%,0,0.0%,199,69.8%,17,6.0%,216,75.8%
-Indiana,128323303,Homer-Center SD,2331,Homer-Center JSHS,93,66,71.0%,0,0.0%,66,71.0%,6,6.5%,72,77.4%
-Philadelphia,126510003,Hope CS,7723,Hope CS,68,44,64.7%,4,5.9%,48,70.6%,1,1.5%,49,72.1%
-Beaver,127044103,Hopewell Area SD,0675,Hopewell SHS,227,150,66.1%,12,5.3%,162,71.4%,2,0.9%,164,72.2%
-Huntingdon,111312503,Huntingdon Area SD,2305,Huntingdon Area SHS,179,103,57.5%,8,4.5%,111,62.0%,7,3.9%,118,65.9%
-Philadelphia,126512980,Imhotep Institute CHS,7542,Imhotep Institute CHS,104,102,98.1%,0,0.0%,102,98.1%,2,1.9%,104,100.0%
-Indiana,128323703,Indiana Area SD,2325,Indiana Area SHS,290,213,73.4%,13,4.5%,226,77.9%,6,2.1%,232,80.0%
-Delaware,125235103,Interboro SD,1885,Interboro SHS,350,244,69.7%,1,0.3%,245,70.0%,9,2.6%,254,72.6%
-Erie,105256553,Iroquois SD,4817,Iroquois JSHS,105,59,56.2%,15,14.3%,74,70.5%,5,4.8%,79,75.2%
-Mercer,104433604,Jamestown Area SD,6126,Jamestown Area JSHS,58,22,37.9%,13,22.4%,35,60.3%,1,1.7%,36,62.1%
-Westmoreland,107654103,Jeannette City SD,4412,Jeannette SHS,91,65,71.4%,5,5.5%,70,76.9%,0,0.0%,70,76.9%
-Jefferson,106333407,Jefferson County-DuBois AVTS,5180,Jefferson County-DuBois AVTS,79,2,2.5%,0,0.0%,2,2.5%,6,7.6%,8,10.1%
-Greene,101303503,Jefferson-Morgan SD,2280,Jefferson-Morgan MS/HS,68,44,64.7%,3,4.4%,47,69.1%,1,1.5%,48,70.6%
-Montgomery,123463803,Jenkintown SD,3277,Jenkintown HS,42,39,92.9%,1,2.4%,40,95.2%,0,0.0%,40,95.2%
-Lycoming,117414003,Jersey Shore Area SD,3034,Jersey Shore Area SHS,227,153,67.4%,11,4.8%,164,72.2%,3,1.3%,167,73.6%
-Carbon,121135003,Jim Thorpe Area SD,1307,Jim Thorpe Area SHS,151,118,78.1%,8,5.3%,126,83.4%,6,4.0%,132,87.4%
-Elk,109243503,Johnsonburg Area SD,6218,Johnsonburg Area HS,56,43,76.8%,0,0.0%,43,76.8%,0,0.0%,43,76.8%
-Juniata,111343603,Juniata County SD,2394,East Juniata JSHS,97,60,61.9%,7,7.2%,67,69.1%,0,0.0%,67,69.1%
-Juniata,111343603,Juniata County SD,6255,Juniata SHS,135,55,40.7%,27,20.0%,82,60.7%,2,1.5%,84,62.2%
-Huntingdon,111312804,Juniata Valley SD,2308,Juniata Valley JSHS,64,32,50.0%,0,0.0%,32,50.0%,4,6.3%,36,56.3%
-McKean,109422303,Kane Area SD,5245,Kane Area HS,100,63,63.0%,6,6.0%,69,69.0%,2,2.0%,71,71.0%
-Butler,104103603,Karns City Area SD,1154,Karns City HS,113,77,68.1%,6,5.3%,83,73.5%,3,2.7%,86,76.1%
-Chester,124154003,Kennett Consolidated SD,6482,Kennett HS,299,231,77.3%,1,0.3%,232,77.6%,6,2.0%,238,79.6%
-Clarion,106166503,Keystone  SD,1486,Keystone JSHS,114,75,65.8%,2,1.8%,77,67.5%,4,3.5%,81,71.1%
-Clinton,110183602,Keystone Central SD,6241,Bucktail HS,29,14,48.3%,4,13.8%,18,62.1%,1,3.4%,19,65.5%
-Clinton,110183602,Keystone Central SD,7589,Central Mountain HS,321,187,58.3%,21,6.5%,208,64.8%,11,3.4%,219,68.2%
-Mercer,104432830,Keystone Education Center CS,7506,Keystone Education Center CS,75,9,12.0%,0,0.0%,9,12.0%,12,16.0%,21,28.0%
-Allegheny,103025002,Keystone Oaks SD,5112,Keystone Oaks HS,201,153,76.1%,10,5.0%,163,81.1%,9,4.5%,172,85.6%
-Westmoreland,107654403,Kiski Area SD,4431,Kiski Area HS,325,253,77.8%,30,9.2%,283,87.1%,2,0.6%,285,87.7%
-Berks,114064003,Kutztown Area SD,0816,Kutztown Area SHS,143,96,67.1%,2,1.4%,98,68.5%,2,1.4%,100,69.9%
-Lancaster,113362940,La Academia CS,7538,La Academia CS,10,2,20.0%,0,0.0%,2,20.0%,0,0.0%,2,20.0%
-Wyoming,119665003,Lackawanna Trail SD,4528,Lackawanna Trail JSHS,95,62,65.3%,5,5.3%,67,70.5%,0,0.0%,67,70.5%
-Lackawanna,119354603,Lakeland SD,6404,Lakeland JSHS,114,79,69.3%,0,0.0%,79,69.3%,9,7.9%,88,77.2%
-Luzerne,118403903,Lake-Lehman SD,2924,Lake-Lehman JSHS,155,123,79.4%,2,1.3%,125,80.6%,4,2.6%,129,83.2%
-Mercer,104433903,Lakeview SD,3155,Lakeview HS,126,63,50.0%,16,12.7%,79,62.7%,3,2.4%,82,65.1%
-Lancaster,113363603,Lampeter-Strasburg SD,2607,Lampeter-Strasburg SHS,254,166,65.4%,22,8.7%,188,74.0%,4,1.6%,192,75.6%
-Lancaster,113363705,Lancaster County Academy,7394,Lancaster County Academy,38,10,26.3%,0,0.0%,10,26.3%,2,5.3%,12,31.6%
-Lancaster,113364002,Lancaster SD,7403,Buehrle Alternative Ed Sch,14,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Lancaster,113364002,Lancaster SD,2596,McCaskey Campus,513,279,54.4%,64,12.5%,343,66.9%,11,2.1%,354,69.0%
-Lancaster,113364002,Lancaster SD,7922,Phoenix Academy,63,17,27.0%,11,17.5%,28,44.4%,7,11.1%,35,55.6%
-Lawrence,104374003,Laurel  SD,2680,Laurel JSHS,90,63,70.0%,5,5.6%,68,75.6%,1,1.1%,69,76.7%
-Fayette,101264003,Laurel Highlands SD,6600,Laurel Highlands SHS,240,160,66.7%,37,15.4%,197,82.1%,8,3.3%,205,85.4%
-Lawrence,104374207,Lawrence County CTC,4940,Lawrence County CTC,87,36,41.4%,5,5.7%,41,47.1%,10,11.5%,51,58.6%
-Lebanon,113384603,Lebanon SD,5155,Lebanon SHS,191,103,53.9%,28,14.7%,131,68.6%,7,3.7%,138,72.3%
-Armstrong,128034503,Leechburg Area SD,7923,Leechburg Area HS,42,31,73.8%,6,14.3%,37,88.1%,2,4.8%,39,92.9%
-Northampton,120483170,Lehigh Valley CHS for Performing Arts,7634,Lehigh Valley CHS for Performing Arts,97,85,87.6%,0,0.0%,85,87.6%,2,2.1%,87,89.7%
-Carbon,121135503,Lehighton Area SD,1315,Lehighton Area HS,224,175,78.1%,7,3.1%,182,81.3%,1,0.4%,183,81.7%
-Armstrong,128034607,Lenape Tech,4807,Lenape Tech,199,81,40.7%,6,3.0%,87,43.7%,11,5.5%,98,49.2%
-Union,116604003,Lewisburg Area SD,4085,Lewisburg HS,166,134,80.7%,0,0.0%,134,80.7%,0,0.0%,134,80.7%
-Westmoreland,107654903,Ligonier Valley SD,4437,Laurel Valley MS/HS,53,31,58.5%,2,3.8%,33,62.3%,1,1.9%,34,64.2%
-Westmoreland,107654903,Ligonier Valley SD,4442,Ligonier Valley HS,112,85,75.9%,7,6.3%,92,82.1%,1,0.9%,93,83.0%
-Beaver,127040002,Lincoln Park Performing Arts CS,7859,Lincoln Park Performing Arts CS,60,51,85.0%,1,1.7%,52,86.7%,4,6.7%,56,93.3%
-Northumberland,116493503,Line Mountain SD,3532,Line Mountain JSHS,82,47,57.3%,7,8.5%,54,65.9%,8,9.8%,62,75.6%
-Adams,112015203,Littlestown Area SD,0014,Littlestown SHS,120,79,65.8%,9,7.5%,88,73.3%,0,0.0%,88,73.3%
-Dauphin,115224003,Lower Dauphin SD,1776,Lower Dauphin HS,290,210,72.4%,18,6.2%,228,78.6%,6,2.1%,234,80.7%
-Dauphin,115224003,Lower Dauphin SD,7844,Price,3,1,33.3%,0,0.0%,1,33.3%,0,0.0%,1,33.3%
-Montgomery,123464502,Lower Merion SD,3296,Harriton SHS,220,204,92.7%,4,1.8%,208,94.5%,4,1.8%,212,96.4%
-Montgomery,123464502,Lower Merion SD,3295,Lower Merion HS,383,363,94.8%,2,0.5%,365,95.3%,4,1.0%,369,96.3%
-Montgomery,123464603,Lower Moreland Township SD,4960,Lower Moreland HS,190,183,96.3%,3,1.6%,186,97.9%,2,1.1%,188,98.9%
-Lycoming,117414203,Loyalsock Township SD,4828,Loyalsock Twp SHS,102,90,88.2%,0,0.0%,90,88.2%,1,1.0%,91,89.2%
-Schuylkill,129544503,Mahanoy Area SD,7012,Mahanoy Area HS,88,51,58.0%,5,5.7%,56,63.6%,15,17.0%,71,80.7%
-Lancaster,113364403,Manheim Central SD,2618,Manheim Central SHS,179,95,53.1%,1,0.6%,96,53.6%,0,0.0%,96,53.6%
-Lancaster,113364503,Manheim Township SD,2623,Manheim Twp HS,413,345,83.5%,2,0.5%,347,84.0%,13,3.1%,360,87.2%
-Philadelphia,126513480,Mariana Bracetti Academy CS,7672,Mariana Bracetti Academy CS,80,65,81.3%,7,8.8%,72,90.0%,0,0.0%,72,90.0%
-Indiana,128325203,Marion Center Area SD,2339,Marion Center Area HS,116,71,61.2%,14,12.1%,85,73.3%,4,3.4%,89,76.7%
-Philadelphia,126510014,Maritime Academy Charter School,7777,Maritime Academy CS,35,30,85.7%,0,0.0%,30,85.7%,0,0.0%,30,85.7%
-Delaware,125235502,Marple Newtown SD,1902,Marple Newtown SHS,297,253,85.2%,0,0.0%,253,85.2%,12,4.0%,265,89.2%
-Butler,104105003,Mars Area SD,1159,Mars Area SHS,255,236,92.5%,7,2.7%,243,95.3%,0,0.0%,243,95.3%
-Philadelphia,126510002,Mastery Charter High School,7678,Mastery Charter High School,77,73,94.8%,0,0.0%,73,94.8%,2,2.6%,75,97.4%
-Philadelphia,126513230,Math Civics and Sciences CS,7582,Math Civics and Sciences CS,60,53,88.3%,2,3.3%,55,91.7%,5,8.3%,60,100.0%
-Philadelphia,126513150,Math Sci & Tech Community CS,7574,Math Sci & Tech Community CS,85,76,89.4%,2,2.4%,78,91.8%,5,5.9%,83,97.6%
-Washington,101633903,McGuffey SD,4249,McGuffey HS,158,93,58.9%,9,5.7%,102,64.6%,2,1.3%,104,65.8%
-Allegheny,103026002,McKeesport Area SD,6105,McKeesport Area SHS,323,208,64.4%,34,10.5%,242,74.9%,9,2.8%,251,77.7%
-Cumberland,115216503,Mechanicsburg Area SD,5098,Mechanicsburg Area SHS,247,214,86.6%,1,0.4%,215,87.0%,1,0.4%,216,87.4%
-Mercer,104435003,Mercer Area SD,3158,Mercer Area SHS,97,56,57.7%,0,0.0%,56,57.7%,7,7.2%,63,64.9%
-Montgomery,123465303,Methacton SD,3305,Methacton HS,437,379,86.7%,2,0.5%,381,87.2%,7,1.6%,388,88.8%
-Somerset,108565203,Meyersdale Area SD,3994,Meyersdale Area HS,81,45,55.6%,7,8.6%,52,64.2%,1,1.2%,53,65.4%
-Lackawanna,119355503,Mid Valley SD,7890,Mid Valley HS,118,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Dauphin,115226003,Middletown Area SD,1790,Middletown Area HS,143,81,56.6%,5,3.5%,86,60.1%,0,0.0%,86,60.1%
-Snyder,116555003,Midd-West SD,3962,Midd-West HS,164,67,40.9%,11,6.7%,78,47.6%,3,1.8%,81,49.4%
-Mifflin,111444602,Mifflin County SD,7170,Indian Valley SHS,243,120,49.4%,23,9.5%,143,58.8%,5,2.1%,148,60.9%
-Mifflin,111444602,Mifflin County SD,6887,Lewistown Area SHS,194,102,52.6%,18,9.3%,120,61.9%,6,3.1%,126,64.9%
-Union,116605003,Mifflinburg Area SD,4091,Mifflinburg Area SHS,189,116,61.4%,7,3.7%,123,65.1%,1,0.5%,124,65.6%
-Erie,105257602,Millcreek Township SD,2063,McDowell SHS,561,446,79.5%,13,2.3%,459,81.8%,17,3.0%,476,84.8%
-Erie,105257602,Millcreek Township SD,7471,North Coast School,13,5,38.5%,3,23.1%,8,61.5%,0,0.0%,8,61.5%
-Dauphin,115226103,Millersburg Area SD,1794,Millersburg Area SHS,72,55,76.4%,1,1.4%,56,77.8%,8,11.1%,64,88.9%
-Columbia,116195004,Millville Area SD,1623,Millville Area JSHS,44,30,68.2%,1,2.3%,31,70.5%,1,2.3%,32,72.7%
-Northumberland,116495003,Milton Area SD,3541,Milton HS,205,107,52.2%,23,11.2%,130,63.4%,3,1.5%,133,64.9%
-Schuylkill,129544703,Minersville Area SD,6583,Minersville Area JSHS,97,56,57.7%,16,16.5%,72,74.2%,2,2.1%,74,76.3%
-Lawrence,104375003,Mohawk Area SD,2686,Mohawk JSHS,163,111,68.1%,9,5.5%,120,73.6%,9,5.5%,129,79.1%
-Beaver,127045453,Monaca SD,0685,Monaca JSHS,57,37,64.9%,8,14.0%,45,78.9%,0,0.0%,45,78.9%
-Westmoreland,107655803,Monessen City SD,6181,Monessen SHS,80,60,75.0%,0,0.0%,60,75.0%,0,0.0%,60,75.0%
-Butler,104105353,Moniteau SD,1164,Moniteau JSHS,121,62,51.2%,11,9.1%,73,60.3%,3,2.5%,76,62.8%
-Lycoming,117415004,Montgomery Area SD,3040,Montgomery SHS,71,21,29.6%,16,22.5%,37,52.1%,1,1.4%,38,53.5%
-Allegheny,103026303,Montour SD,5017,Montour HS,272,220,80.9%,18,6.6%,238,87.5%,2,0.7%,240,88.2%
-Lycoming,117415103,Montoursville Area SD,3045,Montoursville Area SHS,174,123,70.7%,2,1.1%,125,71.8%,6,3.4%,131,75.3%
-Susquehanna,119584503,Montrose Area SD,4044,Montrose Area JSHS,154,111,72.1%,7,4.5%,118,76.6%,11,7.1%,129,83.8%
-Allegheny,103026343,Moon Area SD,4951,Moon SHS,272,235,86.4%,3,1.1%,238,87.5%,8,2.9%,246,90.4%
-Bucks,122097203,Morrisville Borough SD,1062,Morrisville Boro MS/HS,64,44,68.8%,8,12.5%,52,81.3%,2,3.1%,54,84.4%
-Clearfield,110175003,Moshannon Valley SD,1550,Moshannon Valley JSHS,79,33,41.8%,11,13.9%,44,55.7%,4,5.1%,48,60.8%
-Northumberland,116495103,Mount Carmel Area SD,6936,Mount Carmel Area JSHS,127,85,66.9%,1,0.8%,86,67.7%,7,5.5%,93,73.2%
-Westmoreland,107655903,Mount Pleasant Area SD,4458,Mount Pleasant Area HS,188,146,77.7%,3,1.6%,149,79.3%,8,4.3%,157,83.5%
-Huntingdon,111316003,Mount Union Area SD,7944,Mount Union Area SHS,108,55,50.9%,2,1.9%,57,52.8%,7,6.5%,64,59.3%
-Susquehanna,119584603,Mountain View SD,4049,Mountain View JSHS,105,68,64.8%,11,10.5%,79,75.2%,11,10.5%,90,85.7%
-Allegheny,103026402,Mt Lebanon SD,0254,Mt Lebanon SHS,490,457,93.3%,7,1.4%,464,94.7%,1,0.2%,465,94.9%
-Berks,114065503,Muhlenberg SD,6610,Muhlenberg HS,262,205,78.2%,7,2.7%,212,80.9%,7,2.7%,219,83.6%
-Philadelphia,126513000,Multi-Cultural Academy CS,7546,Multi-Cultural Academy CS,23,22,95.7%,0,0.0%,22,95.7%,1,4.3%,23,100.0%
-Lycoming,117415303,Muncy SD,3048,Muncy JSHS,75,59,78.7%,2,2.7%,61,81.3%,2,2.7%,63,84.0%
-Northampton,120484803,Nazareth Area SD,3495,Nazareth Area HS,389,334,85.9%,9,2.3%,343,88.2%,6,1.5%,349,89.7%
-Bucks,122097502,Neshaminy SD,6455,Neshaminy HS,743,605,81.4%,2,0.3%,607,81.7%,32,4.3%,639,86.0%
-Lawrence,104375203,Neshannock Township SD,2689,Neshannock JSHS,90,79,87.8%,3,3.3%,82,91.1%,4,4.4%,86,95.6%
-Beaver,127045653,New Brighton Area SD,0695,New Brighton Area HS,122,91,74.6%,6,4.9%,97,79.5%,4,3.3%,101,82.8%
-Lawrence,104375302,New Castle Area SD,2704,New Castle JSHS,200,140,70.0%,13,6.5%,153,76.5%,3,1.5%,156,78.0%
-Bucks,122097604,New Hope-Solebury SD,1084,New Hope-Solebury HS,115,104,90.4%,1,0.9%,105,91.3%,1,0.9%,106,92.2%
-Westmoreland,107656303,New Kensington-Arnold SD,4469,Valley SHS,130,90,69.2%,0,0.0%,90,69.2%,0,0.0%,90,69.2%
-Philadelphia,126510018,New Media Technology CS,7829,New Media Technology CS,69,51,73.9%,11,15.9%,62,89.9%,1,1.4%,63,91.3%
-Perry,115504003,Newport SD,7930,Newport HS,74,54,73.0%,0,0.0%,54,73.0%,0,0.0%,54,73.0%
-Montgomery,123465602,Norristown Area SD,6729,Norristown Area HS,384,292,76.0%,9,2.3%,301,78.4%,18,4.7%,319,83.1%
-Montgomery,123465602,Norristown Area SD,6998,Roosevelt Altern Sch,44,26,59.1%,3,6.8%,29,65.9%,1,2.3%,30,68.2%
-Allegheny,103026852,North Allegheny SD,6793,North Allegheny SHS,645,597,92.6%,8,1.2%,605,93.8%,1,0.2%,606,94.0%
-Clarion,106167504,North Clarion County SD,1489,North Clarion Co JSHS,57,33,57.9%,5,8.8%,38,66.7%,0,0.0%,38,66.7%
-Erie,105258303,North East SD,6145,North East HS,144,98,68.1%,8,5.6%,106,73.6%,3,2.1%,109,75.7%
-Allegheny,103026902,North Hills SD,7101,North Hills SHS,435,366,84.1%,7,1.6%,373,85.7%,10,2.3%,383,88.0%
-Montgomery,123465702,North Penn SD,5345,North Penn SHS,"1,121",971,86.6%,15,1.3%,986,88.0%,11,1.0%,997,88.9%
-Lackawanna,119356503,North Pocono SD,2446,North Pocono HS,230,180,78.3%,2,0.9%,182,79.1%,3,1.3%,185,80.4%
-Schuylkill,129545003,North Schuylkill SD,3883,North Schuylkill JSHS,155,95,61.3%,10,6.5%,105,67.7%,6,3.9%,111,71.6%
-Somerset,108565503,North Star SD,3988,North Star HS,101,68,67.3%,3,3.0%,71,70.3%,10,9.9%,81,80.2%
-Northampton,120484903,Northampton Area SD,3505,Northampton Area HS,463,365,78.8%,11,2.4%,376,81.2%,2,0.4%,378,81.6%
-Bradford,117083004,Northeast Bradford SD,0964,Northeast Bradford JSHS,62,43,69.4%,1,1.6%,44,71.0%,4,6.5%,48,77.4%
-York,112674403,Northeastern York SD,4577,Northeastern SHS,214,127,59.3%,16,7.5%,143,66.8%,12,5.6%,155,72.4%
-Bedford,108056004,Northern Bedford County SD,0747,Northern Bedford Co MS/SHS,90,46,51.1%,10,11.1%,56,62.2%,7,7.8%,63,70.0%
-Cambria,108114503,Northern Cambria SD,6201,Northern Cambria HS,98,48,49.0%,5,5.1%,53,54.1%,7,7.1%,60,61.2%
-Lebanon,113385003,Northern Lebanon SD,2760,Northern Lebanon SHS,212,65,30.7%,10,4.7%,75,35.4%,5,2.4%,80,37.7%
-Lehigh,121394503,Northern Lehigh SD,2818,Northern Lehigh SHS,168,119,70.8%,3,1.8%,122,72.6%,2,1.2%,124,73.8%
-Potter,109535504,Northern Potter SD,3875,Northern Potter JSHS,49,22,44.9%,3,6.1%,25,51.0%,2,4.1%,27,55.1%
-Tioga,117596003,Northern Tioga SD,4058,Cowanesque Valley JSHS,62,40,64.5%,4,6.5%,44,71.0%,3,4.8%,47,75.8%
-Tioga,117596003,Northern Tioga SD,6372,Elkland Area HS,32,23,71.9%,1,3.1%,24,75.0%,1,3.1%,25,78.1%
-Tioga,117596003,Northern Tioga SD,6373,Williamson SHS,75,43,57.3%,1,1.3%,44,58.7%,3,4.0%,47,62.7%
-York,115674603,Northern York County SD,6345,Northern HS,258,162,62.8%,14,5.4%,176,68.2%,3,1.2%,179,69.4%
-Allegheny,103026873,Northgate SD,0053,Northgate MSHS,108,79,73.1%,5,4.6%,84,77.8%,4,3.7%,88,81.5%
-Allegheny,102023080,Northside Urban Pathways CS,7562,Northside Urban Pathways CS,31,23,74.2%,0,0.0%,23,74.2%,0,0.0%,23,74.2%
-Luzerne,118406003,Northwest Area SD,2958,Northwest Area HS,86,71,82.6%,0,0.0%,71,82.6%,3,3.5%,74,86.0%
-Erie,105258503,Northwestern  SD,6745,Northwestern SHS,160,73,45.6%,24,15.0%,97,60.6%,13,8.1%,110,68.8%
-Lehigh,121394603,Northwestern Lehigh SD,2821,Northwestern Lehigh HS,183,130,71.0%,8,4.4%,138,75.4%,2,1.1%,140,76.5%
-Westmoreland,107656502,Norwin SD,4717,Norwin SHS,398,293,73.6%,18,4.5%,311,78.1%,3,0.8%,314,78.9%
-Philadelphia,126513440,Nueva Esperanza Academy CS,7665,Nueva Esperanza Academy CS,143,128,89.5%,4,2.8%,132,92.3%,5,3.5%,137,95.8%
-Chester,124156503,Octorara Area SD,1414,Octorara Area HS,177,135,76.3%,0,0.0%,135,76.3%,2,1.1%,137,77.4%
-Venango,106616203,Oil City Area SD,4931,Oil City SHS,191,104,54.5%,15,7.9%,119,62.3%,6,3.1%,125,65.4%
-Lackawanna,119356603,Old Forge SD,2449,Old Forge JSHS,70,58,82.9%,0,0.0%,58,82.9%,5,7.1%,63,90.0%
-Berks,114066503,Oley Valley SD,6318,Oley Valley SHS,145,112,77.2%,0,0.0%,112,77.2%,1,0.7%,113,77.9%
-Potter,109537504,Oswayo Valley SD,3877,Oswayo Valley HS,44,21,47.7%,0,0.0%,21,47.7%,5,11.4%,26,59.1%
-McKean,109426003,Otto-Eldred SD,3107,Otto-Eldred JSHS,65,32,49.2%,4,6.2%,36,55.4%,4,6.2%,40,61.5%
-Chester,124156603,Owen J Roberts SD,1406,Owen J Roberts HS,363,304,83.7%,12,3.3%,316,87.1%,8,2.2%,324,89.3%
-Chester,124156703,Oxford Area SD,1420,Oxford Area HS,287,180,62.7%,5,1.7%,185,64.5%,12,4.2%,197,68.6%
-Allegheny,103020001,PA Learners Online Regional Cyber CS,7690,PA Learners Online Regional Cyber CS,97,36,37.1%,9,9.3%,45,46.4%,3,3.1%,48,49.5%
-Bucks,122098003,Palisades SD,1094,Palisades HS,193,151,78.2%,2,1.0%,153,79.3%,1,0.5%,154,79.8%
-Carbon,121136503,Palmerton Area SD,4734,Palmerton Area HS,123,102,82.9%,5,4.1%,107,87.0%,2,1.6%,109,88.6%
-Lebanon,113385303,Palmyra Area SD,2766,Palmyra Area SHS,249,167,67.1%,1,0.4%,168,67.5%,1,0.4%,169,67.9%
-Carbon,121136603,Panther Valley SD,6693,Panther Valley SHS,138,79,57.2%,11,8.0%,90,65.2%,5,3.6%,95,68.8%
-Lehigh,121395103,Parkland SD,2829,Parkland SHS,744,642,86.3%,5,0.7%,647,87.0%,4,0.5%,651,87.5%
-Northampton,120485603,Pen Argyl Area SD,6439,Pen Argyl Area HS,131,113,86.3%,1,0.8%,114,87.0%,2,1.5%,116,88.5%
-Cambria,108116003,Penn Cambria SD,1213,Penn Cambria HS,168,91,54.2%,7,4.2%,98,58.3%,0,0.0%,98,58.3%
-Allegheny,103027352,Penn Hills SD,0309,Penn Hills SHS,408,236,57.8%,2,0.5%,238,58.3%,14,3.4%,252,61.8%
-Lancaster,113365203,Penn Manor SD,2633,Penn Manor HS,444,280,63.1%,34,7.7%,314,70.7%,2,0.5%,316,71.2%
-Crawford,105204703,Penncrest SD,1629,Cambridge Springs JSHS,81,51,63.0%,0,0.0%,51,63.0%,0,0.0%,51,63.0%
-Crawford,105204703,Penncrest SD,6942,Maplewood JSHS,101,51,50.5%,2,2.0%,53,52.5%,0,0.0%,53,52.5%
-Crawford,105204703,Penncrest SD,6136,Saegertown JSHS,101,66,65.3%,8,7.9%,74,73.3%,3,3.0%,77,76.2%
-Delaware,125236903,Penn-Delco SD,1915,Sun Valley HS,297,222,74.7%,13,4.4%,235,79.1%,17,5.7%,252,84.8%
-Bucks,122098103,Pennridge SD,1100,Pennridge HS,573,455,79.4%,3,0.5%,458,79.9%,19,3.3%,477,83.2%
-Indiana,128326303,Penns Manor Area SD,2345,Penns Manor Area JSHS,69,46,66.7%,9,13.0%,55,79.7%,0,0.0%,55,79.7%
-Centre,110147003,Penns Valley Area SD,6231,Penns Valley Area JSHS,123,84,68.3%,1,0.8%,85,69.1%,1,0.8%,86,69.9%
-Bucks,122098202,Pennsbury SD,4682,Pennsbury HS,840,763,90.8%,10,1.2%,773,92.0%,13,1.5%,786,93.6%
-Beaver,127043430,Pennsylvania Cyber CS,7650,Pennsylvania Cyber CS,809,468,57.8%,25,3.1%,493,60.9%,43,5.3%,536,66.3%
-Allegheny,115220003,Pennsylvania Distance Learning CS,7821,Pennsylvania Distance Learning CS,56,44,78.6%,6,10.7%,50,89.3%,0,0.0%,50,89.3%
-Chester,124150004,Pennsylvania Leadership Charter School,7819,Pennsylvania Leadership CS,238,95,39.9%,2,0.8%,97,40.8%,13,5.5%,110,46.2%
-Westmoreland,107657103,Penn-Trafford SD,6648,Penn Trafford HS,359,300,83.6%,3,0.8%,303,84.4%,5,1.4%,308,85.8%
-Lancaster,113365303,Pequea Valley SD,2649,Pequea Valley HS,143,67,46.9%,13,9.1%,80,55.9%,12,8.4%,92,64.3%
-Montgomery,123466103,Perkiomen Valley SD,3328,Perkiomen Valley HS,343,286,83.4%,6,1.7%,292,85.1%,3,0.9%,295,86.0%
-Erie,105250001,Perseus House CS of Excellence,7770,Perseus House CS of Excellence,45,19,42.2%,0,0.0%,19,42.2%,1,2.2%,20,44.4%
-Washington,101636503,Peters Township SD,5083,Peters Twp HS,351,320,91.2%,5,1.4%,325,92.6%,3,0.9%,328,93.4%
-Philadelphia,126513280,Philadelphia Academy CS,7587,Philadelphia Academy CS,104,73,70.2%,0,0.0%,73,70.2%,1,1.0%,74,71.2%
-Philadelphia,126515001,Philadelphia City SD,3847,Bartram John - Main,240,132,55.0%,12,5.0%,144,60.0%,3,1.3%,147,61.3%
-Philadelphia,126515001,Philadelphia City SD,7070,Bodine William W HS,122,118,96.7%,0,0.0%,118,96.7%,1,0.8%,119,97.5%
-Philadelphia,126515001,Philadelphia City SD,3840,Bok Edw W Technical High School,166,3,1.8%,0,0.0%,3,1.8%,0,0.0%,3,1.8%
-Philadelphia,126515001,Philadelphia City SD,3638,Boone Daniel Sch,20,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,4728,Carroll Charles Sch,21,13,61.9%,0,0.0%,13,61.9%,0,0.0%,13,61.9%
-Philadelphia,126515001,Philadelphia City SD,7023,Carver HS,202,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,3848,Central HS,519,508,97.9%,1,0.2%,509,98.1%,2,0.4%,511,98.5%
-Philadelphia,126515001,Philadelphia City SD,7783,CEP/Allegheny,39,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,7676,CEP/Hunting Park,98,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,7781,Communications Technology HS,95,69,72.6%,0,0.0%,69,72.6%,1,1.1%,70,73.7%
-Philadelphia,126515001,Philadelphia City SD,6996,Creative and Performing Arts,147,106,72.1%,1,0.7%,107,72.8%,5,3.4%,112,76.2%
-Philadelphia,126515001,Philadelphia City SD,3841,Dobbins AVT HS,218,130,59.6%,17,7.8%,147,67.4%,25,11.5%,172,78.9%
-Philadelphia,126515001,Philadelphia City SD,3787,Douglas Stephen A Sch,41,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,3849,Edison HS/Fareira Skills,312,177,56.7%,14,4.5%,191,61.2%,23,7.4%,214,68.6%
-Philadelphia,126515001,Philadelphia City SD,3816,Fels Samuel HS,267,156,58.4%,3,1.1%,159,59.6%,8,3.0%,167,62.5%
-Philadelphia,126515001,Philadelphia City SD,7240,Fitzsimons Thomas HS,51,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,3850,Frankford HS,310,127,41.0%,7,2.3%,134,43.2%,10,3.2%,144,46.5%
-Philadelphia,126515001,Philadelphia City SD,3851,Franklin Benjamin HS,128,60,46.9%,2,1.6%,62,48.4%,3,2.3%,65,50.8%
-Philadelphia,126515001,Philadelphia City SD,6822,Franklin LC,120,96,80.0%,1,0.8%,97,80.8%,4,3.3%,101,84.2%
-Philadelphia,126515001,Philadelphia City SD,3818,Furness Horace HS,141,121,85.8%,0,0.0%,121,85.8%,1,0.7%,122,86.5%
-Philadelphia,126515001,Philadelphia City SD,7664,Gamp,49,47,95.9%,0,0.0%,47,95.9%,0,0.0%,47,95.9%
-Philadelphia,126515001,Philadelphia City SD,3852,Germantown HS,167,95,56.9%,14,8.4%,109,65.3%,8,4.8%,117,70.1%
-Philadelphia,126515001,Philadelphia City SD,3843,Girls HS,249,238,95.6%,0,0.0%,238,95.6%,0,0.0%,238,95.6%
-Philadelphia,126515001,Philadelphia City SD,3853,Gratz Simon HS,218,103,47.2%,2,0.9%,105,48.2%,11,5.0%,116,53.2%
-Philadelphia,126515001,Philadelphia City SD,7852,Kensington Creative & Performing Arts HS,64,38,59.4%,0,0.0%,38,59.4%,4,6.3%,42,65.6%
-Philadelphia,126515001,Philadelphia City SD,7855,Kensington Culinary Arts,55,30,54.5%,3,5.5%,33,60.0%,13,23.6%,46,83.6%
-Philadelphia,126515001,Philadelphia City SD,7851,"Kensington Intern Business, Finance & En",85,49,57.6%,4,4.7%,53,62.4%,3,3.5%,56,65.9%
-Philadelphia,126515001,Philadelphia City SD,6675,King Martin Luther HS,251,157,62.5%,5,2.0%,162,64.5%,8,3.2%,170,67.7%
-Philadelphia,126515001,Philadelphia City SD,7810,Lamberton Robert HS,91,62,68.1%,6,6.6%,68,74.7%,1,1.1%,69,75.8%
-Philadelphia,126515001,Philadelphia City SD,7811,Lankenau HS,47,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,3845,Lincoln HS,261,127,48.7%,11,4.2%,138,52.9%,15,5.7%,153,58.6%
-Philadelphia,126515001,Philadelphia City SD,3842,Mastbaum Jules E AVTS,177,123,69.5%,2,1.1%,125,70.6%,17,9.6%,142,80.2%
-Philadelphia,126515001,Philadelphia City SD,3808,Masterman Julia R Sec Sch,120,118,98.3%,0,0.0%,118,98.3%,0,0.0%,118,98.3%
-Philadelphia,126515001,Philadelphia City SD,3809,Miller E S Sch,58,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,7815,Motivation HS,34,33,97.1%,1,2.9%,34,100.0%,0,0.0%,34,100.0%
-Philadelphia,126515001,Philadelphia City SD,3855,Northeast HS,612,441,72.1%,24,3.9%,465,76.0%,12,2.0%,477,77.9%
-Philadelphia,126515001,Philadelphia City SD,7853,Olney HS East,105,26,24.8%,2,1.9%,28,26.7%,0,0.0%,28,26.7%
-Philadelphia,126515001,Philadelphia City SD,7854,Olney HS West,99,54,54.5%,9,9.1%,63,63.6%,18,18.2%,81,81.8%
-Philadelphia,126515001,Philadelphia City SD,3857,Overbrook HS,334,225,67.4%,12,3.6%,237,71.0%,45,13.5%,282,84.4%
-Philadelphia,126515001,Philadelphia City SD,6548,Parkway Northwest,64,55,85.9%,0,0.0%,55,85.9%,1,1.6%,56,87.5%
-Philadelphia,126515001,Philadelphia City SD,7808,Parkway West,90,73,81.1%,5,5.6%,78,86.7%,2,2.2%,80,88.9%
-Philadelphia,126515001,Philadelphia City SD,7782,Parkway-Center City,98,94,95.9%,4,4.1%,98,100.0%,0,0.0%,98,100.0%
-Philadelphia,126515001,Philadelphia City SD,7780,Paul Robeson HS for Human Services,43,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,3858,Penn William HS,160,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,7814,Philadelphia HS for Business & Tech,40,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,7812,Philadelphia Military Acad at Leeds,74,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,7813,"Randolph, A. Philip AVT HS",50,1,2.0%,0,0.0%,1,2.0%,0,0.0%,1,2.0%
-Philadelphia,126515001,Philadelphia City SD,6522,Rhodes E Washington MS,64,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,3844,Roxborough HS,210,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,3861,Saul W B Agricultural School,89,2,2.2%,0,0.0%,2,2.2%,0,0.0%,2,2.2%
-Philadelphia,126515001,Philadelphia City SD,7245,Sayre William L MS,76,33,43.4%,0,0.0%,33,43.4%,9,11.8%,42,55.3%
-Philadelphia,126515001,Philadelphia City SD,3859,South Philadelphia HS,174,128,73.6%,12,6.9%,140,80.5%,7,4.0%,147,84.5%
-Philadelphia,126515001,Philadelphia City SD,7255,Strawberry Mansion HS,117,85,72.6%,4,3.4%,89,76.1%,2,1.7%,91,77.8%
-Philadelphia,126515001,Philadelphia City SD,7072,Swenson Arts & Technology HS,175,98,56.0%,3,1.7%,101,57.7%,28,16.0%,129,73.7%
-Philadelphia,126515001,Philadelphia City SD,6523,University City HS,243,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,7252,Vaux Roberts HS,47,1,2.1%,0,0.0%,1,2.1%,0,0.0%,1,2.1%
-Philadelphia,126515001,Philadelphia City SD,6527,Washington George HS,381,227,59.6%,26,6.8%,253,66.4%,8,2.1%,261,68.5%
-Philadelphia,126515001,Philadelphia City SD,3860,West Philadelphia HS,195,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Philadelphia,126515001,Philadelphia City SD,3728,Widener Memorial Sch,9,0,0.0%,0,0.0%,0,0.0%,5,55.6%,5,55.6%
-Philadelphia,126510009,Philadelphia Electrical & Tech CHS,7737,Philadelphia Electrical & Tech CHS,134,66,49.3%,9,6.7%,75,56.0%,1,0.7%,76,56.7%
-Clearfield,110177003,Philipsburg-Osceola Area SD,1560,Philipsburg-Osceola Area HS,129,69,53.5%,16,12.4%,85,65.9%,1,0.8%,86,66.7%
-Chester,124157203,Phoenixville Area SD,1426,Phoenixville Area HS,244,204,83.6%,7,2.9%,211,86.5%,6,2.5%,217,88.9%
-Schuylkill,129546003,Pine Grove Area SD,3910,Pine Grove Area HS,131,62,47.3%,20,15.3%,82,62.6%,9,6.9%,91,69.5%
-Allegheny,103021003,Pine-Richland SD,0315,Pine-Richland HS,332,302,91.0%,0,0.0%,302,91.0%,5,1.5%,307,92.5%
-Allegheny,102027451,Pittsburgh SD,0409,Allderdice HS,329,263,79.9%,16,4.9%,279,84.8%,8,2.4%,287,87.2%
-Allegheny,102027451,Pittsburgh SD,6915,Brashear HS,249,187,75.1%,12,4.8%,199,79.9%,8,3.2%,207,83.1%
-Allegheny,102027451,Pittsburgh SD,0412,Carrick HS,201,132,65.7%,28,13.9%,160,79.6%,0,0.0%,160,79.6%
-Allegheny,102027451,Pittsburgh SD,6811,Conroy Ed Ctr,12,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Allegheny,102027451,Pittsburgh SD,0415,Langley HS,118,92,78.0%,1,0.8%,93,78.8%,2,1.7%,95,80.5%
-Allegheny,102027451,Pittsburgh SD,6047,McNaugher Sp Ed Ctr,8,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Allegheny,102027451,Pittsburgh SD,0422,Oliver HS,149,103,69.1%,6,4.0%,109,73.2%,7,4.7%,116,77.9%
-Allegheny,102027451,Pittsburgh SD,0424,Peabody HS,114,65,57.0%,0,0.0%,65,57.0%,0,0.0%,65,57.0%
-Allegheny,102027451,Pittsburgh SD,0416,Perry Traditional Academy,196,148,75.5%,7,3.6%,155,79.1%,7,3.6%,162,82.7%
-Allegheny,102027451,Pittsburgh SD,6664,Pioneer Ed Ctr,5,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Allegheny,102027451,Pittsburgh SD,7103,Pittsburgh HS Creat & Per Arts,132,119,90.2%,1,0.8%,120,90.9%,1,0.8%,121,91.7%
-Allegheny,102027451,Pittsburgh SD,0425,Schenley HS,227,203,89.4%,8,3.5%,211,93.0%,2,0.9%,213,93.8%
-Allegheny,102027451,Pittsburgh SD,0420,Westinghouse HS,74,42,56.8%,2,2.7%,44,59.5%,4,5.4%,48,64.9%
-Luzerne,118406602,Pittston Area SD,5058,Pittston Area SHS,246,196,79.7%,9,3.7%,205,83.3%,0,0.0%,205,83.3%
-Monroe,120455203,Pleasant Valley SD,3210,Pleasant Valley HS,539,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Allegheny,103027503,Plum Borough SD,0435,Plum SHS,373,309,82.8%,15,4.0%,324,86.9%,5,1.3%,329,88.2%
-Monroe,120450002,Pocono Mountain Charter School,7771,Pocono Mountain Charter School,2,1,50.0%,0,0.0%,1,50.0%,1,50.0%,2,100.0%
-Monroe,120455403,Pocono Mountain SD,3216,Pocono Mountain East HS/Academy,475,362,76.2%,8,1.7%,370,77.9%,4,0.8%,374,78.7%
-Monroe,120455403,Pocono Mountain SD,7738,Pocono Mountain West HS,475,342,72.0%,6,1.3%,348,73.3%,3,0.6%,351,73.9%
-McKean,109426303,Port Allegany SD,3111,Port Allegany JSHS,99,56,56.6%,7,7.1%,63,63.6%,6,6.1%,69,69.7%
-Cambria,108116303,Portage Area SD,1270,Portage Area JSHS,68,43,63.2%,5,7.4%,48,70.6%,1,1.5%,49,72.1%
-Montgomery,123466303,Pottsgrove SD,3338,Pottsgrove SHS,154,131,85.1%,4,2.6%,135,87.7%,2,1.3%,137,89.0%
-Montgomery,123466403,Pottstown SD,3348,Pottstown SHS,169,113,66.9%,14,8.3%,127,75.1%,9,5.3%,136,80.5%
-Schuylkill,129546103,Pottsville Area SD,3924,Pottsville Area HS,275,177,64.4%,20,7.3%,197,71.6%,2,0.7%,199,72.4%
-Philadelphia,126512960,Preparatory CS,7540,Preparatory CS,149,122,81.9%,2,1.3%,124,83.2%,2,1.3%,126,84.6%
-Jefferson,106338003,Punxsutawney Area SD,6165,Punxsutawney Area HS,229,130,56.8%,25,10.9%,155,67.7%,7,3.1%,162,70.7%
-Indiana,128327303,Purchase Line SD,2350,Purchase Line JSHS,78,36,46.2%,2,2.6%,38,48.7%,6,7.7%,44,56.4%
-Allegheny,103027753,Quaker Valley SD,0448,Quaker Valley HS,148,132,89.2%,1,0.7%,133,89.9%,2,1.4%,135,91.2%
-Bucks,122098403,Quakertown Community SD,1128,Quakertown Community SHS,373,311,83.4%,8,2.1%,319,85.5%,4,1.1%,323,86.6%
-Delaware,125237603,Radnor Township SD,1921,Radnor SHS,271,242,89.3%,2,0.7%,244,90.0%,0,0.0%,244,90.0%
-Berks,114067002,Reading SD,0859,Reading SHS,716,404,56.4%,23,3.2%,427,59.6%,11,1.5%,438,61.2%
-York,112675503,Red Lion Area SD,4598,Red Lion Area SHS,366,229,62.6%,32,8.7%,261,71.3%,9,2.5%,270,73.8%
-Clarion,106168003,Redbank Valley SD,1495,Redbank Valley HS,84,43,51.2%,4,4.8%,47,56.0%,2,2.4%,49,58.3%
-Chester,124153350,Renaissance Academy-Edison CS,7636,Renaissance Academy-Edison CS,32,32,100.0%,0,0.0%,32,100.0%,0,0.0%,32,100.0%
-Mercer,104435303,Reynolds SD,3165,Reynolds JSHS,102,61,59.8%,5,4.9%,66,64.7%,1,1.0%,67,65.7%
-Cambria,108116503,Richland SD,7941,Richland HS,134,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Elk,109246003,Ridgway Area SD,1989,Ridgway Area HS,91,61,67.0%,13,14.3%,74,81.3%,0,0.0%,74,81.3%
-Delaware,125237702,Ridley SD,1934,Ridley HS,469,359,76.5%,12,2.6%,371,79.1%,13,2.8%,384,81.9%
-Washington,101637002,Ringgold SD,7019,Ringgold SHS,266,180,67.7%,15,5.6%,195,73.3%,8,3.0%,203,76.3%
-Beaver,127045853,Riverside Beaver County SD,0700,Riverside HS,165,108,65.5%,8,4.8%,116,70.3%,7,4.2%,123,74.5%
-Lackawanna,119357003,Riverside SD,2496,Riverside JSHS,119,92,77.3%,0,0.0%,92,77.3%,3,2.5%,95,79.8%
-Allegheny,103028203,Riverview SD,6928,Riverview HS,101,84,83.2%,4,4.0%,88,87.1%,0,0.0%,88,87.1%
-Lehigh,121393330,Roberto Clemente CS,7629,Roberto Clemente CS,28,27,96.4%,0,0.0%,27,96.4%,1,3.6%,28,100.0%
-Beaver,127046903,Rochester Area SD,0712,Rochester Area HS,55,37,67.3%,7,12.7%,44,80.0%,0,0.0%,44,80.0%
-Somerset,108566303,Rockwood Area SD,6210,Rockwood Area JSHS,65,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
-Delaware,125237903,Rose Tree Media SD,1942,Penncrest HS,288,259,89.9%,2,0.7%,261,90.6%,6,2.1%,267,92.7%
-Elk,109248003,Saint Marys Area SD,5169,St Marys Area SHS,190,125,65.8%,9,4.7%,134,70.5%,6,3.2%,140,73.7%
-Lehigh,121395603,Salisbury Township SD,2833,Salisbury SHS,146,122,83.6%,1,0.7%,123,84.2%,0,0.0%,123,84.2%
-Somerset,108567004,Salisbury-Elk Lick SD,4002,Salisbury-Elk Lick JSHS,35,24,68.6%,1,2.9%,25,71.4%,0,0.0%,25,71.4%
-Northampton,120486003,Saucon Valley SD,5352,Saucon Valley SHS,190,143,75.3%,4,2.1%,147,77.4%,3,1.6%,150,78.9%
-Bradford,117086003,Sayre Area SD,0965,Sayre Area HS,71,47,66.2%,0,0.0%,47,66.2%,6,8.5%,53,74.6%
-Schuylkill,129547303,Schuylkill Haven Area SD,5264,Schuylkill Haven SHS,99,65,65.7%,3,3.0%,68,68.7%,6,6.1%,74,74.7%
-Berks,114067503,Schuylkill Valley SD,0864,Schuylkill Valley HS,161,123,76.4%,5,3.1%,128,79.5%,8,5.0%,136,84.5%
-Franklin,112288008,Scotland Sch Veterans Children,7124,Scotland Sch Veterans Children,25,22,88.0%,0,0.0%,22,88.0%,0,0.0%,22,88.0%
-Lackawanna,119357402,Scranton SD,6413,Scranton HS,479,424,88.5%,10,2.1%,434,90.6%,18,3.8%,452,94.4%
-Lackawanna,119357402,Scranton SD,2489,West Scranton HS,279,248,88.9%,8,2.9%,256,91.8%,15,5.4%,271,97.1%
-Snyder,116557103,Selinsgrove Area SD,3969,Selinsgrove Area HS,209,155,74.2%,1,0.5%,156,74.6%,5,2.4%,161,77.0%
-Butler,104107903,Seneca Valley SD,1183,Seneca Valley SHS,542,444,81.9%,23,4.2%,467,86.2%,3,0.6%,470,86.7%
-Somerset,108567204,Shade-Central City SD,4006,Shade JSHS,47,21,44.7%,2,4.3%,23,48.9%,2,4.3%,25,53.2%
-Allegheny,103028302,Shaler Area SD,0460,Shaler Area HS,435,199,45.7%,12,2.8%,211,48.5%,0,0.0%,211,48.5%
-Northumberland,116496503,Shamokin Area SD,7893,Shamokin Area HS,142,95,66.9%,6,4.2%,101,71.1%,1,0.7%,102,71.8%
-Somerset,108567404,Shanksville-Stonycreek SD,6800,Shanksville-Stonycreek HS,45,29,64.4%,0,0.0%,29,64.4%,1,2.2%,30,66.7%
-Mercer,104435603,Sharon City SD,5246,Sharon MS/HS,142,75,52.8%,2,1.4%,77,54.2%,0,0.0%,77,54.2%
-Mercer,104435703,Sharpsville Area SD,3124,Sharpsville Area SHS,109,81,74.3%,2,1.8%,83,76.1%,7,6.4%,90,82.6%
-Schuylkill,129547203,Shenandoah Valley SD,3940,Shenandoah Valley JSHS,72,38,52.8%,5,6.9%,43,59.7%,5,6.9%,48,66.7%
-Lawrence,104376203,Shenango Area SD,2708,Shenango HS,122,81,66.4%,1,0.8%,82,67.2%,10,8.2%,92,75.4%
-Northumberland,116496603,Shikellamy SD,3569,Shikellamy HS,208,102,49.0%,13,6.3%,115,55.3%,3,1.4%,118,56.7%
-Cumberland,115218003,Shippensburg Area SD,5221,Shippensburg Area SHS,236,167,70.8%,14,5.9%,181,76.7%,1,0.4%,182,77.1%
-Butler,104107503,Slippery Rock Area SD,1172,Slippery Rock Area HS,166,140,84.3%,4,2.4%,144,86.7%,1,0.6%,145,87.3%
-McKean,109427503,Smethport Area SD,3117,Smethport Area JSHS,69,31,44.9%,8,11.6%,39,56.5%,7,10.1%,46,66.7%
-Lancaster,113367003,Solanco SD,2658,Solanco HS,304,162,53.3%,4,1.3%,166,54.6%,10,3.3%,176,57.9%
-Somerset,108567703,Somerset Area SD,4015,Somerset Area SHS,221,133,60.2%,8,3.6%,141,63.8%,8,3.6%,149,67.4%
-Montgomery,123467103,Souderton Area SD,3354,Souderton Area SHS,496,393,79.2%,28,5.6%,421,84.9%,1,0.2%,422,85.1%
-Allegheny,103028653,South Allegheny SD,0440,South Allegheny MS/HS,133,100,75.2%,12,9.0%,112,84.2%,0,0.0%,112,84.2%
-Butler,104107803,South Butler County SD,1177,Knoch HS,253,208,82.2%,0,0.0%,208,82.2%,1,0.4%,209,82.6%
-York,112676203,South Eastern SD,4602,Kennard-Dale HS,247,187,75.7%,0,0.0%,187,75.7%,6,2.4%,193,78.1%
-Allegheny,103028703,South Fayette Township SD,0470,South Fayette Twp HS,127,111,87.4%,8,6.3%,119,93.7%,1,0.8%,120,94.5%
-Cumberland,115218303,South Middleton SD,6328,Boiling Springs HS,179,145,81.0%,6,3.4%,151,84.4%,2,1.1%,153,85.5%
-Allegheny,103028753,South Park SD,0467,South Park SHS,188,168,89.4%,0,0.0%,168,89.4%,2,1.1%,170,90.4%
-Beaver,127047404,South Side Area SD,0714,South Side HS,109,84,77.1%,0,0.0%,84,77.1%,1,0.9%,85,78.0%
-York,112676403,South Western SD,4608,South Western SHS,299,216,72.2%,8,2.7%,224,74.9%,17,5.7%,241,80.6%
-Lycoming,117416103,South Williamsport Area SD,3056,South Williamsport Area JSHS,91,64,70.3%,0,0.0%,64,70.3%,2,2.2%,66,72.5%
-Delaware,125238402,Southeast Delco SD,6516,Academy Park HS,200,144,72.0%,7,3.5%,151,75.5%,13,6.5%,164,82.0%
-Greene,101306503,Southeastern Greene SD,2284,Mapletown JSHS,40,23,57.5%,0,0.0%,23,57.5%,0,0.0%,23,57.5%
-Columbia,116197503,Southern Columbia Area SD,1627,Southern Columbia HS,112,87,77.7%,3,2.7%,90,80.4%,4,3.6%,94,83.9%
-Fulton,111297504,Southern Fulton SD,2253,Southern Fulton JSHS,63,38,60.3%,7,11.1%,45,71.4%,0,0.0%,45,71.4%
-Huntingdon,111317503,Southern Huntingdon County SD,2313,Southern Huntingdon Co HS/MS,109,54,49.5%,5,4.6%,59,54.1%,2,1.8%,61,56.0%
-Lehigh,121395703,Southern Lehigh SD,2839,Southern Lehigh SHS,249,200,80.3%,1,0.4%,201,80.7%,8,3.2%,209,83.9%
-Tioga,117597003,Southern Tioga SD,4064,Liberty JSHS,50,28,56.0%,0,0.0%,28,56.0%,3,6.0%,31,62.0%
-Tioga,117597003,Southern Tioga SD,4068,Mansfield JSHS,87,44,50.6%,11,12.6%,55,63.2%,3,3.4%,58,66.7%
-Tioga,117597003,Southern Tioga SD,4071,North Penn JSHS,49,27,55.1%,0,0.0%,27,55.1%,0,0.0%,27,55.1%
-York,112676503,Southern York County SD,4614,Susquehannock HS,282,205,72.7%,7,2.5%,212,75.2%,7,2.5%,219,77.7%
-Westmoreland,107657503,Southmoreland SD,6191,Southmoreland SHS,153,102,66.7%,0,0.0%,102,66.7%,22,14.4%,124,81.0%
-Allegheny,103023410,Spectrum CS,7648,Spectrum CS,2,1,50.0%,0,0.0%,1,50.0%,0,0.0%,1,50.0%
-Blair,108077503,Spring Cove SD,0941,Central HS,149,82,55.0%,5,3.4%,87,58.4%,3,2.0%,90,60.4%
-York,112676703,Spring Grove Area SD,4623,Spring Grove Area SHS,283,179,63.3%,25,8.8%,204,72.1%,18,6.4%,222,78.4%
-Delaware,125238502,Springfield SD,1950,Springfield HS,283,259,91.5%,2,0.7%,261,92.2%,1,0.4%,262,92.6%
-Montgomery,123467203,Springfield Township SD,3376,Springfield Twp HS,191,173,90.6%,2,1.0%,175,91.6%,0,0.0%,175,91.6%
-Montgomery,123467303,Spring-Ford Area SD,3367,Spring-Ford SHS 10-12 Gr Ctr,442,374,84.6%,8,1.8%,382,86.4%,16,3.6%,398,90.0%
-Centre,110148002,State College Area SD,1364,State College Area HS,656,548,83.5%,24,3.7%,572,87.2%,4,0.6%,576,87.8%
-Allegheny,103028833,Steel Valley SD,0196,Steel Valley SHS,147,90,61.2%,13,8.8%,103,70.1%,10,6.8%,113,76.9%
-Dauphin,115228003,Steelton-Highspire SD,1801,Steelton-Highspire HS,66,30,45.5%,2,3.0%,32,48.5%,2,3.0%,34,51.5%
-Allegheny,103028853,Sto-Rox SD,0477,Sto-Rox HS,96,43,44.8%,0,0.0%,43,44.8%,10,10.4%,53,55.2%
-Monroe,120456003,Stroudsburg Area SD,3224,Stroudsburg HS,436,318,72.9%,0,0.0%,318,72.9%,0,0.0%,318,72.9%
-Clinton,101833400,Sugar Valley Rural CS,7635,Sugar Valley Rural CS,31,13,41.9%,0,0.0%,13,41.9%,0,0.0%,13,41.9%
-Sullivan,117576303,Sullivan County SD,4030,Sullivan Co JSHS,56,33,58.9%,1,1.8%,34,60.7%,0,0.0%,34,60.7%
-Northumberland,116493130,Susq-Cyber CS,7567,Susq-Cyber CS,49,7,14.3%,0,0.0%,7,14.3%,3,6.1%,10,20.4%
-Susquehanna,119586503,Susquehanna Community SD,4054,Susquehanna Community JSHS,62,46,74.2%,0,0.0%,46,74.2%,4,6.5%,50,80.6%
-Dauphin,115228303,Susquehanna Township SD,1806,Susquehanna Twp HS,254,215,84.6%,15,5.9%,230,90.6%,1,0.4%,231,90.9%
-Perry,115506003,Susquenita SD,3589,Susquenita HS,148,102,68.9%,2,1.4%,104,70.3%,0,0.0%,104,70.3%
-Schuylkill,129547603,Tamaqua Area SD,5070,Tamaqua Area SHS,156,129,82.7%,8,5.1%,137,87.8%,0,0.0%,137,87.8%
-Warren,105620001,Tidioute Community CS,7833,Tidioute Community CS,15,5,33.3%,1,6.7%,6,40.0%,2,13.3%,8,53.3%
-Venango,106617203,Titusville Area SD,1668,Titusville SHS,159,116,73.0%,4,2.5%,120,75.5%,0,0.0%,120,75.5%
-Bradford,117086503,Towanda Area SD,5208,Towanda Area JSHS,145,76,52.4%,6,4.1%,82,56.6%,11,7.6%,93,64.1%
-Chester,124157802,Tredyffrin-Easttown SD,1423,Conestoga SHS,491,475,96.7%,1,0.2%,476,96.9%,3,0.6%,479,97.6%
-Washington,101638003,Trinity Area SD,6012,Trinity SHS,272,182,66.9%,24,8.8%,206,75.7%,10,3.7%,216,79.4%
-Schuylkill,129547803,Tri-Valley SD,3957,Tri-Valley JSHS,73,37,50.7%,11,15.1%,48,65.8%,2,2.7%,50,68.5%
-Bradford,117086653,Troy Area SD,1000,Troy Area SHS,120,77,64.2%,1,0.8%,78,65.0%,1,0.8%,79,65.8%
-Berks,114068003,Tulpehocken Area SD,4670,Tulpehocken JSHS,116,69,59.5%,3,2.6%,72,62.1%,7,6.0%,79,68.1%
-Wyoming,118667503,Tunkhannock Area SD,5271,Tunkhannock HS,259,178,68.7%,7,2.7%,185,71.4%,4,1.5%,189,73.0%
-Somerset,108568404,Turkeyfoot Valley Area SD,6216,Turkeyfoot Valley Area JSHS,18,7,38.9%,0,0.0%,7,38.9%,0,0.0%,7,38.9%
-Huntingdon,111440001,Tuscarora Blended Learning CS,7762,Tuscarora Blended Learning CS,77,16,20.8%,1,1.3%,17,22.1%,1,1.3%,18,23.4%
-Franklin,112286003,Tuscarora SD,6280,James Buchanan HS,207,92,44.4%,0,0.0%,92,44.4%,26,12.6%,118,57.0%
-Bedford,108058003,Tussey Mountain SD,0753,Tussey Mountain JSHS,99,47,47.5%,7,7.1%,54,54.5%,4,4.0%,58,58.6%
-Berks,114068103,Twin Valley SD,0873,Twin Valley HS,235,189,80.4%,0,0.0%,189,80.4%,1,0.4%,190,80.9%
-Blair,108078003,Tyrone Area SD,0949,Tyrone Area HS,139,91,65.5%,8,5.8%,99,71.2%,11,7.9%,110,79.1%
-Lawrence,104377003,Union Area SD,2712,Union Area HS,54,43,79.6%,5,9.3%,48,88.9%,1,1.9%,49,90.7%
-Erie,105259103,Union City Area SD,2075,Union City HS,85,35,41.2%,2,2.4%,37,43.5%,12,14.1%,49,57.6%
-Clarion,106169003,Union SD,1501,Union HS,45,22,48.9%,4,8.9%,26,57.8%,1,2.2%,27,60.0%
-Fayette,101268003,Uniontown Area SD,2184,Uniontown Area SHS,221,143,64.7%,16,7.2%,159,71.9%,6,2.7%,165,74.7%
-Chester,124158503,Unionville-Chadds Ford SD,1443,Unionville HS,311,298,95.8%,0,0.0%,298,95.8%,3,1.0%,301,96.8%
-Indiana,128328003,United SD,2358,United JSHS,110,76,69.1%,0,0.0%,76,69.1%,1,0.9%,77,70.0%
-Adams,112018523,Upper Adams SD,0021,Biglerville HS,142,78,54.9%,15,10.6%,93,65.5%,4,2.8%,97,68.3%
-Delaware,125239452,Upper Darby SD,1972,Upper Darby SHS,783,578,73.8%,0,0.0%,578,73.8%,13,1.7%,591,75.5%
-Dauphin,115229003,Upper Dauphin Area SD,6340,Upper Dauphin Area HS,82,56,68.3%,1,1.2%,57,69.5%,2,2.4%,59,72.0%
-Montgomery,123468303,Upper Dublin SD,5078,Upper Dublin HS,403,383,95.0%,0,0.0%,383,95.0%,2,0.5%,385,95.5%
-Montgomery,123468402,Upper Merion Area SD,3395,Upper Merion HS,237,210,88.6%,6,2.5%,216,91.1%,0,0.0%,216,91.1%
-Montgomery,123468503,Upper Moreland Township SD,3401,Upper Moreland HS,226,164,72.6%,0,0.0%,164,72.6%,12,5.3%,176,77.9%
-Montgomery,123468603,Upper Perkiomen SD,5081,Upper Perkiomen HS,211,154,73.0%,4,1.9%,158,74.9%,7,3.3%,165,78.2%
-Allegheny,103029203,Upper Saint Clair SD,0492,Upper Saint Clair HS,340,324,95.3%,1,0.3%,325,95.6%,1,0.3%,326,95.9%
-Venango,106618603,Valley Grove SD,4126,Rocky Grove JSHS,70,49,70.0%,0,0.0%,49,70.0%,0,0.0%,49,70.0%
-Lackawanna,119358403,Valley View SD,6775,Valley View HS,186,147,79.0%,4,2.2%,151,81.2%,4,2.2%,155,83.3%
-Wayne,119648303,Wallenpaupack Area SD,4310,Wallenpaupack Area HS,301,216,71.8%,11,3.7%,227,75.4%,11,3.7%,238,79.1%
-Delaware,125239603,Wallingford-Swarthmore SD,5287,Strath Haven HS,322,276,85.7%,4,1.2%,280,87.0%,2,0.6%,282,87.6%
-Warren,105628302,Warren County SD,4143,Eisenhower M/HS,98,75,76.5%,0,0.0%,75,76.5%,4,4.1%,79,80.6%
-Warren,105628302,Warren County SD,4146,Sheffield M/HS,44,16,36.4%,6,13.6%,22,50.0%,4,9.1%,26,59.1%
-Warren,105628302,Warren County SD,4149,Warren Area HS,196,143,73.0%,0,0.0%,143,73.0%,1,0.5%,144,73.5%
-Warren,105628302,Warren County SD,4135,Youngsville HS,90,46,51.1%,1,1.1%,47,52.2%,9,10.0%,56,62.2%
-Northumberland,116498003,Warrior Run SD,5103,Warrior Run HS,124,72,58.1%,11,8.9%,83,66.9%,21,16.9%,104,83.9%
-Lancaster,113369003,Warwick SD,2663,Warwick SHS,343,237,69.1%,12,3.5%,249,72.6%,14,4.1%,263,76.7%
-Washington,101638803,Washington SD,4286,Washington HS,124,69,55.6%,17,13.7%,86,69.4%,2,1.6%,88,71.0%
-Erie,105259703,Wattsburg Area SD,6148,Seneca HS,115,58,50.4%,9,7.8%,67,58.3%,13,11.3%,80,69.6%
-Wayne,119648703,Wayne Highlands SD,4295,Honesdale HS,258,164,63.6%,7,2.7%,171,66.3%,13,5.0%,184,71.3%
-Franklin,112289003,Waynesboro Area SD,2243,Waynesboro Area SHS,312,188,60.3%,4,1.3%,192,61.5%,17,5.4%,209,67.0%
-Carbon,121139004,Weatherly Area SD,1327,Weatherly Area SHS,67,54,80.6%,0,0.0%,54,80.6%,0,0.0%,54,80.6%
-Tioga,117598503,Wellsboro Area SD,4080,Wellsboro Area HS,107,73,68.2%,7,6.5%,80,74.8%,2,1.9%,82,76.6%
-Allegheny,103029403,West Allegheny SD,0509,West Allegheny SHS,243,194,79.8%,13,5.3%,207,85.2%,8,3.3%,215,88.5%
-Clearfield,110179003,West Branch Area SD,1566,West Branch Area JSHS,94,44,46.8%,8,8.5%,52,55.3%,1,1.1%,53,56.4%
-Chester,124159002,West Chester Area SD,7894,West Chester Bayard Rustin HS,279,247,88.5%,3,1.1%,250,89.6%,10,3.6%,260,93.2%
-Chester,124159002,West Chester Area SD,6734,West Chester East HS,356,320,89.9%,2,0.6%,322,90.4%,8,2.2%,330,92.7%
-Chester,124159002,West Chester Area SD,1453,West Chester Henderson HS,306,269,87.9%,3,1.0%,272,88.9%,1,0.3%,273,89.2%
-Greene,101308503,West Greene SD,7136,West Greene HS,77,47,61.0%,0,0.0%,47,61.0%,0,0.0%,47,61.0%
-Allegheny,103029553,West Jefferson Hills SD,0523,Thomas Jefferson HS,258,181,70.2%,6,2.3%,187,72.5%,1,0.4%,188,72.9%
-Mercer,104437503,West Middlesex Area SD,6129,West Middlesex JSHS,79,57,72.2%,2,2.5%,59,74.7%,5,6.3%,64,81.0%
-Allegheny,103029603,West Mifflin Area SD,0536,West Mifflin Area HS,259,208,80.3%,23,8.9%,231,89.2%,1,0.4%,232,89.6%
-Perry,115508003,West Perry SD,3596,West Perry SHS,193,87,45.1%,11,5.7%,98,50.8%,9,4.7%,107,55.4%
-York,115219002,West Shore SD,1732,Cedar Cliff HS,327,260,79.5%,0,0.0%,260,79.5%,0,0.0%,260,79.5%
-York,115219002,West Shore SD,4704,Red Land SHS,298,203,68.1%,11,3.7%,214,71.8%,11,3.7%,225,75.5%
-Luzerne,118408707,West Side CTC,5059,West Side CTC,102,32,31.4%,1,1.0%,33,32.4%,5,4.9%,38,37.3%
-York,112678503,West York Area SD,6705,West York Area HS,167,142,85.0%,6,3.6%,148,88.6%,3,1.8%,151,90.4%
-Beaver,127049303,Western Beaver County SD,0719,Western Beaver Co JSHS,63,45,71.4%,1,1.6%,46,73.0%,2,3.2%,48,76.2%
-Montgomery,123469007,Western Center for Technical Studies,4959,Western Center for Technical Studies,121,39,32.2%,23,19.0%,62,51.2%,0,0.0%,62,51.2%
-Wayne,119648903,Western Wayne SD,6704,Western Wayne HS,186,126,67.7%,4,2.2%,130,69.9%,13,7.0%,143,76.9%
-Cambria,108118503,Westmont Hilltop SD,1293,Westmont Hilltop HS,147,127,86.4%,1,0.7%,128,87.1%,1,0.7%,129,87.8%
-Lehigh,121397803,Whitehall-Coplay SD,2848,Whitehall HS,355,263,74.1%,1,0.3%,264,74.4%,8,2.3%,272,76.6%
-Luzerne,118408852,Wilkes-Barre Area SD,3009,Elmer L Meyers JSHS,165,116,70.3%,3,1.8%,119,72.1%,7,4.2%,126,76.4%
-Luzerne,118408852,Wilkes-Barre Area SD,3008,G A R Memorial JSHS,117,78,66.7%,10,8.5%,88,75.2%,0,0.0%,88,75.2%
-Luzerne,118408852,Wilkes-Barre Area SD,3007,James M Coughlin JSHS,236,171,72.5%,5,2.1%,176,74.6%,6,2.5%,182,77.1%
-Allegheny,103029803,Wilkinsburg Borough SD,0555,Wilkinsburg SHS,85,57,67.1%,10,11.8%,67,78.8%,0,0.0%,67,78.8%
-Delaware,125239652,William Penn SD,1892,Penn Wood HS - Green Ave Campus,364,246,67.6%,5,1.4%,251,69.0%,27,7.4%,278,76.4%
-Schuylkill,129548803,Williams Valley SD,3914,Williams Valley JSHS,91,49,53.8%,11,12.1%,60,65.9%,4,4.4%,64,70.3%
-Blair,108079004,Williamsburg Community SD,0951,Williamsburg Community JSHS,46,24,52.2%,0,0.0%,24,52.2%,1,2.2%,25,54.3%
-Lycoming,117417202,Williamsport Area SD,6368,Williamsport Area SHS,368,197,53.5%,0,0.0%,197,53.5%,7,1.9%,204,55.4%
-Lawrence,104378003,Wilmington Area SD,2721,Wilmington Area HS,131,95,72.5%,4,3.1%,99,75.6%,14,10.7%,113,86.3%
-Berks,114069103,Wilson  SD,6980,Wilson HS,441,354,80.3%,8,1.8%,362,82.1%,16,3.6%,378,85.7%
-Northampton,120488603,Wilson Area SD,3522,Wilson Area HS,177,127,71.8%,3,1.7%,130,73.4%,4,2.3%,134,75.7%
-Somerset,108569103,Windber Area SD,4026,Windber Area HS,99,76,76.8%,1,1.0%,77,77.8%,2,2.0%,79,79.8%
-Montgomery,123469303,Wissahickon SD,3247,Wissahickon SHS,333,307,92.2%,0,0.0%,307,92.2%,0,0.0%,307,92.2%
-Allegheny,103029902,Woodland Hills SD,0107,Woodland Hills SHS,316,243,76.9%,20,6.3%,263,83.2%,3,0.9%,266,84.2%
-Philadelphia,126512860,World Communications CS,7512,World Communications CS,44,43,97.7%,1,2.3%,44,100.0%,0,0.0%,44,100.0%
-Bradford,117089003,Wyalusing Area SD,1005,Wyalusing Valley JSHS,101,64,63.4%,4,4.0%,68,67.3%,1,1.0%,69,68.3%
-Luzerne,118409203,Wyoming Area SD,6390,Wyoming Area Sec Ctr,208,175,84.1%,0,0.0%,175,84.1%,8,3.8%,183,88.0%
-Luzerne,118409302,Wyoming Valley West SD,6391,Wyoming Valley West SHS,356,260,73.0%,6,1.7%,266,74.7%,16,4.5%,282,79.2%
-Berks,114069353,Wyomissing Area SD,0887,Wyomissing Area JSHS,148,131,88.5%,5,3.4%,136,91.9%,0,0.0%,136,91.9%
-York,112679002,York City SD,4647,William Penn SHS,254,58,22.8%,0,0.0%,58,22.8%,22,8.7%,80,31.5%
-York,112679107,York Co School of Technology,5168,York Co School of Technology,98,17,17.3%,0,0.0%,17,17.3%,4,4.1%,21,21.4%
-York,112679205,York County HS,7345,York County HS,185,47,25.4%,17,9.2%,64,34.6%,21,11.4%,85,45.9%
-York,112679403,York Suburban SD,4658,York Suburban SHS,179,144,80.4%,14,7.8%,158,88.3%,1,0.6%,159,88.8%
-Westmoreland,107658903,Yough SD,4735,Yough SHS,190,123,64.7%,6,3.2%,129,67.9%,11,5.8%,140,73.7%
-Philadelphia,126512870,Youth Build Phila CS,7513,Youth Build Phila CS,97,25,25.8%,18,18.6%,43,44.3%,2,2.1%,45,46.4%
-,,,,,,,,,,,,,,,
-STATE TOTAL,,,,,"130,296","89,950",69.0%,"4,288",3.3%,"94,238",72.3%,"3,473",2.7%,"97,711",75.0%
+﻿County,AUN,LEA,Total Graduates,2- or 4-Year College or University,2- or 4-Year College or University %,Specialized Associate Degree-Granting Institution,Specialized Associate Degree-Granting Institution %,Total College-Bound,Total College-Bound %,Non-Degree-Granting Postsecondary School,Non-Degree-Granting Postsecondary School %,Total Postsecondary Bound,Total Postsecondary Bound %
+Adams,112011103,Bermudian Springs SD,154,76,49.4%,23,14.9%,99,64.3%,2,1.3%,101,65.6%
+Adams,112011603,Conewago Valley SD,297,179,60.3%,12,4.0%,191,64.3%,18,6.1%,209,70.4%
+Adams,112013054,Fairfield Area SD,96,61,63.5%,2,2.1%,63,65.6%,2,2.1%,65,67.7%
+Adams,112013753,Gettysburg Area SD,285,177,62.1%,23,8.1%,200,70.2%,3,1.1%,203,71.2%
+Adams,112015203,Littlestown Area SD,120,79,65.8%,9,7.5%,88,73.3%,0,0.0%,88,73.3%
+Adams,112018523,Upper Adams SD,142,78,54.9%,15,10.6%,93,65.5%,4,2.8%,97,68.3%
+Allegheny,103020603,Allegheny Valley SD,98,82,83.7%,3,3.1%,85,86.7%,4,4.1%,89,90.8%
+Allegheny,103020753,Avonworth SD,91,74,81.3%,5,5.5%,79,86.8%,0,0.0%,79,86.8%
+Allegheny,103021102,Baldwin-Whitehall SD,400,309,77.3%,23,5.8%,332,83.0%,15,3.8%,347,86.8%
+Allegheny,103021252,Bethel Park SD,460,442,96.1%,11,2.4%,453,98.5%,1,0.2%,454,98.7%
+Allegheny,103021453,Brentwood Borough SD,103,81,78.6%,0,0.0%,81,78.6%,5,4.9%,86,83.5%
+Allegheny,103021603,Carlynton SD,103,69,67.0%,9,8.7%,78,75.7%,0,0.0%,78,75.7%
+Allegheny,103021752,Chartiers Valley SD,293,248,84.6%,3,1.0%,251,85.7%,1,0.3%,252,86.0%
+Allegheny,103021903,Clairton City SD,56,48,85.7%,0,0.0%,48,85.7%,1,1.8%,49,87.5%
+Allegheny,103022103,Cornell SD,60,46,76.7%,0,0.0%,46,76.7%,0,0.0%,46,76.7%
+Allegheny,103022253,Deer Lakes SD,159,120,75.5%,0,0.0%,120,75.5%,18,11.3%,138,86.8%
+Allegheny,103022803,East Allegheny SD,124,94,75.8%,11,8.9%,105,84.7%,3,2.4%,108,87.1%
+Allegheny,103023153,Elizabeth Forward SD,195,137,70.3%,17,8.7%,154,79.0%,4,2.1%,158,81.0%
+Allegheny,103023912,Fox Chapel Area SD,371,322,86.8%,13,3.5%,335,90.3%,5,1.3%,340,91.6%
+Allegheny,103024102,Gateway SD,339,268,79.1%,7,2.1%,275,81.1%,9,2.7%,284,83.8%
+Allegheny,103024603,Hampton Township SD,253,230,90.9%,0,0.0%,230,90.9%,5,2.0%,235,92.9%
+Allegheny,103024753,Highlands SD,203,110,54.2%,28,13.8%,138,68.0%,1,0.5%,139,68.5%
+Allegheny,103025002,Keystone Oaks SD,201,153,76.1%,10,5.0%,163,81.1%,9,4.5%,172,85.6%
+Allegheny,103026002,McKeesport Area SD,323,208,64.4%,34,10.5%,242,74.9%,9,2.8%,251,77.7%
+Allegheny,103026303,Montour SD,272,220,80.9%,18,6.6%,238,87.5%,2,0.7%,240,88.2%
+Allegheny,103026343,Moon Area SD,272,235,86.4%,3,1.1%,238,87.5%,8,2.9%,246,90.4%
+Allegheny,103026402,Mt Lebanon SD,490,457,93.3%,7,1.4%,464,94.7%,1,0.2%,465,94.9%
+Allegheny,103026852,North Allegheny SD,645,597,92.6%,8,1.2%,605,93.8%,1,0.2%,606,94.0%
+Allegheny,103026902,North Hills SD,435,366,84.1%,7,1.6%,373,85.7%,10,2.3%,383,88.0%
+Allegheny,103026873,Northgate SD,108,79,73.1%,5,4.6%,84,77.8%,4,3.7%,88,81.5%
+Allegheny,103027352,Penn Hills SD,408,236,57.8%,2,0.5%,238,58.3%,14,3.4%,252,61.8%
+Allegheny,103021003,Pine-Richland SD,332,302,91.0%,0,0.0%,302,91.0%,5,1.5%,307,92.5%
+Allegheny,102027451,Pittsburgh SD,"1,814","1,354",74.6%,81,4.5%,"1,435",79.1%,39,2.1%,"1,474",81.3%
+Allegheny,103027503,Plum Borough SD,373,309,82.8%,15,4.0%,324,86.9%,5,1.3%,329,88.2%
+Allegheny,103027753,Quaker Valley SD,148,132,89.2%,1,0.7%,133,89.9%,2,1.4%,135,91.2%
+Allegheny,103028203,Riverview SD,101,84,83.2%,4,4.0%,88,87.1%,0,0.0%,88,87.1%
+Allegheny,103028302,Shaler Area SD,435,199,45.7%,12,2.8%,211,48.5%,0,0.0%,211,48.5%
+Allegheny,103028653,South Allegheny SD,133,100,75.2%,12,9.0%,112,84.2%,0,0.0%,112,84.2%
+Allegheny,103028703,South Fayette Township SD,127,111,87.4%,8,6.3%,119,93.7%,1,0.8%,120,94.5%
+Allegheny,103028753,South Park SD,188,168,89.4%,0,0.0%,168,89.4%,2,1.1%,170,90.4%
+Allegheny,103028833,Steel Valley SD,147,90,61.2%,13,8.8%,103,70.1%,10,6.8%,113,76.9%
+Allegheny,103028853,Sto-Rox SD,96,43,44.8%,0,0.0%,43,44.8%,10,10.4%,53,55.2%
+Allegheny,103029203,Upper Saint Clair SD,340,324,95.3%,1,0.3%,325,95.6%,1,0.3%,326,95.9%
+Allegheny,103029403,West Allegheny SD,243,194,79.8%,13,5.3%,207,85.2%,8,3.3%,215,88.5%
+Allegheny,103029553,West Jefferson Hills SD,258,181,70.2%,6,2.3%,187,72.5%,1,0.4%,188,72.9%
+Allegheny,103029603,West Mifflin Area SD,259,208,80.3%,23,8.9%,231,89.2%,1,0.4%,232,89.6%
+Allegheny,103029803,Wilkinsburg Borough SD,85,57,67.1%,10,11.8%,67,78.8%,0,0.0%,67,78.8%
+Allegheny,103029902,Woodland Hills SD,316,243,76.9%,20,6.3%,263,83.2%,3,0.9%,266,84.2%
+Armstrong,128030603,Apollo-Ridge SD,91,62,68.1%,6,6.6%,68,74.7%,3,3.3%,71,78.0%
+Armstrong,128030852,Armstrong SD,351,255,72.6%,17,4.8%,272,77.5%,6,1.7%,278,79.2%
+Armstrong,128033053,Freeport Area SD,134,98,73.1%,5,3.7%,103,76.9%,10,7.5%,113,84.3%
+Armstrong,128034503,Leechburg Area SD,42,31,73.8%,6,14.3%,37,88.1%,2,4.8%,39,92.9%
+Beaver,127040503,Aliquippa SD,89,47,52.8%,8,9.0%,55,61.8%,6,6.7%,61,68.5%
+Beaver,127040703,Ambridge Area SD,190,137,72.1%,11,5.8%,148,77.9%,4,2.1%,152,80.0%
+Beaver,127041203,Beaver Area SD,165,128,77.6%,0,0.0%,128,77.6%,6,3.6%,134,81.2%
+Beaver,127041503,Big Beaver Falls Area SD,147,93,63.3%,19,12.9%,112,76.2%,2,1.4%,114,77.6%
+Beaver,127041603,Blackhawk SD,223,157,70.4%,0,0.0%,157,70.4%,19,8.5%,176,78.9%
+Beaver,127041903,Center Area SD,142,107,75.4%,6,4.2%,113,79.6%,1,0.7%,114,80.3%
+Beaver,127042853,Freedom Area SD,131,91,69.5%,13,9.9%,104,79.4%,3,2.3%,107,81.7%
+Beaver,127044103,Hopewell Area SD,227,150,66.1%,12,5.3%,162,71.4%,2,0.9%,164,72.2%
+Beaver,127045453,Monaca SD,57,37,64.9%,8,14.0%,45,78.9%,0,0.0%,45,78.9%
+Beaver,127045653,New Brighton Area SD,122,91,74.6%,6,4.9%,97,79.5%,4,3.3%,101,82.8%
+Beaver,127045853,Riverside Beaver County SD,165,108,65.5%,8,4.8%,116,70.3%,7,4.2%,123,74.5%
+Beaver,127046903,Rochester Area SD,55,37,67.3%,7,12.7%,44,80.0%,0,0.0%,44,80.0%
+Beaver,127047404,South Side Area SD,109,84,77.1%,0,0.0%,84,77.1%,1,0.9%,85,78.0%
+Beaver,127049303,Western Beaver County SD,63,45,71.4%,1,1.6%,46,73.0%,2,3.2%,48,76.2%
+Bedford,108051003,Bedford Area SD,158,83,52.5%,1,0.6%,84,53.2%,7,4.4%,91,57.6%
+Bedford,108051503,Chestnut Ridge SD,155,85,54.8%,17,11.0%,102,65.8%,2,1.3%,104,67.1%
+Bedford,108053003,Everett Area SD,125,72,57.6%,1,0.8%,73,58.4%,6,4.8%,79,63.2%
+Bedford,108056004,Northern Bedford County SD,90,46,51.1%,10,11.1%,56,62.2%,7,7.8%,63,70.0%
+Bedford,108058003,Tussey Mountain SD,99,47,47.5%,7,7.1%,54,54.5%,4,4.0%,58,58.6%
+Berks,114060503,Antietam SD,98,69,70.4%,1,1.0%,70,71.4%,6,6.1%,76,77.6%
+Berks,114060753,Boyertown Area SD,556,378,68.0%,22,4.0%,400,71.9%,12,2.2%,412,74.1%
+Berks,114060853,Brandywine Heights Area SD,140,107,76.4%,2,1.4%,109,77.9%,1,0.7%,110,78.6%
+Berks,114061103,Conrad Weiser Area SD,242,179,74.0%,7,2.9%,186,76.9%,9,3.7%,195,80.6%
+Berks,114061503,Daniel Boone Area SD,249,158,63.5%,15,6.0%,173,69.5%,1,0.4%,174,69.9%
+Berks,114062003,Exeter Township SD,317,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
+Berks,114062503,Fleetwood Area SD,218,141,64.7%,6,2.8%,147,67.4%,6,2.8%,153,70.2%
+Berks,114063003,Governor Mifflin SD,311,236,75.9%,0,0.0%,236,75.9%,25,8.0%,261,83.9%
+Berks,114063503,Hamburg Area SD,195,113,57.9%,1,0.5%,114,58.5%,24,12.3%,138,70.8%
+Berks,114064003,Kutztown Area SD,143,96,67.1%,2,1.4%,98,68.5%,2,1.4%,100,69.9%
+Berks,114065503,Muhlenberg SD,262,205,78.2%,7,2.7%,212,80.9%,7,2.7%,219,83.6%
+Berks,114066503,Oley Valley SD,145,112,77.2%,0,0.0%,112,77.2%,1,0.7%,113,77.9%
+Berks,114067002,Reading SD,716,404,56.4%,23,3.2%,427,59.6%,11,1.5%,438,61.2%
+Berks,114067503,Schuylkill Valley SD,161,123,76.4%,5,3.1%,128,79.5%,8,5.0%,136,84.5%
+Berks,114068003,Tulpehocken Area SD,116,69,59.5%,3,2.6%,72,62.1%,7,6.0%,79,68.1%
+Berks,114068103,Twin Valley SD,235,189,80.4%,0,0.0%,189,80.4%,1,0.4%,190,80.9%
+Berks,114069103,Wilson  SD,441,354,80.3%,8,1.8%,362,82.1%,16,3.6%,378,85.7%
+Berks,114069353,Wyomissing Area SD,148,131,88.5%,5,3.4%,136,91.9%,0,0.0%,136,91.9%
+Blair,108070502,Altoona Area SD,517,299,57.8%,23,4.4%,322,62.3%,21,4.1%,343,66.3%
+Blair,108071003,Bellwood-Antis SD,102,67,65.7%,0,0.0%,67,65.7%,8,7.8%,75,73.5%
+Blair,108071504,Claysburg-Kimmel SD,62,26,41.9%,15,24.2%,41,66.1%,1,1.6%,42,67.7%
+Blair,108073503,Hollidaysburg Area SD,286,199,69.6%,0,0.0%,199,69.6%,17,5.9%,216,75.5%
+Blair,108077503,Spring Cove SD,149,82,55.0%,5,3.4%,87,58.4%,3,2.0%,90,60.4%
+Blair,108078003,Tyrone Area SD,139,91,65.5%,8,5.8%,99,71.2%,11,7.9%,110,79.1%
+Blair,108079004,Williamsburg Community SD,46,24,52.2%,0,0.0%,24,52.2%,1,2.2%,25,54.3%
+Bradford,117080503,Athens Area SD,205,119,58.0%,4,2.0%,123,60.0%,4,2.0%,127,62.0%
+Bradford,117081003,Canton Area SD,85,46,54.1%,1,1.2%,47,55.3%,3,3.5%,50,58.8%
+Bradford,117083004,Northeast Bradford SD,62,43,69.4%,1,1.6%,44,71.0%,4,6.5%,48,77.4%
+Bradford,117086003,Sayre Area SD,71,47,66.2%,0,0.0%,47,66.2%,6,8.5%,53,74.6%
+Bradford,117086503,Towanda Area SD,145,76,52.4%,6,4.1%,82,56.6%,11,7.6%,93,64.1%
+Bradford,117086653,Troy Area SD,120,77,64.2%,1,0.8%,78,65.0%,1,0.8%,79,65.8%
+Bradford,117089003,Wyalusing Area SD,101,64,63.4%,4,4.0%,68,67.3%,1,1.0%,69,68.3%
+Bucks,122091002,Bensalem Township SD,466,334,71.7%,12,2.6%,346,74.2%,25,5.4%,371,79.6%
+Bucks,122091303,Bristol Borough SD,99,62,62.6%,5,5.1%,67,67.7%,2,2.0%,69,69.7%
+Bucks,122091352,Bristol Township SD,352,260,73.9%,8,2.3%,268,76.1%,12,3.4%,280,79.5%
+Bucks,122092002,Centennial SD,468,392,83.8%,0,0.0%,392,83.8%,17,3.6%,409,87.4%
+Bucks,122092102,Central Bucks SD,"1,540","1,322",85.8%,5,0.3%,"1,327",86.2%,24,1.6%,"1,351",87.7%
+Bucks,122092353,Council Rock SD,"1,097",473,43.1%,1,0.1%,474,43.2%,2,0.2%,476,43.4%
+Bucks,122097203,Morrisville Borough SD,64,44,68.8%,8,12.5%,52,81.3%,2,3.1%,54,84.4%
+Bucks,122097502,Neshaminy SD,743,605,81.4%,2,0.3%,607,81.7%,32,4.3%,639,86.0%
+Bucks,122097604,New Hope-Solebury SD,115,104,90.4%,1,0.9%,105,91.3%,1,0.9%,106,92.2%
+Bucks,122098003,Palisades SD,193,151,78.2%,2,1.0%,153,79.3%,1,0.5%,154,79.8%
+Bucks,122098103,Pennridge SD,573,455,79.4%,3,0.5%,458,79.9%,19,3.3%,477,83.2%
+Bucks,122098202,Pennsbury SD,840,763,90.8%,10,1.2%,773,92.0%,13,1.5%,786,93.6%
+Bucks,122098403,Quakertown Community SD,373,311,83.4%,8,2.1%,319,85.5%,4,1.1%,323,86.6%
+Butler,104101252,Butler Area SD,610,490,80.3%,15,2.5%,505,82.8%,17,2.8%,522,85.6%
+Butler,104103603,Karns City Area SD,113,77,68.1%,6,5.3%,83,73.5%,3,2.7%,86,76.1%
+Butler,104105003,Mars Area SD,255,236,92.5%,7,2.7%,243,95.3%,0,0.0%,243,95.3%
+Butler,104105353,Moniteau SD,121,62,51.2%,11,9.1%,73,60.3%,3,2.5%,76,62.8%
+Butler,104107903,Seneca Valley SD,542,444,81.9%,23,4.2%,467,86.2%,3,0.6%,470,86.7%
+Butler,104107503,Slippery Rock Area SD,166,140,84.3%,4,2.4%,144,86.7%,1,0.6%,145,87.3%
+Butler,104107803,South Butler County SD,253,208,82.2%,0,0.0%,208,82.2%,1,0.4%,209,82.6%
+Cambria,108110603,Blacklick Valley SD,46,28,60.9%,4,8.7%,32,69.6%,3,6.5%,35,76.1%
+Cambria,108111203,Cambria Heights SD,110,76,69.1%,5,4.5%,81,73.6%,0,0.0%,81,73.6%
+Cambria,108111303,Central Cambria SD,158,102,64.6%,7,4.4%,109,69.0%,4,2.5%,113,71.5%
+Cambria,108111403,Conemaugh Valley SD,64,41,64.1%,1,1.6%,42,65.6%,1,1.6%,43,67.2%
+Cambria,108112003,Ferndale Area SD,56,29,51.8%,2,3.6%,31,55.4%,3,5.4%,34,60.7%
+Cambria,108112203,Forest Hills SD,230,143,62.2%,11,4.8%,154,67.0%,9,3.9%,163,70.9%
+Cambria,108112502,Greater Johnstown SD,212,113,53.3%,1,0.5%,114,53.8%,0,0.0%,114,53.8%
+Cambria,108114503,Northern Cambria SD,98,48,49.0%,5,5.1%,53,54.1%,7,7.1%,60,61.2%
+Cambria,108116003,Penn Cambria SD,168,91,54.2%,7,4.2%,98,58.3%,0,0.0%,98,58.3%
+Cambria,108116303,Portage Area SD,68,43,63.2%,5,7.4%,48,70.6%,1,1.5%,49,72.1%
+Cambria,108116503,Richland SD,134,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
+Cambria,108118503,Westmont Hilltop SD,147,127,86.4%,1,0.7%,128,87.1%,1,0.7%,129,87.8%
+Cameron,109122703,Cameron County SD,83,48,57.8%,4,4.8%,52,62.7%,2,2.4%,54,65.1%
+Carbon,121135003,Jim Thorpe Area SD,151,118,78.1%,8,5.3%,126,83.4%,6,4.0%,132,87.4%
+Carbon,121135503,Lehighton Area SD,224,175,78.1%,7,3.1%,182,81.3%,1,0.4%,183,81.7%
+Carbon,121136503,Palmerton Area SD,123,102,82.9%,5,4.1%,107,87.0%,2,1.6%,109,88.6%
+Carbon,121136603,Panther Valley SD,138,79,57.2%,11,8.0%,90,65.2%,5,3.6%,95,68.8%
+Carbon,121139004,Weatherly Area SD,67,54,80.6%,0,0.0%,54,80.6%,0,0.0%,54,80.6%
+Centre,110141003,Bald Eagle Area SD,162,87,53.7%,11,6.8%,98,60.5%,1,0.6%,99,61.1%
+Centre,110141103,Bellefonte Area SD,255,174,68.2%,20,7.8%,194,76.1%,1,0.4%,195,76.5%
+Centre,110147003,Penns Valley Area SD,123,84,68.3%,1,0.8%,85,69.1%,1,0.8%,86,69.9%
+Centre,110148002,State College Area SD,656,548,83.5%,24,3.7%,572,87.2%,4,0.6%,576,87.8%
+Chester,124150503,Avon Grove SD,421,328,77.9%,0,0.0%,328,77.9%,17,4.0%,345,81.9%
+Chester,124151902,Coatesville Area SD,509,346,68.0%,6,1.2%,352,69.2%,66,13.0%,418,82.1%
+Chester,124152003,Downingtown Area SD,910,824,90.5%,4,0.4%,828,91.0%,5,0.5%,833,91.5%
+Chester,124153503,Great Valley SD,318,292,91.8%,0,0.0%,292,91.8%,2,0.6%,294,92.5%
+Chester,124154003,Kennett Consolidated SD,299,231,77.3%,1,0.3%,232,77.6%,6,2.0%,238,79.6%
+Chester,124156503,Octorara Area SD,177,135,76.3%,0,0.0%,135,76.3%,2,1.1%,137,77.4%
+Chester,124156603,Owen J Roberts SD,363,304,83.7%,12,3.3%,316,87.1%,8,2.2%,324,89.3%
+Chester,124156703,Oxford Area SD,287,180,62.7%,5,1.7%,185,64.5%,12,4.2%,197,68.6%
+Chester,124157203,Phoenixville Area SD,244,204,83.6%,7,2.9%,211,86.5%,6,2.5%,217,88.9%
+Chester,124157802,Tredyffrin-Easttown SD,491,475,96.7%,1,0.2%,476,96.9%,3,0.6%,479,97.6%
+Chester,124158503,Unionville-Chadds Ford SD,311,298,95.8%,0,0.0%,298,95.8%,3,1.0%,301,96.8%
+Chester,124159002,West Chester Area SD,941,836,88.8%,8,0.9%,844,89.7%,19,2.0%,863,91.7%
+Clarion,106160303,Allegheny-Clarion Valley SD,86,34,39.5%,5,5.8%,39,45.3%,9,10.5%,48,55.8%
+Clarion,106161203,Clarion Area SD,72,49,68.1%,4,5.6%,53,73.6%,0,0.0%,53,73.6%
+Clarion,106161703,Clarion-Limestone Area SD,71,46,64.8%,2,2.8%,48,67.6%,1,1.4%,49,69.0%
+Clarion,106166503,Keystone  SD,114,75,65.8%,2,1.8%,77,67.5%,4,3.5%,81,71.1%
+Clarion,106167504,North Clarion County SD,57,33,57.9%,5,8.8%,38,66.7%,0,0.0%,38,66.7%
+Clarion,106168003,Redbank Valley SD,84,43,51.2%,4,4.8%,47,56.0%,2,2.4%,49,58.3%
+Clarion,106169003,Union SD,45,22,48.9%,4,8.9%,26,57.8%,1,2.2%,27,60.0%
+Clearfield,110171003,Clearfield Area SD,201,95,47.3%,22,10.9%,117,58.2%,8,4.0%,125,62.2%
+Clearfield,110171803,Curwensville Area SD,74,51,68.9%,4,5.4%,55,74.3%,4,5.4%,59,79.7%
+Clearfield,106172003,Dubois Area SD,301,197,65.4%,30,10.0%,227,75.4%,12,4.0%,239,79.4%
+Clearfield,110173003,Glendale SD,71,43,60.6%,0,0.0%,43,60.6%,10,14.1%,53,74.6%
+Clearfield,110173504,Harmony Area SD,28,12,42.9%,4,14.3%,16,57.1%,0,0.0%,16,57.1%
+Clearfield,110175003,Moshannon Valley SD,79,33,41.8%,11,13.9%,44,55.7%,4,5.1%,48,60.8%
+Clearfield,110177003,Philipsburg-Osceola Area SD,129,69,53.5%,16,12.4%,85,65.9%,1,0.8%,86,66.7%
+Clearfield,110179003,West Branch Area SD,94,44,46.8%,8,8.5%,52,55.3%,1,1.1%,53,56.4%
+Clinton,110183602,Keystone Central SD,350,201,57.4%,25,7.1%,226,64.6%,12,3.4%,238,68.0%
+Columbia,116191004,Benton Area SD,54,34,63.0%,1,1.9%,35,64.8%,2,3.7%,37,68.5%
+Columbia,116191103,Berwick Area SD,208,144,69.2%,4,1.9%,148,71.2%,2,1.0%,150,72.1%
+Columbia,116191203,Bloomsburg Area SD,99,73,73.7%,3,3.0%,76,76.8%,2,2.0%,78,78.8%
+Columbia,116191503,Central Columbia SD,174,107,61.5%,0,0.0%,107,61.5%,15,8.6%,122,70.1%
+Columbia,116195004,Millville Area SD,44,30,68.2%,1,2.3%,31,70.5%,1,2.3%,32,72.7%
+Columbia,116197503,Southern Columbia Area SD,112,87,77.7%,3,2.7%,90,80.4%,4,3.6%,94,83.9%
+Crawford,105201033,Conneaut SD,217,109,50.2%,21,9.7%,130,59.9%,3,1.4%,133,61.3%
+Crawford,105201352,Crawford Central SD,305,190,62.3%,3,1.0%,193,63.3%,12,3.9%,205,67.2%
+Crawford,105204703,Penncrest SD,283,168,59.4%,10,3.5%,178,62.9%,3,1.1%,181,64.0%
+Cumberland,115210503,Big Spring SD,208,120,57.7%,3,1.4%,123,59.1%,13,6.3%,136,65.4%
+Cumberland,115211003,Camp Hill SD,85,70,82.4%,4,4.7%,74,87.1%,0,0.0%,74,87.1%
+Cumberland,115211103,Carlisle Area SD,347,234,67.4%,0,0.0%,234,67.4%,10,2.9%,244,70.3%
+Cumberland,115211603,Cumberland Valley SD,570,449,78.8%,0,0.0%,449,78.8%,0,0.0%,449,78.8%
+Cumberland,115212503,East Pennsboro Area SD,193,168,87.0%,0,0.0%,168,87.0%,1,0.5%,169,87.6%
+Cumberland,115216503,Mechanicsburg Area SD,247,214,86.6%,1,0.4%,215,87.0%,1,0.4%,216,87.4%
+Cumberland,115218003,Shippensburg Area SD,236,167,70.8%,14,5.9%,181,76.7%,1,0.4%,182,77.1%
+Cumberland,115218303,South Middleton SD,179,145,81.0%,6,3.4%,151,84.4%,2,1.1%,153,85.5%
+Dauphin,115221402,Central Dauphin SD,779,642,82.4%,10,1.3%,652,83.7%,8,1.0%,660,84.7%
+Dauphin,115221753,Derry Township SD,264,225,85.2%,0,0.0%,225,85.2%,8,3.0%,233,88.3%
+Dauphin,115222504,Halifax Area SD,78,52,66.7%,2,2.6%,54,69.2%,2,2.6%,56,71.8%
+Dauphin,115222752,Harrisburg City SD,438,256,58.4%,18,4.1%,274,62.6%,8,1.8%,282,64.4%
+Dauphin,115224003,Lower Dauphin SD,293,211,72.0%,18,6.1%,229,78.2%,6,2.0%,235,80.2%
+Dauphin,115226003,Middletown Area SD,143,81,56.6%,5,3.5%,86,60.1%,0,0.0%,86,60.1%
+Dauphin,115226103,Millersburg Area SD,72,55,76.4%,1,1.4%,56,77.8%,8,11.1%,64,88.9%
+Dauphin,115228003,Steelton-Highspire SD,66,30,45.5%,2,3.0%,32,48.5%,2,3.0%,34,51.5%
+Dauphin,115228303,Susquehanna Township SD,254,215,84.6%,15,5.9%,230,90.6%,1,0.4%,231,90.9%
+Dauphin,115229003,Upper Dauphin Area SD,82,56,68.3%,1,1.2%,57,69.5%,2,2.4%,59,72.0%
+Delaware,125231232,Chester-Upland SD,241,96,39.8%,36,14.9%,132,54.8%,0,0.0%,132,54.8%
+Delaware,125231303,Chichester SD,255,151,59.2%,2,0.8%,153,60.0%,33,12.9%,186,72.9%
+Delaware,125234103,Garnet Valley SD,355,314,88.5%,9,2.5%,323,91.0%,10,2.8%,333,93.8%
+Delaware,125234502,Haverford Township SD,461,418,90.7%,15,3.3%,433,93.9%,1,0.2%,434,94.1%
+Delaware,125235103,Interboro SD,350,244,69.7%,1,0.3%,245,70.0%,9,2.6%,254,72.6%
+Delaware,125235502,Marple Newtown SD,297,253,85.2%,0,0.0%,253,85.2%,12,4.0%,265,89.2%
+Delaware,125236903,Penn-Delco SD,297,222,74.7%,13,4.4%,235,79.1%,17,5.7%,252,84.8%
+Delaware,125237603,Radnor Township SD,271,242,89.3%,2,0.7%,244,90.0%,0,0.0%,244,90.0%
+Delaware,125237702,Ridley SD,469,359,76.5%,12,2.6%,371,79.1%,13,2.8%,384,81.9%
+Delaware,125237903,Rose Tree Media SD,288,259,89.9%,2,0.7%,261,90.6%,6,2.1%,267,92.7%
+Delaware,125238402,Southeast Delco SD,200,144,72.0%,7,3.5%,151,75.5%,13,6.5%,164,82.0%
+Delaware,125238502,Springfield SD,283,259,91.5%,2,0.7%,261,92.2%,1,0.4%,262,92.6%
+Delaware,125239452,Upper Darby SD,783,578,73.8%,0,0.0%,578,73.8%,13,1.7%,591,75.5%
+Delaware,125239603,Wallingford-Swarthmore SD,322,276,85.7%,4,1.2%,280,87.0%,2,0.6%,282,87.6%
+Delaware,125239652,William Penn SD,364,246,67.6%,5,1.4%,251,69.0%,27,7.4%,278,76.4%
+Elk,109243503,Johnsonburg Area SD,56,43,76.8%,0,0.0%,43,76.8%,0,0.0%,43,76.8%
+Elk,109246003,Ridgway Area SD,91,61,67.0%,13,14.3%,74,81.3%,0,0.0%,74,81.3%
+Elk,109248003,Saint Marys Area SD,190,125,65.8%,9,4.7%,134,70.5%,6,3.2%,140,73.7%
+Erie,105251453,Corry Area SD,186,91,48.9%,22,11.8%,113,60.8%,10,5.4%,123,66.1%
+Erie,105252602,Erie City SD,783,516,65.9%,41,5.2%,557,71.1%,16,2.0%,573,73.2%
+Erie,105253303,Fairview SD,134,107,79.9%,7,5.2%,114,85.1%,0,0.0%,114,85.1%
+Erie,105253553,Fort LeBoeuf SD,196,130,66.3%,3,1.5%,133,67.9%,14,7.1%,147,75.0%
+Erie,105253903,General McLane SD,210,160,76.2%,5,2.4%,165,78.6%,5,2.4%,170,81.0%
+Erie,105254053,Girard SD,138,79,57.2%,17,12.3%,96,69.6%,3,2.2%,99,71.7%
+Erie,105254353,Harbor Creek SD,154,109,70.8%,1,0.6%,110,71.4%,5,3.2%,115,74.7%
+Erie,105256553,Iroquois SD,105,59,56.2%,15,14.3%,74,70.5%,5,4.8%,79,75.2%
+Erie,105257602,Millcreek Township SD,574,451,78.6%,16,2.8%,467,81.4%,17,3.0%,484,84.3%
+Erie,105258303,North East SD,144,98,68.1%,8,5.6%,106,73.6%,3,2.1%,109,75.7%
+Erie,105258503,Northwestern  SD,160,73,45.6%,24,15.0%,97,60.6%,13,8.1%,110,68.8%
+Erie,105259103,Union City Area SD,85,35,41.2%,2,2.4%,37,43.5%,12,14.1%,49,57.6%
+Erie,105259703,Wattsburg Area SD,115,58,50.4%,9,7.8%,67,58.3%,13,11.3%,80,69.6%
+Fayette,101260303,Albert Gallatin Area SD,243,111,45.7%,17,7.0%,128,52.7%,20,8.2%,148,60.9%
+Fayette,101260803,Brownsville Area SD,106,48,45.3%,8,7.5%,56,52.8%,0,0.0%,56,52.8%
+Fayette,101261302,Connellsville Area SD,238,171,71.8%,0,0.0%,171,71.8%,12,5.0%,183,76.9%
+Fayette,101262903,Frazier SD,81,44,54.3%,7,8.6%,51,63.0%,3,3.7%,54,66.7%
+Fayette,101264003,Laurel Highlands SD,240,160,66.7%,37,15.4%,197,82.1%,8,3.3%,205,85.4%
+Fayette,101268003,Uniontown Area SD,221,143,64.7%,16,7.2%,159,71.9%,6,2.7%,165,74.7%
+Forest,106272003,Forest Area SD,68,33,48.5%,14,20.6%,47,69.1%,1,1.5%,48,70.6%
+Franklin,112281302,Chambersburg Area SD,601,310,51.6%,9,1.5%,319,53.1%,18,3.0%,337,56.1%
+Franklin,112282004,Fannett-Metal SD,45,15,33.3%,1,2.2%,16,35.6%,2,4.4%,18,40.0%
+Franklin,112283003,Greencastle-Antrim SD,204,126,61.8%,9,4.4%,135,66.2%,9,4.4%,144,70.6%
+Franklin,112286003,Tuscarora SD,207,92,44.4%,0,0.0%,92,44.4%,26,12.6%,118,57.0%
+Franklin,112289003,Waynesboro Area SD,312,188,60.3%,4,1.3%,192,61.5%,17,5.4%,209,67.0%
+Fulton,111291304,Central Fulton SD,65,41,63.1%,0,0.0%,41,63.1%,1,1.5%,42,64.6%
+Fulton,111292304,Forbes Road SD,33,18,54.5%,1,3.0%,19,57.6%,0,0.0%,19,57.6%
+Fulton,111297504,Southern Fulton SD,63,38,60.3%,7,11.1%,45,71.4%,0,0.0%,45,71.4%
+Greene,101301303,Carmichaels Area SD,74,36,48.6%,7,9.5%,43,58.1%,2,2.7%,45,60.8%
+Greene,101301403,Central Greene SD,156,84,53.8%,9,5.8%,93,59.6%,4,2.6%,97,62.2%
+Greene,101303503,Jefferson-Morgan SD,68,44,64.7%,3,4.4%,47,69.1%,1,1.5%,48,70.6%
+Greene,101306503,Southeastern Greene SD,40,23,57.5%,0,0.0%,23,57.5%,0,0.0%,23,57.5%
+Greene,101308503,West Greene SD,77,47,61.0%,0,0.0%,47,61.0%,0,0.0%,47,61.0%
+Huntingdon,111312503,Huntingdon Area SD,179,103,57.5%,8,4.5%,111,62.0%,7,3.9%,118,65.9%
+Huntingdon,111312804,Juniata Valley SD,64,32,50.0%,0,0.0%,32,50.0%,4,6.3%,36,56.3%
+Huntingdon,111316003,Mount Union Area SD,108,55,50.9%,2,1.9%,57,52.8%,7,6.5%,64,59.3%
+Huntingdon,111317503,Southern Huntingdon County SD,109,54,49.5%,5,4.6%,59,54.1%,2,1.8%,61,56.0%
+Indiana,128321103,Blairsville-Saltsburg SD,177,112,63.3%,19,10.7%,131,74.0%,6,3.4%,137,77.4%
+Indiana,128323303,Homer-Center SD,93,66,71.0%,0,0.0%,66,71.0%,6,6.5%,72,77.4%
+Indiana,128323703,Indiana Area SD,290,213,73.4%,13,4.5%,226,77.9%,6,2.1%,232,80.0%
+Indiana,128325203,Marion Center Area SD,116,71,61.2%,14,12.1%,85,73.3%,4,3.4%,89,76.7%
+Indiana,128326303,Penns Manor Area SD,69,46,66.7%,9,13.0%,55,79.7%,0,0.0%,55,79.7%
+Indiana,128327303,Purchase Line SD,78,36,46.2%,2,2.6%,38,48.7%,6,7.7%,44,56.4%
+Indiana,128328003,United SD,110,76,69.1%,0,0.0%,76,69.1%,1,0.9%,77,70.0%
+Jefferson,106330703,Brockway Area SD,67,39,58.2%,9,13.4%,48,71.6%,6,9.0%,54,80.6%
+Jefferson,106330803,Brookville Area SD,140,82,58.6%,3,2.1%,85,60.7%,11,7.9%,96,68.6%
+Jefferson,106338003,Punxsutawney Area SD,229,130,56.8%,25,10.9%,155,67.7%,7,3.1%,162,70.7%
+Juniata,111343603,Juniata County SD,232,115,49.6%,34,14.7%,149,64.2%,2,0.9%,151,65.1%
+Lackawanna,119350303,Abington Heights SD,315,259,82.2%,11,3.5%,270,85.7%,6,1.9%,276,87.6%
+Lackawanna,119351303,Carbondale Area SD,101,54,53.5%,7,6.9%,61,60.4%,4,4.0%,65,64.4%
+Lackawanna,119352203,Dunmore SD,148,128,86.5%,7,4.7%,135,91.2%,0,0.0%,135,91.2%
+Lackawanna,119354603,Lakeland SD,114,79,69.3%,0,0.0%,79,69.3%,9,7.9%,88,77.2%
+Lackawanna,119355503,Mid Valley SD,118,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
+Lackawanna,119356503,North Pocono SD,230,180,78.3%,2,0.9%,182,79.1%,3,1.3%,185,80.4%
+Lackawanna,119356603,Old Forge SD,70,58,82.9%,0,0.0%,58,82.9%,5,7.1%,63,90.0%
+Lackawanna,119357003,Riverside SD,119,92,77.3%,0,0.0%,92,77.3%,3,2.5%,95,79.8%
+Lackawanna,119357402,Scranton SD,758,672,88.7%,18,2.4%,690,91.0%,33,4.4%,723,95.4%
+Lackawanna,119358403,Valley View SD,186,147,79.0%,4,2.2%,151,81.2%,4,2.2%,155,83.3%
+Lancaster,113361303,Cocalico SD,263,167,63.5%,9,3.4%,176,66.9%,1,0.4%,177,67.3%
+Lancaster,113361503,Columbia Borough SD,110,50,45.5%,11,10.0%,61,55.5%,10,9.1%,71,64.5%
+Lancaster,113361703,Conestoga Valley SD,249,164,65.9%,11,4.4%,175,70.3%,17,6.8%,192,77.1%
+Lancaster,113362203,Donegal SD,208,114,54.8%,10,4.8%,124,59.6%,4,1.9%,128,61.5%
+Lancaster,113362303,Eastern Lancaster County SD,309,180,58.3%,6,1.9%,186,60.2%,2,0.6%,188,60.8%
+Lancaster,113362403,Elizabethtown Area SD,281,191,68.0%,5,1.8%,196,69.8%,7,2.5%,203,72.2%
+Lancaster,113362603,Ephrata Area SD,363,202,55.6%,10,2.8%,212,58.4%,22,6.1%,234,64.5%
+Lancaster,113363103,Hempfield  SD,522,397,76.1%,0,0.0%,397,76.1%,15,2.9%,412,78.9%
+Lancaster,113363603,Lampeter-Strasburg SD,254,166,65.4%,22,8.7%,188,74.0%,4,1.6%,192,75.6%
+Lancaster,113364002,Lancaster SD,590,296,50.2%,75,12.7%,371,62.9%,18,3.1%,389,65.9%
+Lancaster,113364403,Manheim Central SD,179,95,53.1%,1,0.6%,96,53.6%,0,0.0%,96,53.6%
+Lancaster,113364503,Manheim Township SD,413,345,83.5%,2,0.5%,347,84.0%,13,3.1%,360,87.2%
+Lancaster,113365203,Penn Manor SD,444,280,63.1%,34,7.7%,314,70.7%,2,0.5%,316,71.2%
+Lancaster,113365303,Pequea Valley SD,143,67,46.9%,13,9.1%,80,55.9%,12,8.4%,92,64.3%
+Lancaster,113367003,Solanco SD,304,162,53.3%,4,1.3%,166,54.6%,10,3.3%,176,57.9%
+Lancaster,113369003,Warwick SD,343,237,69.1%,12,3.5%,249,72.6%,14,4.1%,263,76.7%
+Lawrence,104372003,Ellwood City Area SD,130,86,66.2%,5,3.8%,91,70.0%,4,3.1%,95,73.1%
+Lawrence,104374003,Laurel  SD,90,63,70.0%,5,5.6%,68,75.6%,1,1.1%,69,76.7%
+Lawrence,104375003,Mohawk Area SD,163,111,68.1%,9,5.5%,120,73.6%,9,5.5%,129,79.1%
+Lawrence,104375203,Neshannock Township SD,90,79,87.8%,3,3.3%,82,91.1%,4,4.4%,86,95.6%
+Lawrence,104375302,New Castle Area SD,200,140,70.0%,13,6.5%,153,76.5%,3,1.5%,156,78.0%
+Lawrence,104376203,Shenango Area SD,122,81,66.4%,1,0.8%,82,67.2%,10,8.2%,92,75.4%
+Lawrence,104377003,Union Area SD,54,43,79.6%,5,9.3%,48,88.9%,1,1.9%,49,90.7%
+Lawrence,104378003,Wilmington Area SD,131,95,72.5%,4,3.1%,99,75.6%,14,10.7%,113,86.3%
+Lebanon,113380303,Annville-Cleona SD,108,77,71.3%,0,0.0%,77,71.3%,5,4.6%,82,75.9%
+Lebanon,113381303,Cornwall-Lebanon SD,428,312,72.9%,0,0.0%,312,72.9%,5,1.2%,317,74.1%
+Lebanon,113382303,Eastern Lebanon County SD,180,102,56.7%,9,5.0%,111,61.7%,7,3.9%,118,65.6%
+Lebanon,113384603,Lebanon SD,191,103,53.9%,28,14.7%,131,68.6%,7,3.7%,138,72.3%
+Lebanon,113385003,Northern Lebanon SD,212,65,30.7%,10,4.7%,75,35.4%,5,2.4%,80,37.7%
+Lebanon,113385303,Palmyra Area SD,249,167,67.1%,1,0.4%,168,67.5%,1,0.4%,169,67.9%
+Lehigh,121390302,Allentown City SD,"1,080",649,60.1%,10,0.9%,659,61.0%,14,1.3%,673,62.3%
+Lehigh,121391303,Catasauqua Area SD,106,71,67.0%,6,5.7%,77,72.6%,2,1.9%,79,74.5%
+Lehigh,121392303,East Penn SD,637,523,82.1%,1,0.2%,524,82.3%,10,1.6%,534,83.8%
+Lehigh,121394503,Northern Lehigh SD,168,119,70.8%,3,1.8%,122,72.6%,2,1.2%,124,73.8%
+Lehigh,121394603,Northwestern Lehigh SD,183,130,71.0%,8,4.4%,138,75.4%,2,1.1%,140,76.5%
+Lehigh,121395103,Parkland SD,744,642,86.3%,5,0.7%,647,87.0%,4,0.5%,651,87.5%
+Lehigh,121395603,Salisbury Township SD,146,122,83.6%,1,0.7%,123,84.2%,0,0.0%,123,84.2%
+Lehigh,121395703,Southern Lehigh SD,249,200,80.3%,1,0.4%,201,80.7%,8,3.2%,209,83.9%
+Lehigh,121397803,Whitehall-Coplay SD,355,263,74.1%,1,0.3%,264,74.4%,8,2.3%,272,76.6%
+Luzerne,118401403,Crestwood SD,279,233,83.5%,1,0.4%,234,83.9%,8,2.9%,242,86.7%
+Luzerne,118401603,Dallas SD,218,189,86.7%,2,0.9%,191,87.6%,3,1.4%,194,89.0%
+Luzerne,118402603,Greater Nanticoke Area SD,190,135,71.1%,1,0.5%,136,71.6%,2,1.1%,138,72.6%
+Luzerne,118403003,Hanover Area SD,166,104,62.7%,2,1.2%,106,63.9%,2,1.2%,108,65.1%
+Luzerne,118403302,Hazleton Area SD,746,486,65.1%,19,2.5%,505,67.7%,9,1.2%,514,68.9%
+Luzerne,118403903,Lake-Lehman SD,155,123,79.4%,2,1.3%,125,80.6%,4,2.6%,129,83.2%
+Luzerne,118406003,Northwest Area SD,86,71,82.6%,0,0.0%,71,82.6%,3,3.5%,74,86.0%
+Luzerne,118406602,Pittston Area SD,246,196,79.7%,9,3.7%,205,83.3%,0,0.0%,205,83.3%
+Luzerne,118408852,Wilkes-Barre Area SD,518,365,70.5%,18,3.5%,383,73.9%,13,2.5%,396,76.4%
+Luzerne,118409203,Wyoming Area SD,208,175,84.1%,0,0.0%,175,84.1%,8,3.8%,183,88.0%
+Luzerne,118409302,Wyoming Valley West SD,356,260,73.0%,6,1.7%,266,74.7%,16,4.5%,282,79.2%
+Lycoming,117412003,East Lycoming SD,153,104,68.0%,7,4.6%,111,72.5%,8,5.2%,119,77.8%
+Lycoming,117414003,Jersey Shore Area SD,227,153,67.4%,11,4.8%,164,72.2%,3,1.3%,167,73.6%
+Lycoming,117414203,Loyalsock Township SD,102,90,88.2%,0,0.0%,90,88.2%,1,1.0%,91,89.2%
+Lycoming,117415004,Montgomery Area SD,71,21,29.6%,16,22.5%,37,52.1%,1,1.4%,38,53.5%
+Lycoming,117415103,Montoursville Area SD,174,123,70.7%,2,1.1%,125,71.8%,6,3.4%,131,75.3%
+Lycoming,117415303,Muncy SD,75,59,78.7%,2,2.7%,61,81.3%,2,2.7%,63,84.0%
+Lycoming,117416103,South Williamsport Area SD,91,64,70.3%,0,0.0%,64,70.3%,2,2.2%,66,72.5%
+Lycoming,117417202,Williamsport Area SD,368,197,53.5%,0,0.0%,197,53.5%,7,1.9%,204,55.4%
+McKean,109420803,Bradford Area SD,253,181,71.5%,8,3.2%,189,74.7%,10,4.0%,199,78.7%
+McKean,109422303,Kane Area SD,100,63,63.0%,6,6.0%,69,69.0%,2,2.0%,71,71.0%
+McKean,109426003,Otto-Eldred SD,65,32,49.2%,4,6.2%,36,55.4%,4,6.2%,40,61.5%
+McKean,109426303,Port Allegany SD,99,56,56.6%,7,7.1%,63,63.6%,6,6.1%,69,69.7%
+McKean,109427503,Smethport Area SD,69,31,44.9%,8,11.6%,39,56.5%,7,10.1%,46,66.7%
+Mercer,104431304,Commodore Perry SD,62,39,62.9%,8,12.9%,47,75.8%,2,3.2%,49,79.0%
+Mercer,104432503,Farrell Area SD,68,3,4.4%,0,0.0%,3,4.4%,0,0.0%,3,4.4%
+Mercer,104432803,Greenville Area SD,106,62,58.5%,7,6.6%,69,65.1%,3,2.8%,72,67.9%
+Mercer,104432903,Grove City Area SD,205,144,70.2%,12,5.9%,156,76.1%,10,4.9%,166,81.0%
+Mercer,104433303,Hermitage SD,190,142,74.7%,10,5.3%,152,80.0%,2,1.1%,154,81.1%
+Mercer,104433604,Jamestown Area SD,58,22,37.9%,13,22.4%,35,60.3%,1,1.7%,36,62.1%
+Mercer,104433903,Lakeview SD,126,63,50.0%,16,12.7%,79,62.7%,3,2.4%,82,65.1%
+Mercer,104435003,Mercer Area SD,97,56,57.7%,0,0.0%,56,57.7%,7,7.2%,63,64.9%
+Mercer,104435303,Reynolds SD,102,61,59.8%,5,4.9%,66,64.7%,1,1.0%,67,65.7%
+Mercer,104435603,Sharon City SD,142,75,52.8%,2,1.4%,77,54.2%,0,0.0%,77,54.2%
+Mercer,104435703,Sharpsville Area SD,109,81,74.3%,2,1.8%,83,76.1%,7,6.4%,90,82.6%
+Mercer,104437503,West Middlesex Area SD,79,57,72.2%,2,2.5%,59,74.7%,5,6.3%,64,81.0%
+Mifflin,111444602,Mifflin County SD,437,222,50.8%,41,9.4%,263,60.2%,11,2.5%,274,62.7%
+Monroe,120452003,East Stroudsburg Area SD,701,338,48.2%,9,1.3%,347,49.5%,8,1.1%,355,50.6%
+Monroe,120455203,Pleasant Valley SD,539,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
+Monroe,120455403,Pocono Mountain SD,950,704,74.1%,14,1.5%,718,75.6%,7,0.7%,725,76.3%
+Monroe,120456003,Stroudsburg Area SD,436,318,72.9%,0,0.0%,318,72.9%,0,0.0%,318,72.9%
+Montgomery,123460302,Abington  SD,580,508,87.6%,8,1.4%,516,89.0%,5,0.9%,521,89.8%
+Montgomery,123461302,Cheltenham Township SD,395,373,94.4%,2,0.5%,375,94.9%,0,0.0%,375,94.9%
+Montgomery,123461602,Colonial SD,356,308,86.5%,6,1.7%,314,88.2%,7,2.0%,321,90.2%
+Montgomery,123463603,Hatboro-Horsham SD,473,415,87.7%,10,2.1%,425,89.9%,6,1.3%,431,91.1%
+Montgomery,123463803,Jenkintown SD,42,39,92.9%,1,2.4%,40,95.2%,0,0.0%,40,95.2%
+Montgomery,123464502,Lower Merion SD,603,567,94.0%,6,1.0%,573,95.0%,8,1.3%,581,96.4%
+Montgomery,123464603,Lower Moreland Township SD,190,183,96.3%,3,1.6%,186,97.9%,2,1.1%,188,98.9%
+Montgomery,123465303,Methacton SD,437,379,86.7%,2,0.5%,381,87.2%,7,1.6%,388,88.8%
+Montgomery,123465602,Norristown Area SD,428,318,74.3%,12,2.8%,330,77.1%,19,4.4%,349,81.5%
+Montgomery,123465702,North Penn SD,"1,121",971,86.6%,15,1.3%,986,88.0%,11,1.0%,997,88.9%
+Montgomery,123466103,Perkiomen Valley SD,343,286,83.4%,6,1.7%,292,85.1%,3,0.9%,295,86.0%
+Montgomery,123466303,Pottsgrove SD,154,131,85.1%,4,2.6%,135,87.7%,2,1.3%,137,89.0%
+Montgomery,123466403,Pottstown SD,169,113,66.9%,14,8.3%,127,75.1%,9,5.3%,136,80.5%
+Montgomery,123467103,Souderton Area SD,496,393,79.2%,28,5.6%,421,84.9%,1,0.2%,422,85.1%
+Montgomery,123467303,Spring-Ford Area SD,442,374,84.6%,8,1.8%,382,86.4%,16,3.6%,398,90.0%
+Montgomery,123467203,Springfield Township SD,191,173,90.6%,2,1.0%,175,91.6%,0,0.0%,175,91.6%
+Montgomery,123468303,Upper Dublin SD,403,383,95.0%,0,0.0%,383,95.0%,2,0.5%,385,95.5%
+Montgomery,123468402,Upper Merion Area SD,237,210,88.6%,6,2.5%,216,91.1%,0,0.0%,216,91.1%
+Montgomery,123468503,Upper Moreland Township SD,226,164,72.6%,0,0.0%,164,72.6%,12,5.3%,176,77.9%
+Montgomery,123468603,Upper Perkiomen SD,211,154,73.0%,4,1.9%,158,74.9%,7,3.3%,165,78.2%
+Montgomery,123469303,Wissahickon SD,333,307,92.2%,0,0.0%,307,92.2%,0,0.0%,307,92.2%
+Montour,116471803,Danville Area SD,191,152,79.6%,2,1.0%,154,80.6%,1,0.5%,155,81.2%
+Northampton,120480803,Bangor Area SD,309,190,61.5%,3,1.0%,193,62.5%,1,0.3%,194,62.8%
+Northampton,120481002,Bethlehem Area SD,"1,123",924,82.3%,35,3.1%,959,85.4%,3,0.3%,962,85.7%
+Northampton,120483302,Easton Area SD,698,582,83.4%,6,0.9%,588,84.2%,19,2.7%,607,87.0%
+Northampton,120484803,Nazareth Area SD,389,334,85.9%,9,2.3%,343,88.2%,6,1.5%,349,89.7%
+Northampton,120484903,Northampton Area SD,463,365,78.8%,11,2.4%,376,81.2%,2,0.4%,378,81.6%
+Northampton,120485603,Pen Argyl Area SD,131,113,86.3%,1,0.8%,114,87.0%,2,1.5%,116,88.5%
+Northampton,120486003,Saucon Valley SD,190,143,75.3%,4,2.1%,147,77.4%,3,1.6%,150,78.9%
+Northampton,120488603,Wilson Area SD,177,127,71.8%,3,1.7%,130,73.4%,4,2.3%,134,75.7%
+Northumberland,116493503,Line Mountain SD,82,47,57.3%,7,8.5%,54,65.9%,8,9.8%,62,75.6%
+Northumberland,116495003,Milton Area SD,205,107,52.2%,23,11.2%,130,63.4%,3,1.5%,133,64.9%
+Northumberland,116495103,Mount Carmel Area SD,127,85,66.9%,1,0.8%,86,67.7%,7,5.5%,93,73.2%
+Northumberland,116496503,Shamokin Area SD,142,95,66.9%,6,4.2%,101,71.1%,1,0.7%,102,71.8%
+Northumberland,116496603,Shikellamy SD,208,102,49.0%,13,6.3%,115,55.3%,3,1.4%,118,56.7%
+Northumberland,116498003,Warrior Run SD,124,72,58.1%,11,8.9%,83,66.9%,21,16.9%,104,83.9%
+Perry,115503004,Greenwood SD,68,28,41.2%,1,1.5%,29,42.6%,4,5.9%,33,48.5%
+Perry,115504003,Newport SD,74,54,73.0%,0,0.0%,54,73.0%,0,0.0%,54,73.0%
+Perry,115506003,Susquenita SD,148,102,68.9%,2,1.4%,104,70.3%,0,0.0%,104,70.3%
+Perry,115508003,West Perry SD,193,87,45.1%,11,5.7%,98,50.8%,9,4.7%,107,55.4%
+Philadelphia,126515001,Philadelphia City SD,"8,732","4,579",52.4%,207,2.4%,"4,786",54.8%,303,3.5%,"5,089",58.3%
+Pike,120522003,Delaware Valley SD,446,366,82.1%,8,1.8%,374,83.9%,3,0.7%,377,84.5%
+Potter,109530304,Austin Area SD,18,8,44.4%,0,0.0%,8,44.4%,1,5.6%,9,50.0%
+Potter,109531304,Coudersport Area SD,66,47,71.2%,0,0.0%,47,71.2%,4,6.1%,51,77.3%
+Potter,109532804,Galeton Area SD,22,10,45.5%,0,0.0%,10,45.5%,0,0.0%,10,45.5%
+Potter,109535504,Northern Potter SD,49,22,44.9%,3,6.1%,25,51.0%,2,4.1%,27,55.1%
+Potter,109537504,Oswayo Valley SD,44,21,47.7%,0,0.0%,21,47.7%,5,11.4%,26,59.1%
+Schuylkill,129540803,Blue Mountain SD,226,163,72.1%,8,3.5%,171,75.7%,12,5.3%,183,81.0%
+Schuylkill,129544503,Mahanoy Area SD,88,51,58.0%,5,5.7%,56,63.6%,15,17.0%,71,80.7%
+Schuylkill,129544703,Minersville Area SD,97,56,57.7%,16,16.5%,72,74.2%,2,2.1%,74,76.3%
+Schuylkill,129545003,North Schuylkill SD,155,95,61.3%,10,6.5%,105,67.7%,6,3.9%,111,71.6%
+Schuylkill,129546003,Pine Grove Area SD,131,62,47.3%,20,15.3%,82,62.6%,9,6.9%,91,69.5%
+Schuylkill,129546103,Pottsville Area SD,275,177,64.4%,20,7.3%,197,71.6%,2,0.7%,199,72.4%
+Schuylkill,129547303,Schuylkill Haven Area SD,99,65,65.7%,3,3.0%,68,68.7%,6,6.1%,74,74.7%
+Schuylkill,129547203,Shenandoah Valley SD,72,38,52.8%,5,6.9%,43,59.7%,5,6.9%,48,66.7%
+Schuylkill,129547603,Tamaqua Area SD,156,129,82.7%,8,5.1%,137,87.8%,0,0.0%,137,87.8%
+Schuylkill,129547803,Tri-Valley SD,73,37,50.7%,11,15.1%,48,65.8%,2,2.7%,50,68.5%
+Schuylkill,129548803,Williams Valley SD,91,49,53.8%,11,12.1%,60,65.9%,4,4.4%,64,70.3%
+Snyder,116555003,Midd-West SD,164,67,40.9%,11,6.7%,78,47.6%,3,1.8%,81,49.4%
+Snyder,116557103,Selinsgrove Area SD,209,155,74.2%,1,0.5%,156,74.6%,5,2.4%,161,77.0%
+Somerset,108561003,Berlin Brothersvalley SD,82,56,68.3%,4,4.9%,60,73.2%,0,0.0%,60,73.2%
+Somerset,108561803,Conemaugh Township Area SD,96,67,69.8%,8,8.3%,75,78.1%,3,3.1%,78,81.3%
+Somerset,108565203,Meyersdale Area SD,81,45,55.6%,7,8.6%,52,64.2%,1,1.2%,53,65.4%
+Somerset,108565503,North Star SD,101,68,67.3%,3,3.0%,71,70.3%,10,9.9%,81,80.2%
+Somerset,108566303,Rockwood Area SD,65,0,0.0%,0,0.0%,0,0.0%,0,0.0%,0,0.0%
+Somerset,108567004,Salisbury-Elk Lick SD,35,24,68.6%,1,2.9%,25,71.4%,0,0.0%,25,71.4%
+Somerset,108567204,Shade-Central City SD,47,21,44.7%,2,4.3%,23,48.9%,2,4.3%,25,53.2%
+Somerset,108567404,Shanksville-Stonycreek SD,45,29,64.4%,0,0.0%,29,64.4%,1,2.2%,30,66.7%
+Somerset,108567703,Somerset Area SD,221,133,60.2%,8,3.6%,141,63.8%,8,3.6%,149,67.4%
+Somerset,108568404,Turkeyfoot Valley Area SD,18,7,38.9%,0,0.0%,7,38.9%,0,0.0%,7,38.9%
+Somerset,108569103,Windber Area SD,99,76,76.8%,1,1.0%,77,77.8%,2,2.0%,79,79.8%
+Sullivan,117576303,Sullivan County SD,56,33,58.9%,1,1.8%,34,60.7%,0,0.0%,34,60.7%
+Susquehanna,119581003,Blue Ridge SD,76,52,68.4%,3,3.9%,55,72.4%,0,0.0%,55,72.4%
+Susquehanna,119582503,Elk Lake SD,101,71,70.3%,2,2.0%,73,72.3%,2,2.0%,75,74.3%
+Susquehanna,119583003,Forest City Regional SD,67,39,58.2%,0,0.0%,39,58.2%,1,1.5%,40,59.7%
+Susquehanna,119584503,Montrose Area SD,154,111,72.1%,7,4.5%,118,76.6%,11,7.1%,129,83.8%
+Susquehanna,119584603,Mountain View SD,105,68,64.8%,11,10.5%,79,75.2%,11,10.5%,90,85.7%
+Susquehanna,119586503,Susquehanna Community SD,62,46,74.2%,0,0.0%,46,74.2%,4,6.5%,50,80.6%
+Tioga,117596003,Northern Tioga SD,169,106,62.7%,6,3.6%,112,66.3%,7,4.1%,119,70.4%
+Tioga,117597003,Southern Tioga SD,186,99,53.2%,11,5.9%,110,59.1%,6,3.2%,116,62.4%
+Tioga,117598503,Wellsboro Area SD,107,73,68.2%,7,6.5%,80,74.8%,2,1.9%,82,76.6%
+Union,116604003,Lewisburg Area SD,166,134,80.7%,0,0.0%,134,80.7%,0,0.0%,134,80.7%
+Union,116605003,Mifflinburg Area SD,189,116,61.4%,7,3.7%,123,65.1%,1,0.5%,124,65.6%
+Venango,106611303,Cranberry Area SD,98,54,55.1%,16,16.3%,70,71.4%,0,0.0%,70,71.4%
+Venango,106612203,Franklin Area SD,179,100,55.9%,2,1.1%,102,57.0%,7,3.9%,109,60.9%
+Venango,106616203,Oil City Area SD,191,104,54.5%,15,7.9%,119,62.3%,6,3.1%,125,65.4%
+Venango,106617203,Titusville Area SD,159,116,73.0%,4,2.5%,120,75.5%,0,0.0%,120,75.5%
+Venango,106618603,Valley Grove SD,70,49,70.0%,0,0.0%,49,70.0%,0,0.0%,49,70.0%
+Warren,105628302,Warren County SD,428,280,65.4%,7,1.6%,287,67.1%,18,4.2%,305,71.3%
+Washington,101630504,Avella Area SD,62,39,62.9%,0,0.0%,39,62.9%,8,12.9%,47,75.8%
+Washington,101630903,Bentworth SD,92,60,65.2%,19,20.7%,79,85.9%,1,1.1%,80,87.0%
+Washington,101631003,Bethlehem-Center SD,95,49,51.6%,14,14.7%,63,66.3%,2,2.1%,65,68.4%
+Washington,101631203,Burgettstown Area SD,116,66,56.9%,18,15.5%,84,72.4%,9,7.8%,93,80.2%
+Washington,101631503,California Area SD,76,58,76.3%,5,6.6%,63,82.9%,9,11.8%,72,94.7%
+Washington,101631703,Canon-McMillan SD,329,267,81.2%,15,4.6%,282,85.7%,6,1.8%,288,87.5%
+Washington,101631803,Charleroi SD,101,67,66.3%,20,19.8%,87,86.1%,1,1.0%,88,87.1%
+Washington,101631903,Chartiers-Houston SD,102,66,64.7%,13,12.7%,79,77.5%,2,2.0%,81,79.4%
+Washington,101632403,Fort Cherry SD,90,61,67.8%,4,4.4%,65,72.2%,0,0.0%,65,72.2%
+Washington,101633903,McGuffey SD,158,93,58.9%,9,5.7%,102,64.6%,2,1.3%,104,65.8%
+Washington,101636503,Peters Township SD,351,320,91.2%,5,1.4%,325,92.6%,3,0.9%,328,93.4%
+Washington,101637002,Ringgold SD,266,180,67.7%,15,5.6%,195,73.3%,8,3.0%,203,76.3%
+Washington,101638003,Trinity Area SD,272,182,66.9%,24,8.8%,206,75.7%,10,3.7%,216,79.4%
+Washington,101638803,Washington SD,124,69,55.6%,17,13.7%,86,69.4%,2,1.6%,88,71.0%
+Wayne,119648303,Wallenpaupack Area SD,301,216,71.8%,11,3.7%,227,75.4%,11,3.7%,238,79.1%
+Wayne,119648703,Wayne Highlands SD,258,164,63.6%,7,2.7%,171,66.3%,13,5.0%,184,71.3%
+Wayne,119648903,Western Wayne SD,186,126,67.7%,4,2.2%,130,69.9%,13,7.0%,143,76.9%
+Westmoreland,107650603,Belle Vernon Area SD,239,168,70.3%,14,5.9%,182,76.2%,2,0.8%,184,77.0%
+Westmoreland,107650703,Burrell SD,165,132,80.0%,9,5.5%,141,85.5%,3,1.8%,144,87.3%
+Westmoreland,107651603,Derry Area SD,210,163,77.6%,13,6.2%,176,83.8%,7,3.3%,183,87.1%
+Westmoreland,107652603,Franklin Regional SD,320,270,84.4%,10,3.1%,280,87.5%,2,0.6%,282,88.1%
+Westmoreland,107653102,Greater Latrobe SD,317,261,82.3%,4,1.3%,265,83.6%,4,1.3%,269,84.9%
+Westmoreland,107653203,Greensburg Salem SD,224,131,58.5%,7,3.1%,138,61.6%,0,0.0%,138,61.6%
+Westmoreland,107653802,Hempfield Area SD,503,412,81.9%,7,1.4%,419,83.3%,11,2.2%,430,85.5%
+Westmoreland,107654103,Jeannette City SD,91,65,71.4%,5,5.5%,70,76.9%,0,0.0%,70,76.9%
+Westmoreland,107654403,Kiski Area SD,325,253,77.8%,30,9.2%,283,87.1%,2,0.6%,285,87.7%
+Westmoreland,107654903,Ligonier Valley SD,165,116,70.3%,9,5.5%,125,75.8%,2,1.2%,127,77.0%
+Westmoreland,107655803,Monessen City SD,80,60,75.0%,0,0.0%,60,75.0%,0,0.0%,60,75.0%
+Westmoreland,107655903,Mount Pleasant Area SD,188,146,77.7%,3,1.6%,149,79.3%,8,4.3%,157,83.5%
+Westmoreland,107656303,New Kensington-Arnold SD,130,90,69.2%,0,0.0%,90,69.2%,0,0.0%,90,69.2%
+Westmoreland,107656502,Norwin SD,398,293,73.6%,18,4.5%,311,78.1%,3,0.8%,314,78.9%
+Westmoreland,107657103,Penn-Trafford SD,359,300,83.6%,3,0.8%,303,84.4%,5,1.4%,308,85.8%
+Westmoreland,107657503,Southmoreland SD,153,102,66.7%,0,0.0%,102,66.7%,22,14.4%,124,81.0%
+Westmoreland,107658903,Yough SD,190,123,64.7%,6,3.2%,129,67.9%,11,5.8%,140,73.7%
+Wyoming,119665003,Lackawanna Trail SD,95,62,65.3%,5,5.3%,67,70.5%,0,0.0%,67,70.5%
+Wyoming,118667503,Tunkhannock Area SD,259,178,68.7%,7,2.7%,185,71.4%,4,1.5%,189,73.0%
+York,112671303,Central York SD,349,258,73.9%,15,4.3%,273,78.2%,8,2.3%,281,80.5%
+York,112671603,Dallastown Area SD,435,316,72.6%,12,2.8%,328,75.4%,15,3.4%,343,78.9%
+York,112671803,Dover Area SD,207,118,57.0%,20,9.7%,138,66.7%,12,5.8%,150,72.5%
+York,112672203,Eastern York SD,175,97,55.4%,13,7.4%,110,62.9%,9,5.1%,119,68.0%
+York,112672803,Hanover Public SD,104,55,52.9%,11,10.6%,66,63.5%,2,1.9%,68,65.4%
+York,112674403,Northeastern York SD,214,127,59.3%,16,7.5%,143,66.8%,12,5.6%,155,72.4%
+York,115674603,Northern York County SD,258,162,62.8%,14,5.4%,176,68.2%,3,1.2%,179,69.4%
+York,112675503,Red Lion Area SD,366,229,62.6%,32,8.7%,261,71.3%,9,2.5%,270,73.8%
+York,112676203,South Eastern SD,247,187,75.7%,0,0.0%,187,75.7%,6,2.4%,193,78.1%
+York,112676403,South Western SD,299,216,72.2%,8,2.7%,224,74.9%,17,5.7%,241,80.6%
+York,112676503,Southern York County SD,282,205,72.7%,7,2.5%,212,75.2%,7,2.5%,219,77.7%
+York,112676703,Spring Grove Area SD,283,179,63.3%,25,8.8%,204,72.1%,18,6.4%,222,78.4%
+York,115219002,West Shore SD,625,463,74.1%,11,1.8%,474,75.8%,11,1.8%,485,77.6%
+York,112678503,West York Area SD,167,142,85.0%,6,3.6%,148,88.6%,3,1.8%,151,90.4%
+York,112679002,York City SD,254,58,22.8%,0,0.0%,58,22.8%,22,8.7%,80,31.5%
+York,112679403,York Suburban SD,179,144,80.4%,14,7.8%,158,88.3%,1,0.6%,159,88.8%
