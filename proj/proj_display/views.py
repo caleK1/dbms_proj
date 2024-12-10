@@ -5,6 +5,7 @@
 
 from django.shortcuts import render
 from django.http import HttpResponse
+from itertools import islice
 from .models import School
 from .models import District
 from .models import County
@@ -16,6 +17,7 @@ from .models import DistrictInfo
 from .models import GenderDistrict
 from .models import DistrictDemographic
 from .models import ExtraDemoDistrict
+from .models import SchoolFiscalData
 
 
 # Create your views here.
@@ -136,17 +138,129 @@ def year_view_school(request, school_id):
     selected_year = request.GET.get('yearSchool', 'all-years')
     context['selected_year'] = selected_year
 
-    if selected_year != "all-years":
-        if SchoolDemographic.objects.filter(school_year=selected_year, school_id=school_id).exists():
-            school_demo = SchoolDemographic.objects.filter(school_year=selected_year, school_id=school_id)
-            context['school_demo'] = school_demo
+    selected_cat = request.GET.get('categorySchool', 'demographic')
+    context['selected_cat'] = selected_cat
+
+    if selected_cat == "demographic":
+        table_create_demographics(school_id, selected_year, context)
+    elif selected_cat == "fiscal":
+        table_create_fiscal(school_id, selected_year, context)
     else:
-        if SchoolDemographic.objects.filter(school_id=school_id).exists():
-            school_demo = SchoolDemographic.objects.filter(school_id=school_id)
-            context['school_demo'] = school_demo
+        pass
 
 
     return render(request, 'school_view.html', context)
+
+def table_create_demographics(school_id, selected_year, context):
+    if selected_year != "all-years":
+        #School Demographic
+        if SchoolDemographic.objects.filter(school_year=selected_year, school_id=school_id).exists():
+            cat_info = SchoolDemographic.objects.get(school_year=selected_year, school_id=school_id)
+            cat_info_dict = cat_info.__dict__
+            good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
+            context['cat_info'] = good_cat_info_dict.values()
+            context['cat_headers'] = good_cat_info_dict.keys()
+            context['table_name'] = 'Demographic Information'
+
+        #Extra Demographic
+        if ExtraDemoSchool.objects.filter(school_year=selected_year, school_id=school_id).exists():
+            cat_info2 = ExtraDemoSchool.objects.get(school_year=selected_year, school_id=school_id)
+            cat_info_dict2 = cat_info2.__dict__
+            good_cat_info_dict2 = dict(islice(cat_info_dict2.items(), 3, None))
+            context['cat_info2'] = good_cat_info_dict2.values()
+            context['cat_headers2'] = good_cat_info_dict2.keys()
+            context['table_name2'] = 'More Demographic Information'
+
+        #Gender School
+        if GenderSchool.objects.filter(school_year=selected_year, school_id=school_id).exists():
+            cat_info3 = GenderSchool.objects.get(school_year=selected_year, school_id=school_id)
+            cat_info_dict3 = cat_info3.__dict__
+            good_cat_info_dict3 = dict(islice(cat_info_dict3.items(), 3, None))
+            context['cat_info3'] = good_cat_info_dict3.values()
+            context['cat_headers3'] = good_cat_info_dict3.keys()
+            context['table_name3'] = 'Gender Information'
+
+    else:
+        if SchoolDemographic.objects.filter(school_id=school_id).exists():
+            cat_info = SchoolDemographic.objects.filter(school_id=school_id)
+            cat_info_list = []
+            cat_info_headers = []
+
+            i = 0
+            for info in cat_info:
+                cat_info_dict = info.__dict__
+                good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
+                cat_info_list.append(good_cat_info_dict)
+
+                if i == 0:
+                    cat_headers = good_cat_info_dict.keys()
+            context['cat_info'] = cat_info_list
+            context['cat_headers'] = cat_headers
+            context['table_name'] = 'Demographic Information'
+
+        #Extra Demographic
+        if ExtraDemoSchool.objects.filter(school_id=school_id).exists():
+            cat_info2 = ExtraDemoSchool.objects.filter(school_id=school_id)
+            cat_info_list2 = []
+            cat_info_headers2 = []
+
+            i = 0
+            for info in cat_info2:
+                cat_info_dict2 = info.__dict__
+                good_cat_info_dict2 = dict(islice(cat_info_dict2.items(), 3, None))
+                cat_info_list2.append(good_cat_info_dict2)
+
+                if i == 0:
+                    cat_headers2 = good_cat_info_dict2.keys()
+            context['cat_info2'] = cat_info_list2
+            context['cat_headers2'] = cat_headers2
+            context['table_name2'] = 'More Demographic Information'
+
+        #Gender School
+        if GenderSchool.objects.filter(school_id=school_id).exists():
+            cat_info3 = GenderSchool.objects.filter(school_id=school_id)
+            cat_info_list3 = []
+            cat_info_headers3 = []
+
+            i = 0
+            for info in cat_info3:
+                cat_info_dict3 = info.__dict__
+                good_cat_info_dict3 = dict(islice(cat_info_dict3.items(), 3, None))
+                cat_info_list3.append(good_cat_info_dict3)
+
+                if i == 0:
+                    cat_headers3 = good_cat_info_dict3.keys()
+            context['cat_info3'] = cat_info_list3
+            context['cat_headers3'] = cat_headers3
+            context['table_name3'] = 'Gender Information'
+
+def table_create_fiscal(school_id, selected_year, context):
+    if selected_year != "all-years":
+        #School Demographic
+        if SchoolFiscalData.objects.filter(school_year=selected_year, school_id=school_id).exists():
+            cat_info = SchoolFiscalData.objects.get(school_year=selected_year, school_id=school_id)
+            cat_info_dict = cat_info.__dict__
+            good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
+            context['cat_info'] = good_cat_info_dict.values()
+            context['cat_headers'] = good_cat_info_dict.keys()
+            context['table_name'] = 'Fiscal Information'
+    else:
+        if SchoolFiscalData.objects.filter(school_id=school_id).exists():
+            cat_info = SchoolFiscalData.objects.filter(school_id=school_id)
+            cat_info_list = []
+            cat_info_headers = []
+
+            i = 0
+            for info in cat_info:
+                cat_info_dict = info.__dict__
+                good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
+                cat_info_list.append(good_cat_info_dict)
+
+                if i == 0:
+                    cat_headers = good_cat_info_dict.keys()
+            context['cat_info'] = cat_info_list
+            context['cat_headers'] = cat_headers
+            context['table_name'] = 'Fiscal Information'
 
 def compare(request):
     """
