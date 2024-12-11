@@ -22,6 +22,7 @@ from .models import ExtraDemoDistrict
 from .models import SchoolFiscalData
 from .models import LowIncomePercentPubSchool
 from .models import DistrictFiscalData
+from .models import PublicSchoolGradRatesSchool
 
 
 # Create your views here.
@@ -152,6 +153,8 @@ def year_view_school(request, school_id):
         table_create_fiscal(school_id, selected_year, context, "")
     elif selected_cat == "enroll_low_income":
         table_create_enroll_low_income(school_id, selected_year, context, "")
+    elif selected_cat == "pub_school_grad_rates":
+        table_create_pub_school_grad_rates(school_id, selected_year, context, "")
     else:
         pass
 
@@ -215,6 +218,9 @@ def compare(request):
         elif selected_cat == "enroll_low_income":
             table_create_enroll_low_income(selected_school, 'all-years', context, "")
             table_create_enroll_low_income(selected_school2, 'all-years', context, "_compare")
+        elif selected_cat == "pub_school_grad_rates":
+            table_create_pub_school_grad_rates(selected_school, 'all-years', context, "")
+            table_create_pub_school_grad_rates(selected_school2, 'all-years', context, "_compare")
         else:
             pass
 
@@ -616,3 +622,45 @@ def table_create_fiscal_district(district_aun, selected_year, context, add):
 
             context[f'cat_info{add}'] = cat_info_list
             context['table_name'] = 'Fiscal Information'
+
+def table_create_pub_school_grad_rates(school_id, selected_year, context, add):
+    if selected_year != "all-years":
+        #School Demographic
+        if PublicSchoolGradRatesSchool.objects.filter(school_year=selected_year, school_id=school_id).exists():
+            cat_info = PublicSchoolGradRatesSchool.objects.get(school_year=selected_year, school_id=school_id)
+
+            fields = []
+            i = 0
+            for field in PublicSchoolGradRatesSchool._meta.get_fields():
+                if not field.is_relation and i != 0:
+                    fields.append(field.verbose_name)
+                i = i + 1
+            context[f'cat_headers{add}'] = fields
+
+            cat_info_dict = cat_info.__dict__
+            good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
+            context[f'cat_info{add}'] = good_cat_info_dict.values()
+            context['table_name'] = 'Public School Graduation Rates'
+    else:
+        if PublicSchoolGradRatesSchool.objects.filter(school_id=school_id).exists():
+            cat_info = PublicSchoolGradRatesSchool.objects.filter(school_id=school_id)
+
+            fields = []
+            i = 0
+            for field in PublicSchoolGradRatesSchool._meta.get_fields():
+                if not field.is_relation and i != 0:
+                    fields.append(field.verbose_name)
+                i = i + 1
+            context[f'cat_headers{add}'] = fields
+
+            cat_info_list = []
+            cat_info_headers = []
+
+            i = 0
+            for info in cat_info:
+                cat_info_dict = info.__dict__
+                good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
+                cat_info_list.append(good_cat_info_dict)
+
+            context[f'cat_info{add}'] = cat_info_list
+            context['table_name'] = 'Public School Graduation Rates'
