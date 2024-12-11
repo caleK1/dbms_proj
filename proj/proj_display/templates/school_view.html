@@ -4,31 +4,6 @@
 
 	<h1>School View for {{ school_info.school_name }}</h1>
 
-	<br></br>
-
-	<div class="container">
-	    <form method="GET" action="{% url 'year_view_school' school_id=school_info.school_id %}">
-	        <div class="form-group">
-	            <label for="yearSelectSchool">Choose Year</label>
-	            <select class="form-control" id="yearSelectSchool" name="yearSchool" onchange="this.form.submit()">
-	            	<option value="all-years" {% if selected_year == 'all-years' %}selected{% endif %}>All Years</option>
-	                <option value="20222023" {% if selected_year == '20222023' %}selected{% endif %}>2022-2023</option>
-	                <option value="20212022" {% if selected_year == '20212022' %}selected{% endif %}>2021-2022</option>
-	                <option value="20202021" {% if selected_year == '20202021' %}selected{% endif %}>2020-2021</option>
-	            </select>
-	        </div>
-		        
-		    <div class="form-group">
-		        <label for="categorySelectSchool">Choose Category</label>
-		        <select class="form-control" id="categorySelectSchool" name="categorySchool" onchange="this.form.submit()">
-		           	<option value="demographic" {% if selected_cat == 'demographic' %}selected{% endif %}>Demographic</option>
-		            <option value="fiscal" {% if selected_cat == 'fiscal' %}selected{% endif %}>Fiscal</option>
-		            <option value="enroll_low_income" {% if selected_cat == 'enroll_low_income' %}selected{% endif %}>Enrollment Low Income</option>
-		        </select>
-		    </div>
-		</form>
-	</div>
-
 	{% if fast_facts %}
 	<br></br>
 	<h3>Contact Information:</h3>
@@ -55,7 +30,46 @@
 		    
 			</tbody>
 		</table>
+	</div>
 	{% endif %}
+
+	<br></br>
+
+	<div class="container">
+	    <form method="GET" action="{% url 'year_view_school' school_id=school_info.school_id %}">
+	        <div class="form-group">
+	            <label for="yearSelectSchool">Choose Year</label>
+	            <select class="form-control" id="yearSelectSchool" name="yearSchool" onchange="this.form.submit()">
+	            	<option value="all-years" {% if selected_year == 'all-years' %}selected{% endif %}>All Years</option>
+	                <option value="20222023" {% if selected_year == '20222023' %}selected{% endif %}>2022-2023</option>
+	                <option value="20212022" {% if selected_year == '20212022' %}selected{% endif %}>2021-2022</option>
+	                <option value="20202021" {% if selected_year == '20202021' %}selected{% endif %}>2020-2021</option>
+	                <option value="20192020" {% if selected_year == '20192020' %}selected{% endif %}>2019-2020</option>
+	                <option value="20182019" {% if selected_year == '20182019' %}selected{% endif %}>2018-2019</option>
+	                <option value="20172018" {% if selected_year == '20172018' %}selected{% endif %}>2017-2018</option>
+	                <option value="20162017" {% if selected_year == '20162017' %}selected{% endif %}>2016-2017</option>
+	                <option value="20152016" {% if selected_year == '20152016' %}selected{% endif %}>2015-2016</option>
+	                <option value="20142015" {% if selected_year == '20142015' %}selected{% endif %}>2014-2015</option>
+	                <option value="20132014" {% if selected_year == '20132014' %}selected{% endif %}>2013-2014</option>
+	                <option value="20122013" {% if selected_year == '20122013' %}selected{% endif %}>2012-2013</option>
+	                <option value="20112012" {% if selected_year == '20112012' %}selected{% endif %}>2011-2012</option>
+	                <option value="20102011" {% if selected_year == '20102011' %}selected{% endif %}>2010-2011</option>
+	                <option value="20092010" {% if selected_year == '20092010' %}selected{% endif %}>2009-2010</option>
+	                <option value="20082009" {% if selected_year == '20082009' %}selected{% endif %}>2008-2009</option>
+	                <option value="20072008" {% if selected_year == '20072008' %}selected{% endif %}>2007-2008</option>
+	            </select>
+	        </div>
+		        
+		    <div class="form-group">
+		        <label for="categorySelectSchool">Choose Category</label>
+		        <select class="form-control" id="categorySelectSchool" name="categorySchool" onchange="this.form.submit()">
+		           	<option value="demographic" {% if selected_cat == 'demographic' %}selected{% endif %}>Demographic</option>
+		            <option value="fiscal" {% if selected_cat == 'fiscal' %}selected{% endif %}>Fiscal</option>
+		            <option value="enroll_low_income" {% if selected_cat == 'enroll_low_income' %}selected{% endif %}>Enrollment Low Income</option>
+		        </select>
+		    </div>
+		</form>
+	</div>
 
 	{% if selected_cat %}
 		<h3>{{ table_name }}</h3>
