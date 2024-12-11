@@ -7,7 +7,6 @@
 	<br></br>
 
 	<div class="container">
-    
 	    <form method="GET" action="{% url 'year_view_school' school_id=school_info.school_id %}">
 	        <div class="form-group">
 	            <label for="yearSelectSchool">Choose Year</label>
@@ -18,7 +17,16 @@
 	                <option value="20202021" {% if selected_year == '20202021' %}selected{% endif %}>2020-2021</option>
 	            </select>
 	        </div>
-	    </form>
+		        
+		    <div class="form-group">
+		        <label for="categorySelectSchool">Choose Category</label>
+		        <select class="form-control" id="categorySelectSchool" name="categorySchool" onchange="this.form.submit()">
+		           	<option value="demographic" {% if selected_cat == 'demographic' %}selected{% endif %}>Demographic</option>
+		            <option value="fiscal" {% if selected_cat == 'fiscal' %}selected{% endif %}>Fiscal</option>
+		            <option value="enroll_low_income" {% if selected_cat == 'enroll_low_income' %}selected{% endif %}>Enrollment Low Income</option>
+		        </select>
+		    </div>
+		</form>
 	</div>
 
 	{% if fast_facts %}
@@ -48,18 +56,6 @@
 			</tbody>
 		</table>
 	{% endif %}
-
-	<div class="container">
-	    <form method="GET" action="{% url 'year_view_school' school_id=school_info.school_id %}">
-	        <div class="form-group">
-	            <label for="categorySelectSchool">Choose Category</label>
-	            <select class="form-control" id="categorySelectSchool" name="categorySchool" onchange="this.form.submit()">
-	            	<option value="demographic" {% if selected_cat == 'demographic' %}selected{% endif %}>Demographic</option>
-	                <option value="fiscal" {% if selected_cat == 'fiscal' %}selected{% endif %}>Fiscal</option>
-	            </select>
-	        </div>
-	    </form>
-	</div>
 
 	{% if selected_cat %}
 		<h3>{{ table_name }}</h3>
@@ -157,11 +153,11 @@
 		</div>
 	{% endif %}
 
-	{% if html_str %}
+<!-- 	{% if html_str %}
 		<body>
 			{{ html_str | safe}}
 		</body>
-	{% endif %}
+	{% endif %} -->
 
 	{% if cat_graph %}
 		<!-- Load d3.js -->

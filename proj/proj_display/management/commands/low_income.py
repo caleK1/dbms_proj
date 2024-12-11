@@ -13,19 +13,19 @@ def safe_float(value):
 
 class Command(BaseCommand):
     help='Import the data from the LowIncomePercent into the database'
-    years_pub=years=['0809','0910','1011','1112','1213','1314','1415','1516','1617','1718','1819','1920','2021','2122','2223','2324']
+    years_pub=years=['20082009','20092010','20102011','20112012','20122013','20132014','20142015','20152016','20162017','20172018','20182019','20192020','20202021','20212022','20222023','20232024']
     years_priv=['1314','1415','1516','1617','1718','1819','1920','2021','2022','2223']
    
     
     def handle(self, *args, **kwargs):
         LowIncomePercentPubSchool.objects.all().delete()
         LowIncomePercentPrivateSchool.objects.all().delete()
-        low_income_priv_info=[]
+        low_income_priv_info=[] 
         low_income_pub_info=[]
 
 
         for year in self.years_pub:
-            file_path=f'/Users/ericlynch/cs320/dbms_proj/data/PublicSchoolLowIncome/{year}pub_low_pct_clean.csv'
+            file_path=f'/Users/calek/DBMS/dbms_proj/data/PublicSchoolLowIncome/{year}pub_low_pct_clean.csv'
             try:
                 df=pd.read_csv(file_path)
 
@@ -64,7 +64,7 @@ class Command(BaseCommand):
         print(f'Successfully imported {len(low_income_pub_info)} records into the database.')        
 
         for year in self.years_priv:
-                file_path_priv=f'/Users/ericlynch/cs320/dbms_proj/data/PrivateSchoolLowIncome/{year}priv_low_pct_clean.csv'
+                file_path_priv=f'/Users/calek/DBMS/dbms_proj/data/PrivateSchoolLowIncome/{year}priv_low_pct_clean.csv'
                 try:
                     df=pd.read_csv(file_path_priv)
 
