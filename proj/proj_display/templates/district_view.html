@@ -68,12 +68,74 @@
 	        <div class="form-group">
 	            <label for="categorySelectDistrict">Choose Category</label>
 	            <select class="form-control" id="categorySelectDisrict" name="categoryDistrict" onchange="this.form.submit()">
+	            	<option value="" {% if not selected_cat %} disabled selected{% endif %}>Select a Category</option>
 	            	<option value="demographic" {% if selected_cat == 'demographic' %}selected{% endif %}>Demographic</option>
 	                <option value="fiscal" {% if selected_cat == 'fiscal' %}selected{% endif %}>Fiscal</option>
 	            </select>
 	        </div>
+
+	        <div class="form-group">
+		        <label for="trendAttrSelectDistrict">Choose Attribute</label>
+		        <select class="form-control" id="trendAttrSelectDistrict" name="trendAttrDistrict" onchange="this.form.submit()">
+		        	<option value="" {% if not selected_attr %} disabled selected{% endif %}>Select an Attribute</option>
+		           	{% for verbose_attr, name_attr in attributes %}
+				        <option value="{{ name_attr }}" {% if selected_attr == name_attr %}selected{% endif %}>{{ verbose_attr }}</option>
+			        {% endfor %}
+			        {% for verbose_attr, name_attr in attributes2 %}
+				        <option value="{{ name_attr }}" {% if selected_attr == name_attr %}selected{% endif %}>{{ verbose_attr }}</option>
+			        {% endfor %}
+			        {% for verbose_attr, name_attr in attributes3 %}
+				        <option value="{{ name_attr }}" {% if selected_attr == name_attr %}selected{% endif %}>{{ verbose_attr }}</option>
+			        {% endfor %}
+		        </select>
+		    </div>
 	    </form>
 	</div>
+
+	{% if selected_attr %}
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<div style="width: 80%; margin: auto;">
+        	<canvas id="trendChart"></canvas>
+    	</div>
+	    <script>
+	        // Retrieve data passed from Django view (converted into JSON format)
+	        var trendData = JSON.parse('{{ trend_data_json|escapejs }}');  // Convert JSON to JS object
+
+	        // Set up the chart data for Chart.js
+	        var ctx = document.getElementById('trendChart').getContext('2d');
+	        var trendChart = new Chart(ctx, {
+	            type: 'line',  // Line chart
+	            data: {
+	                labels: trendData.years,  // X-axis: Years
+	                datasets: [{
+	                    label: trendData.yLabel +  ' over Years',  // Dataset label
+	                    data: trendData.values,  // Y-axis: Trend values (value1)
+	                    borderColor: 'rgba(75, 192, 192, 1)',  // Line color
+	                    backgroundColor: 'rgba(75, 192, 192, 0.2)',  // Area under the line color
+	                    fill: true,  // Fill the area under the line
+	                    tension: 0.1  // Smooth curve
+	                }]
+	            },
+	            options: {
+	                responsive: true,
+	                scales: {
+	                    x: {
+	                        title: {
+	                            display: true,
+	                            text: 'Year'
+	                        }
+	                    },
+	                    y: {
+	                        title: {
+	                            display: true,
+	                            text: trendData.yLabel
+	                        }
+	                    }
+	                }
+	            }
+	        });
+	    </script>
+	{% endif %}
 
 	{% if selected_cat %}
 		<h3>{{ table_name }}</h3>

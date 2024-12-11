@@ -8,6 +8,7 @@ from django.http import HttpResponse
 from itertools import islice
 import matplotlib.pyplot as plt
 import numpy as np
+import json
 from .models import School
 from .models import District
 from .models import County
@@ -131,6 +132,10 @@ def year_view_district(request, district_aun):
     else:
         pass
 
+    selected_attr = request.GET.get('trendAttrDistrict', 'None')
+    context['selected_attr'] = selected_attr
+    trend_graph_create_district(district_aun, context, selected_cat, selected_attr)
+
 
     return render(request, 'district_view.html', context)
 
@@ -158,6 +163,9 @@ def year_view_school(request, school_id):
     else:
         pass
 
+    selected_attr = request.GET.get('trendAttrSchool', 'None')
+    context['selected_attr'] = selected_attr
+    trend_graph_create(school_id, context, selected_cat, selected_attr)
 
     return render(request, 'school_view.html', context)
 
@@ -226,6 +234,222 @@ def compare(request):
 
     return render(request, 'compare.html', context)
 
+def trend_graph_create_district(district_aun, context, selected_cat, attr):
+    if selected_cat == "demographic":
+
+        demo_attr = ["per_asian", "per_hispanic", "per_pacific_islander", "per_am_indian_or_alaskan_native", "per_african_american", "per_white", "per_two_or_more_races"]
+        extra_demo_attr = ["per_english_learner", "per_special_education", "per_gifted_student", "per_military_connected", "per_foster_care", "per_economically_disadvantaged", "per_homeless"]
+        gender_attr = ["male", "female"]
+
+        if attr in demo_attr:
+            if DistrictDemographic.objects.filter(district=district_aun).exists():
+                years = DistrictDemographic.objects.filter(district=district_aun).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                for year in years_data:
+                    record = DistrictDemographic.objects.filter(district=district_aun, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'yLabel': attr
+                }
+                context['trend_data_json'] = json.dumps(trend_data)
+        if attr in extra_demo_attr:
+            if ExtraDemoDistrict.objects.filter(district=district_aun).exists():
+                years = ExtraDemoDistrict.objects.filter(district=district_aun).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                for year in years_data:
+                    record = ExtraDemoDistrict.objects.filter(district=district_aun, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'yLabel': attr
+                }
+                context['trend_data_json'] = json.dumps(trend_data)
+        if attr in gender_attr:
+            if GenderDistrict.objects.filter(district=district_aun).exists():
+                years = GenderDistrict.objects.filter(district=district_aun).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                for year in years_data:
+                    record = GenderDistrict.objects.filter(district=district_aun, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'yLabel': attr
+                }
+                context['trend_data_json'] = json.dumps(trend_data)
+    elif selected_cat == "fiscal":
+        if DistrictFiscalData.objects.filter(district=district_aun).exists():
+            years = DistrictFiscalData.objects.filter(district=district_aun).values('school_year').distinct()
+            years_data = [item['school_year'] for item in years]
+            print(attr)
+            values = []
+            for year in years_data:
+                record = DistrictFiscalData.objects.filter(district=district_aun, school_year=year).first()
+
+                if record:
+                    value = getattr(record, attr, None)
+                    values.append(value)
+                else:
+                    values.append(None)
+
+            trend_data = {
+                'years': years_data,
+                'values': values,
+                'yLabel': attr
+            }
+            context['trend_data_json'] = json.dumps(trend_data)
+
+def trend_graph_create(school_id, context, selected_cat, attr):
+    if selected_cat == "demographic":
+
+        demo_attr = ["per_asian", "per_hispanic", "per_pacific_islander", "per_am_indian_or_alaskan_native", "per_african_american", "per_white", "per_two_or_more_races"]
+        extra_demo_attr = ["per_english_learner", "per_special_education", "per_gifted_student", "per_military_connected", "per_foster_care", "per_economically_disadvantaged", "per_homeless"]
+        gender_attr = ["male", "female"]
+
+        if attr in demo_attr:
+            if SchoolDemographic.objects.filter(school_id=school_id).exists():
+                years = SchoolDemographic.objects.filter(school_id=school_id).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                for year in years_data:
+                    record = SchoolDemographic.objects.filter(school_id=school_id, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'yLabel': attr
+                }
+                context['trend_data_json'] = json.dumps(trend_data)
+        if attr in extra_demo_attr:
+            if ExtraDemoSchool.objects.filter(school_id=school_id).exists():
+                years = ExtraDemoSchool.objects.filter(school_id=school_id).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                for year in years_data:
+                    record = ExtraDemoSchool.objects.filter(school_id=school_id, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'yLabel': attr
+                }
+                context['trend_data_json'] = json.dumps(trend_data)
+        if attr in gender_attr:
+            if GenderSchool.objects.filter(school_id=school_id).exists():
+                years = GenderSchool.objects.filter(school_id=school_id).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                for year in years_data:
+                    record = GenderSchool.objects.filter(school_id=school_id, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'yLabel': attr
+                }
+                context['trend_data_json'] = json.dumps(trend_data)
+    elif selected_cat == "fiscal":
+        if SchoolFiscalData.objects.filter(school_id=school_id).exists():
+            years = SchoolFiscalData.objects.filter(school_id=school_id).values('school_year').distinct()
+            years_data = [item['school_year'] for item in years]
+            print(attr)
+            values = []
+            for year in years_data:
+                record = SchoolFiscalData.objects.filter(school_id=school_id, school_year=year).first()
+
+                if record:
+                    value = getattr(record, attr, None)
+                    values.append(value)
+                else:
+                    values.append(None)
+
+            trend_data = {
+                'years': years_data,
+                'values': values,
+                'yLabel': attr
+            }
+            context['trend_data_json'] = json.dumps(trend_data)
+    elif selected_cat == "enroll_low_income":
+        if LowIncomePercentPubSchool.objects.filter(school_id=school_id).exists():
+            years = LowIncomePercentPubSchool.objects.filter(school_id=school_id).values('school_year').distinct()
+            years_data = [item['school_year'] for item in years]
+            print(attr)
+            values = []
+            for year in years_data:
+                record = LowIncomePercentPubSchool.objects.filter(school_id=school_id, school_year=year).first()
+
+                if record:
+                    value = getattr(record, attr, None)
+                    values.append(value)
+                else:
+                    values.append(None)
+
+            trend_data = {
+                'years': years_data,
+                'values': values,
+                'yLabel': attr
+            }
+            context['trend_data_json'] = json.dumps(trend_data)
+    elif selected_cat == "pub_school_grad_rates":
+        if PublicSchoolGradRatesSchool.objects.filter(school_id=school_id).exists():
+            years = PublicSchoolGradRatesSchool.objects.filter(school_id=school_id).values('school_year').distinct()
+            years_data = [item['school_year'] for item in years]
+            print(attr)
+            values = []
+            for year in years_data:
+                record = PublicSchoolGradRatesSchool.objects.filter(school_id=school_id, school_year=year).first()
+
+                if record:
+                    value = getattr(record, attr, None)
+                    values.append(value)
+                else:
+                    values.append(None)
+
+            trend_data = {
+                'years': years_data,
+                'values': values,
+                'yLabel': attr
+            }
+            context['trend_data_json'] = json.dumps(trend_data)
+    else:
+        pass
+
 def table_create_enroll_low_income(school_id, selected_year, context, add):
     if selected_year != "all-years":
         #School Demographic
@@ -233,12 +457,16 @@ def table_create_enroll_low_income(school_id, selected_year, context, add):
             cat_info = LowIncomePercentPubSchool.objects.get(school_year=selected_year, school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
             i = 0
             for field in LowIncomePercentPubSchool._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing
 
             cat_info_dict = cat_info.__dict__
             good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
@@ -249,12 +477,17 @@ def table_create_enroll_low_income(school_id, selected_year, context, add):
             cat_info = LowIncomePercentPubSchool.objects.filter(school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in LowIncomePercentPubSchool._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
 
             cat_info_list = []
             cat_info_headers = []
@@ -275,12 +508,16 @@ def table_create_demographics(school_id, selected_year, context, add):
             cat_info = SchoolDemographic.objects.get(school_year=selected_year, school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
             i = 0
             for field in SchoolDemographic._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
 
             cat_info_dict = cat_info.__dict__
             good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
@@ -301,12 +538,17 @@ def table_create_demographics(school_id, selected_year, context, add):
             cat_info2 = ExtraDemoSchool.objects.get(school_year=selected_year, school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
             i = 0
+
             for field in ExtraDemoSchool._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers2{add}'] = fields
+            context[f'attributes2{add}'] = fields_pairing.items()
 
             cat_info_dict2 = cat_info2.__dict__
             good_cat_info_dict2 = dict(islice(cat_info_dict2.items(), 3, None))
@@ -318,12 +560,17 @@ def table_create_demographics(school_id, selected_year, context, add):
             cat_info3 = GenderSchool.objects.get(school_year=selected_year, school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in GenderSchool._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers3{add}'] = fields
+            context[f'attributes3{add}'] = fields_pairing.items()
 
             cat_info_dict3 = cat_info3.__dict__
             good_cat_info_dict3 = dict(islice(cat_info_dict3.items(), 3, None))
@@ -344,12 +591,16 @@ def table_create_demographics(school_id, selected_year, context, add):
             cat_info = SchoolDemographic.objects.filter(school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
             i = 0
             for field in SchoolDemographic._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
 
             cat_info_list = []
             cat_info_headers = []
@@ -368,12 +619,17 @@ def table_create_demographics(school_id, selected_year, context, add):
             cat_info2 = ExtraDemoSchool.objects.filter(school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in ExtraDemoSchool._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers2{add}'] = fields
+            context[f'attributes2{add}'] = fields_pairing.items()
 
             cat_info_list2 = []
             cat_info_headers2 = []
@@ -392,12 +648,17 @@ def table_create_demographics(school_id, selected_year, context, add):
             cat_info3 = GenderSchool.objects.filter(school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in GenderSchool._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers3{add}'] = fields
+            context[f'attributes3{add}'] = fields_pairing.items()
 
             cat_info_list3 = []
             cat_info_headers3 = []
@@ -418,12 +679,17 @@ def table_create_demographics_district(district_aun, selected_year, context, add
             cat_info = DistrictDemographic.objects.get(school_year=selected_year, district=district_aun)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in DistrictDemographic._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
 
             cat_info_dict = cat_info.__dict__
             good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
@@ -435,12 +701,17 @@ def table_create_demographics_district(district_aun, selected_year, context, add
             cat_info2 = ExtraDemoDistrict.objects.get(school_year=selected_year, district=district_aun)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in ExtraDemoDistrict._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers2{add}'] = fields
+            context[f'attributes2{add}'] = fields_pairing.items()
 
             cat_info_dict2 = cat_info2.__dict__
             good_cat_info_dict2 = dict(islice(cat_info_dict2.items(), 3, None))
@@ -452,12 +723,17 @@ def table_create_demographics_district(district_aun, selected_year, context, add
             cat_info3 = GenderDistrict.objects.get(school_year=selected_year, district=district_aun)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in GenderDistrict._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers3{add}'] = fields
+            context[f'attributes3{add}'] = fields_pairing.items()
 
             cat_info_dict3 = cat_info3.__dict__
             good_cat_info_dict3 = dict(islice(cat_info_dict3.items(), 3, None))
@@ -472,12 +748,17 @@ def table_create_demographics_district(district_aun, selected_year, context, add
             cat_info = DistrictDemographic.objects.filter(district=district_aun)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in DistrictDemographic._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
 
             cat_info_list = []
             cat_info_headers = []
@@ -496,12 +777,17 @@ def table_create_demographics_district(district_aun, selected_year, context, add
             cat_info2 = ExtraDemoDistrict.objects.filter(district=district_aun)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in ExtraDemoDistrict._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers2{add}'] = fields
+            context[f'attributes2{add}'] = fields_pairing.items()
 
             cat_info_list2 = []
             cat_info_headers2 = []
@@ -520,12 +806,17 @@ def table_create_demographics_district(district_aun, selected_year, context, add
             cat_info3 = GenderDistrict.objects.filter(district=district_aun)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in GenderDistrict._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers3{add}'] = fields
+            context[f'attributes3{add}'] = fields_pairing.items()
 
             cat_info_list3 = []
             cat_info_headers3 = []
@@ -546,12 +837,17 @@ def table_create_fiscal(school_id, selected_year, context, add):
             cat_info = SchoolFiscalData.objects.get(school_year=selected_year, school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in SchoolFiscalData._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
 
             cat_info_dict = cat_info.__dict__
             good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
@@ -562,12 +858,17 @@ def table_create_fiscal(school_id, selected_year, context, add):
             cat_info = SchoolFiscalData.objects.filter(school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in SchoolFiscalData._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
 
             cat_info_list = []
             cat_info_headers = []
@@ -588,12 +889,17 @@ def table_create_fiscal_district(district_aun, selected_year, context, add):
             cat_info = DistrictFiscalData.objects.get(school_year=selected_year, district=district_aun)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in DistrictFiscalData._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
 
             cat_info_dict = cat_info.__dict__
             good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
@@ -604,12 +910,17 @@ def table_create_fiscal_district(district_aun, selected_year, context, add):
             cat_info = DistrictFiscalData.objects.filter(district=district_aun)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in DistrictFiscalData._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
 
             cat_info_list = []
             cat_info_headers = []
@@ -630,12 +941,17 @@ def table_create_pub_school_grad_rates(school_id, selected_year, context, add):
             cat_info = PublicSchoolGradRatesSchool.objects.get(school_year=selected_year, school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in PublicSchoolGradRatesSchool._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
 
             cat_info_dict = cat_info.__dict__
             good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
@@ -646,12 +962,17 @@ def table_create_pub_school_grad_rates(school_id, selected_year, context, add):
             cat_info = PublicSchoolGradRatesSchool.objects.filter(school_id=school_id)
 
             fields = []
+            fields_pairing = dict()
+
             i = 0
             for field in PublicSchoolGradRatesSchool._meta.get_fields():
                 if not field.is_relation and i != 0:
                     fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
                 i = i + 1
             context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
 
             cat_info_list = []
             cat_info_headers = []
