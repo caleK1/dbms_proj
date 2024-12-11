@@ -570,7 +570,7 @@ class LowIncomePercentPubSchool(models.Model):
     school_year = models.IntegerField()
     total_enrollment = models.IntegerField()
     low_income_enrollment = models.IntegerField()
-    percent_enrollment_from_low_income_families = models.FloatField()
+    percent_enrollment_from_low_income_families = models.CharField(max_length=20)
 
     class Meta:
         unique_together = ('school', 'school_year')
@@ -600,7 +600,7 @@ class LowIncomePercentDistrict(models.Model):
 class LowIncomePercentPrivateSchool(models.Model):
     school = models.ForeignKey(School, on_delete=models.CASCADE)
     school_year = models.IntegerField()
-    low_income_percentage = models.FloatField()
+    low_income_percentage = models.CharField(max_length=20)
 
     class Meta:
         unique_together = ('school', 'school_year')
