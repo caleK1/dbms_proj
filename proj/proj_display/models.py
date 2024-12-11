@@ -53,7 +53,7 @@ class GenderSchool(models.Model):
         unique_together = ('school_id', 'school_year')
 
     def __str__(self):
-        return f"Gender distribution for {self.school} in {self.school_year}"
+        return f"Gender distribution for {self.school_id} in {self.school_year}"
 
 class SchoolDemographic(models.Model):
     school_id = models.ForeignKey(School, on_delete=models.CASCADE)
@@ -70,7 +70,7 @@ class SchoolDemographic(models.Model):
         unique_together = ('school_id', 'school_year')
 
     def __str__(self):
-        return f"Demographics for {self.school} in {self.school_year}"
+        return f"Demographics for {self.school_id} in {self.school_year}"
 
 class ExtraDemoSchool(models.Model):
     school_id = models.ForeignKey(School, on_delete=models.CASCADE)
