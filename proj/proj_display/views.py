@@ -24,6 +24,7 @@ from .models import SchoolFiscalData
 from .models import LowIncomePercentPubSchool
 from .models import DistrictFiscalData
 from .models import PublicSchoolGradRatesSchool
+from .models import AidRatio
 
 
 # Create your views here.
@@ -129,6 +130,8 @@ def year_view_district(request, district_aun):
         table_create_demographics_district(district_aun, selected_year, context, "")
     elif selected_cat == "fiscal":
         table_create_fiscal_district(district_aun, selected_year, context, "")
+    elif selected_cat == "aid_ratio":
+        table_create_aid_ratio_district(district_aun, selected_year, context, "")
     else:
         pass
 
@@ -214,6 +217,9 @@ def compare(request):
         elif selected_cat == "fiscal":
             table_create_fiscal_district(selected_district, 'all-years', context, "")
             table_create_fiscal_district(selected_district2, 'all-years', context, "_compare")
+        elif selected_cat == "aid_ratio":
+            table_create_aid_ratio_district(selected_district, 'all-years', context, "")
+            table_create_aid_ratio_district(selected_district2, 'all-years', context, "_compare")
         else:
             pass
     else:
@@ -306,6 +312,27 @@ def trend_graph_create_district(district_aun, context, selected_cat, attr):
             values = []
             for year in years_data:
                 record = DistrictFiscalData.objects.filter(district=district_aun, school_year=year).first()
+
+                if record:
+                    value = getattr(record, attr, None)
+                    values.append(value)
+                else:
+                    values.append(None)
+
+            trend_data = {
+                'years': years_data,
+                'values': values,
+                'yLabel': attr
+            }
+            context['trend_data_json'] = json.dumps(trend_data)
+    elif selected_cat == "aid_ratio":
+        if AidRatio.objects.filter(district=district_aun).exists():
+            years = AidRatio.objects.filter(district=district_aun).values('school_year').distinct()
+            years_data = [item['school_year'] for item in years]
+            print(attr)
+            values = []
+            for year in years_data:
+                record = AidRatio.objects.filter(district=district_aun, school_year=year).first()
 
                 if record:
                     value = getattr(record, attr, None)
@@ -985,3 +1012,55 @@ def table_create_pub_school_grad_rates(school_id, selected_year, context, add):
 
             context[f'cat_info{add}'] = cat_info_list
             context['table_name'] = 'Public School Graduation Rates'
+
+def table_create_aid_ratio_district(district_aun, selected_year, context, add):
+    if selected_year != "all-years":
+        #School Demographic
+        if AidRatio.objects.filter(school_year=selected_year, district=district_aun).exists():
+            cat_info = AidRatio.objects.get(school_year=selected_year, district=district_aun)
+
+            fields = []
+            fields_pairing = dict()
+
+            i = 0
+            for field in AidRatio._meta.get_fields():
+                if not field.is_relation and i != 0:
+                    fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
+                i = i + 1
+            context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
+
+            cat_info_dict = cat_info.__dict__
+            good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
+            context[f'cat_info{add}'] = good_cat_info_dict.values()
+            context['table_name'] = 'Fiscal Information'
+    else:
+        if AidRatio.objects.filter(district=district_aun).exists():
+            cat_info = AidRatio.objects.filter(district=district_aun)
+
+            fields = []
+            fields_pairing = dict()
+
+            i = 0
+            for field in AidRatio._meta.get_fields():
+                if not field.is_relation and i != 0:
+                    fields.append(field.verbose_name)
+                    if i != 2:
+                        fields_pairing.update({field.verbose_name: field.name})
+                i = i + 1
+            context[f'cat_headers{add}'] = fields
+            context[f'attributes{add}'] = fields_pairing.items()
+
+            cat_info_list = []
+            cat_info_headers = []
+
+            i = 0
+            for info in cat_info:
+                cat_info_dict = info.__dict__
+                good_cat_info_dict = dict(islice(cat_info_dict.items(), 3, None))
+                cat_info_list.append(good_cat_info_dict)
+
+            context[f'cat_info{add}'] = cat_info_list
+            context['table_name'] = 'Aid Ratios'
