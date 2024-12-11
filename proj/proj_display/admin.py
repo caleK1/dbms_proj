@@ -18,6 +18,7 @@ from .models import ExtraDemoDistrict
 from .models import SchoolFiscalData
 from .models import LowIncomePercentPubSchool
 from .models import DistrictFiscalData
+from .models import PublicSchoolGradRatesSchool
 
 # Register your models here.
 admin.site.register(School)
@@ -34,3 +35,4 @@ admin.site.register(ExtraDemoDistrict)
 admin.site.register(SchoolFiscalData)
 admin.site.register(LowIncomePercentPubSchool)
 admin.site.register(DistrictFiscalData)
+admin.site.register(PublicSchoolGradRatesSchool)
