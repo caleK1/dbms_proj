@@ -5,7 +5,6 @@
 	<h1>Compare</h1>
 
 	<br></br>
-	<h3>Compare Two Districts:</h3>
 
 	<div class="container">
 	    <form method="GET" action="{% url 'compare' %}">
@@ -55,12 +54,50 @@
 	                </select>
 	            </div>
 			</div>
+
+			<div class="form-group row">
+	        	<div class="col-md-6">
+	            	<label for="districtCompareSelectSchool">Select School 1</label>
+	            	<select class="form-control" id="districtCompareSelectSchool" name="districtCompareSchool" onchange="this.form.submit()">
+	            		<option value="" {% if not selected_school %}disabled selected{% endif %}>Select a School</option>
+
+	            		{% for school in schls_in_dist %}
+		            		<option value="{{ school.school_id }}" {% if selected_school.school_id == school.school_id %}selected{% endif %}>{{ school.school_name }}</option>
+	            		{% endfor %}
+	            	</select>
+	        	</div>
+
+	        	<div class="col-md-6">
+	                <label for="districtCompareSelectSchool2">Select School 2</label>
+	                <select class="form-control" id="districtCompareSelectSchool2" name="districtCompareSchool2" onchange="this.form.submit()">
+	                    <option value="" {% if not selected_school2 %}disabled selected{% endif %}>Select a School</option>
+	                    {% for school in schls_in_dist2 %}
+	                        <option value="{{ school.school_id }}" {% if selected_school2.school_id == school.school_id %}selected{% endif %}>{{ school.school_name }}</option>
+	                    {% endfor %}
+	                </select>
+	            </div>
+			</div>
+	    </form>
+	</div>
+
+	<div class="container">
+	        <div class="form-group">
+	            <label for="categorySelectCompare">Choose Category</label>
+	            <select class="form-control" id="categorySelectCompare" name="categoryCompare" onchange="this.form.submit()">
+	            	<option value="demographic" {% if selected_cat == 'demographic' %}selected{% endif %}>Demographic</option>
+	                <option value="fiscal" {% if selected_cat == 'fiscal' %}selected{% endif %}>Fiscal</option>
+	            </select>
+	        </div>
 	    </form>
 	</div>
 
 	{% if selected_district and selected_district2 %}
 		<br></br>
-		<h3>{{ selected_district }}</h3>
+		{% if selected_school%}
+			<h3>{{ selected_school }}</h3>
+		{% else %}
+			<h3>{{ selected_district }}</h3>
+		{% endif %}
 			{% if cat_info %}
 				<h3>{{ table_name }}</h3>
 				<div class="table-responsive">
@@ -255,11 +292,5 @@
 				</div>
 			{% endif %}
 	{% endif %}
-
-	<br></br>
-	<h3>Compare Two Schools:</h3>
-
-	<br></br>
-	<h3>Compare a School to its District:</h3>
 
 {% endblock %}
