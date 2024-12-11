@@ -19,6 +19,8 @@ from .models import SchoolFiscalData
 from .models import LowIncomePercentPubSchool
 from .models import DistrictFiscalData
 from .models import PublicSchoolGradRatesSchool
+from .models import AidRatio
+from .models import PersonalIncome
 
 # Register your models here.
 admin.site.register(School)
@@ -36,3 +38,5 @@ admin.site.register(SchoolFiscalData)
 admin.site.register(LowIncomePercentPubSchool)
 admin.site.register(DistrictFiscalData)
 admin.site.register(PublicSchoolGradRatesSchool)
+admin.site.register(AidRatio)
+admin.site.register(PersonalIncome)
