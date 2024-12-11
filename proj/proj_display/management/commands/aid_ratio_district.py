@@ -33,7 +33,7 @@ class Command(BaseCommand):
 
         for year in self.years:
             i+=1
-            file_path=f'/Users/ericlynch/cs320/dbms_proj/data/FinancialData/FinancialDataElements/AidRatios/cleaned_adr{year}.csv'
+            file_path=f'/Users/calek/DBMS/dbms_proj/data/FinancialData/FinancialDataElements/AidRatios/cleaned_adr{year}.csv'
             try:
                 df=pd.read_csv(file_path)
             
