@@ -77,15 +77,13 @@
 	                </select>
 	            </div>
 			</div>
-	    </form>
-	</div>
 
-	<div class="container">
 	        <div class="form-group">
 	            <label for="categorySelectCompare">Choose Category</label>
 	            <select class="form-control" id="categorySelectCompare" name="categoryCompare" onchange="this.form.submit()">
 	            	<option value="demographic" {% if selected_cat == 'demographic' %}selected{% endif %}>Demographic</option>
 	                <option value="fiscal" {% if selected_cat == 'fiscal' %}selected{% endif %}>Fiscal</option>
+	                <option value="enroll_low_income" {% if selected_cat == 'enroll_low_income' %}selected{% endif %}>Enrollment Low Income</option>
 	            </select>
 	        </div>
 	    </form>
