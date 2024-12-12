@@ -85,6 +85,8 @@
 	                <option value="fiscal" {% if selected_cat == 'fiscal' %}selected{% endif %}>Fiscal</option>
 	                <option value="enroll_low_income" {% if selected_cat == 'enroll_low_income' %}selected{% endif %}>Enrollment Low Income</option>
 	                <option value="pub_school_grad_rates" {% if selected_cat == 'pub_school_grad_rates' %}selected{% endif %}>Public School Graduation Rates</option>
+	                <option value="aid_ratio" {% if selected_cat == 'aid_ratio' %}selected{% endif %}>Aid Ratios (District)</option>
+	                <option value="personal_income" {% if selected_cat == 'personal_income' %}selected{% endif %}>Personal Income (District)</option>
 	            </select>
 	        </div>
 	    </form>
@@ -194,7 +196,11 @@
 			{% endif %}
 
 			<br></br>
-			<h3>{{ selected_district2 }}</h3>
+			{% if selected_school2%}
+				<h3>{{ selected_school2 }}</h3>
+			{% else %}
+				<h3>{{ selected_district2 }}</h3>
+			{% endif %}
 			{% if cat_info_compare %}
 				<h3>{{ table_name }}</h3>
 				<div class="table-responsive">
