@@ -244,7 +244,441 @@ def compare(request):
         else:
             pass
 
+    selected_attr = request.GET.get('trendAttrCompare', 'None')
+    context['selected_attr'] = selected_attr
+
+    if not selected_school or not selected_school2:
+        trend_graph_create_compare_district(selected_district, selected_district2, context, selected_cat, selected_attr)
+    else:
+        trend_graph_create_compare_school(selected_school, selected_school2, context, selected_cat, selected_attr)
+
     return render(request, 'compare.html', context)
+
+def trend_graph_create_compare_district(selected_district, selected_district2, context, selected_cat, attr):
+    if selected_cat == "demographic":
+
+        demo_attr = ["per_asian", "per_hispanic", "per_pacific_islander", "per_am_indian_or_alaskan_native", "per_african_american", "per_white", "per_two_or_more_races"]
+        extra_demo_attr = ["per_english_learner", "per_special_education", "per_gifted_student", "per_military_connected", "per_foster_care", "per_economically_disadvantaged", "per_homeless"]
+        gender_attr = ["male", "female"]
+
+        if attr in demo_attr:
+            if DistrictDemographic.objects.filter(district=selected_district).exists() and DistrictDemographic.objects.filter(district=selected_district2).exists():
+                years = DistrictDemographic.objects.filter(district=selected_district).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = DistrictDemographic.objects.filter(district=selected_district, school_year=year).first()
+                    record2 = DistrictDemographic.objects.filter(district=selected_district2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(District.objects.filter(district_aun=selected_district).first(), "district_name", None)
+                school2_name = getattr(District.objects.filter(district_aun=selected_district2).first(), "district_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+        if attr in extra_demo_attr:
+            if ExtraDemoDistrict.objects.filter(district=selected_district).exists() and ExtraDemoDistrict.objects.filter(district=selected_district2).exists():
+                years = ExtraDemoDistrict.objects.filter(district=selected_district).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = ExtraDemoDistrict.objects.filter(district=selected_district, school_year=year).first()
+                    record2 = ExtraDemoDistrict.objects.filter(district=selected_district2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(District.objects.filter(district_aun=selected_district).first(), "district_name", None)
+                school2_name = getattr(District.objects.filter(district_aun=selected_district2).first(), "district_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+        if attr in gender_attr:
+            if GenderDistrict.objects.filter(district=selected_district).exists() and GenderDistrict.objects.filter(district=selected_district2).exists():
+                years = GenderDistrict.objects.filter(district=selected_district).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = GenderDistrict.objects.filter(district=selected_district, school_year=year).first()
+                    record2 = GenderDistrict.objects.filter(district=selected_district2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(District.objects.filter(district_aun=selected_district).first(), "district_name", None)
+                school2_name = getattr(District.objects.filter(district_aun=selected_district2).first(), "district_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+    elif selected_cat == "fiscal":
+        if DistrictFiscalData.objects.filter(district=selected_district).exists() and DistrictFiscalData.objects.filter(district=selected_district2).exists():
+                years = DistrictFiscalData.objects.filter(district=selected_district).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = DistrictFiscalData.objects.filter(district=selected_district, school_year=year).first()
+                    record2 = DistrictFiscalData.objects.filter(district=selected_district2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(District.objects.filter(district_aun=selected_district).first(), "district_name", None)
+                school2_name = getattr(District.objects.filter(district_aun=selected_district2).first(), "district_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+    elif selected_cat == "aid_ratio":
+        if AidRatio.objects.filter(district=selected_district).exists() and AidRatio.objects.filter(district=selected_district2).exists():
+                years = AidRatio.objects.filter(district=selected_district).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = AidRatio.objects.filter(district=selected_district, school_year=year).first()
+                    record2 = AidRatio.objects.filter(district=selected_district2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(District.objects.filter(district_aun=selected_district).first(), "district_name", None)
+                school2_name = getattr(District.objects.filter(district_aun=selected_district2).first(), "district_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+    elif selected_cat == "personal_income":
+        if PersonalIncome.objects.filter(district=selected_district).exists() and PersonalIncome.objects.filter(district=selected_district2).exists():
+                years = PersonalIncome.objects.filter(district=selected_district).values('school_year').distinct()
+                years_data = sorted([item['school_year'] for item in years], key=lambda x: x)
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = PersonalIncome.objects.filter(district=selected_district, school_year=year).first()
+                    record2 = PersonalIncome.objects.filter(district=selected_district2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(District.objects.filter(district_aun=selected_district).first(), "district_name", None)
+                school2_name = getattr(District.objects.filter(district_aun=selected_district2).first(), "district_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+
+def trend_graph_create_compare_school(selected_school, selected_school2, context, selected_cat, attr):
+    if selected_cat == "demographic":
+
+        demo_attr = ["per_asian", "per_hispanic", "per_pacific_islander", "per_am_indian_or_alaskan_native", "per_african_american", "per_white", "per_two_or_more_races"]
+        extra_demo_attr = ["per_english_learner", "per_special_education", "per_gifted_student", "per_military_connected", "per_foster_care", "per_economically_disadvantaged", "per_homeless"]
+        gender_attr = ["male", "female"]
+
+        if attr in demo_attr:
+            if SchoolDemographic.objects.filter(school_id=selected_school).exists() and SchoolDemographic.objects.filter(school_id=selected_school2).exists():
+                years = SchoolDemographic.objects.filter(school_id=selected_school).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = SchoolDemographic.objects.filter(school_id=selected_school, school_year=year).first()
+                    record2 = SchoolDemographic.objects.filter(school_id=selected_school2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(School.objects.filter(school_id=selected_school).first(), "school_name", None)
+                school2_name = getattr(School.objects.filter(school_id=selected_school2).first(), "school_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+        if attr in extra_demo_attr:
+            if ExtraDemoSchool.objects.filter(school_id=selected_school).exists() and ExtraDemoSchool.objects.filter(school_id=selected_school2).exists():
+                years = ExtraDemoSchool.objects.filter(school_id=selected_school).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = ExtraDemoSchool.objects.filter(school_id=selected_school, school_year=year).first()
+                    record2 = ExtraDemoSchool.objects.filter(school_id=selected_school2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(School.objects.filter(school_id=selected_school).first(), "school_name", None)
+                school2_name = getattr(School.objects.filter(school_id=selected_school2).first(), "school_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+        if attr in gender_attr:
+            if GenderSchool.objects.filter(school_id=selected_school).exists() and GenderSchool.objects.filter(school_id=selected_school2).exists():
+                years = GenderSchool.objects.filter(school_id=selected_school).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = GenderSchool.objects.filter(school_id=selected_school, school_year=year).first()
+                    record2 = GenderSchool.objects.filter(school_id=selected_school2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(School.objects.filter(school_id=selected_school).first(), "school_name", None)
+                school2_name = getattr(School.objects.filter(school_id=selected_school2).first(), "school_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+    elif selected_cat == "fiscal":
+        if SchoolFiscalData.objects.filter(school_id=selected_school).exists() and SchoolFiscalData.objects.filter(school_id=selected_school2).exists():
+                years = SchoolFiscalData.objects.filter(school_id=selected_school).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = SchoolFiscalData.objects.filter(school_id=selected_school, school_year=year).first()
+                    record2 = SchoolFiscalData.objects.filter(school_id=selected_school2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(School.objects.filter(school_id=selected_school).first(), "school_name", None)
+                school2_name = getattr(School.objects.filter(school_id=selected_school2).first(), "school_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+    elif selected_cat == "enroll_low_income":
+        if LowIncomePercentPubSchool.objects.filter(school_id=selected_school).exists() and LowIncomePercentPubSchool.objects.filter(school_id=selected_school2).exists():
+                years = LowIncomePercentPubSchool.objects.filter(school_id=selected_school).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = LowIncomePercentPubSchool.objects.filter(school_id=selected_school, school_year=year).first()
+                    record2 = LowIncomePercentPubSchool.objects.filter(school_id=selected_school2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(School.objects.filter(school_id=selected_school).first(), "school_name", None)
+                school2_name = getattr(School.objects.filter(school_id=selected_school2).first(), "school_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+    elif selected_cat == "pub_school_grad_rates":
+        if PublicSchoolGradRatesSchool.objects.filter(school_id=selected_school).exists() and PublicSchoolGradRatesSchool.objects.filter(school_id=selected_school2).exists():
+                years = PublicSchoolGradRatesSchool.objects.filter(school_id=selected_school).values('school_year').distinct()
+                years_data = [item['school_year'] for item in years]
+                values = []
+                values2 = []
+                for year in years_data:
+                    record = PublicSchoolGradRatesSchool.objects.filter(school_id=selected_school, school_year=year).first()
+                    record2 = PublicSchoolGradRatesSchool.objects.filter(school_id=selected_school2, school_year=year).first()
+
+                    if record:
+                        value = getattr(record, attr, None)
+                        values.append(value)
+                    else:
+                        values.append(None)
+
+                    if record2:
+                        value2 = getattr(record2, attr, None)
+                        values2.append(value2)
+                    else:
+                        values2.append(None)
+
+                school1_name = getattr(School.objects.filter(school_id=selected_school).first(), "school_name", None)
+                school2_name = getattr(School.objects.filter(school_id=selected_school2).first(), "school_name", None)
+                trend_data = {
+                    'years': years_data,
+                    'values': values,
+                    'values2': values2,
+                    'yLabel': attr,
+                    'school1_name': school1_name,
+                    'school2_name': school2_name
+                }
+                print(trend_data)
+                context['trend_data_json'] = json.dumps(trend_data)
+    else:
+        pass
 
 def trend_graph_create_district(district_aun, context, selected_cat, attr):
     if selected_cat == "demographic":

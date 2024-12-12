@@ -28,7 +28,7 @@ class Command(BaseCommand):
         PersonalIncome.objects.all().delete()
         info=[]
         #increase the years to 25 
-        save_years=[20122013,20132014,20142015,201521016,20162017,20172018,20182019,20192020,20202021,20212022]
+        save_years=[20122013,20132014,20142015,20152016,20162017,20172018,20182019,20192020,20202021,20212022]
         i=-1
 
         for year in self.years:
